@@ -1,0 +1,25 @@
+language: ruby
+
+rvm:
+  - "2.2"
+  - "2.1"
+  - "2.0"
+  - "1.9"
+
+sudo: false
+
+install: echo install
+
+script: echo script
+
+deploy:
+  provider: rubygems
+  api_key:
+    master:
+      secure: "alhZpyXA3GL09Au3efqVLNHhaDrAT9CyUxObMX3sZIEQKQWaphORGSN5aHV4CcwiW+486IfgJvP2iFRibTtG+RKt/RQtSHxX/1gnvaJWhcPWNewPLYrybzcvNvtyblbSxEME9nZ5r2se8/ete28i9wgh6yKnljqWqmyOzdClmio="
+  gem:
+    master: codeforces
+  on:
+    repo: sh19910711/codeforces-api-client
+    ruby: "2.2"
+
