@@ -8,9 +8,15 @@ rvm:
 
 sudo: false
 
-install: echo install
+install:
+  - bundle install -j4 --path vendor/bundle
 
-script: echo script
+script:
+  - bundle exec rake spec
+
+cache:
+  directories:
+    - vendor/bundle
 
 deploy:
   provider: rubygems
