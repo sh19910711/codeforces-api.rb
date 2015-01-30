@@ -1,6 +1,6 @@
 # Codeforces API Client Library
 
-The wrapper library for Codeforces API written in Ruby.
+The wrapper library for [Codeforces API](http://codeforces.com/api/help) written in Ruby.
 
 [![Gem Version](https://img.shields.io/gem/v/codeforces.svg?style=flat)](https://rubygems.org/gems/codeforces)
 [![Build Status](https://img.shields.io/travis/sh19910711/codeforces-api-client.svg?style=flat)](https://travis-ci.org/sh19910711/codeforces-api-client)
