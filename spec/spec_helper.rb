@@ -16,7 +16,7 @@ VCR.configure do |conf|
   conf.default_cassette_options = {
     :serialize_with => :psych,
   }
-  config.ignore_hosts "codeclimate.com"
+  conf.ignore_hosts "codeclimate.com"
 end
 
 require "webmock"
