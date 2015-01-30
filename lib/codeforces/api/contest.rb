@@ -1,4 +1,4 @@
-class Codeforces::Client
+class Codeforces::Api
 
   class Contest
 
@@ -6,6 +6,12 @@ class Codeforces::Client
 
     def initialize(base_client)
       @client = base_client
+    end
+
+    def hacks(contest_id, options = {})
+      options[:query] ||= {}
+      options[:query].merge! :contestId => contest_id
+      get("contest.hacks", options)
     end
 
     def list(options = {})

@@ -1,11 +1,14 @@
 require "sawyer"
 require "logger"
 require "addressable/uri"
-require "codeforces/client/contest"
-require "codeforces/client/problem_set"
-require "codeforces/client/user"
+require "codeforces/api"
+require "codeforces/client"
+require "codeforces/helper"
+require "codeforces/models"
 
 class Codeforces::Client
+
+  include Codeforces::Helper
 
   DEFAULT_ENDPOINT = "http://codeforces.com/api/"
   DEFAULT_PAGE_COUNT = 50
@@ -18,12 +21,6 @@ class Codeforces::Client
 
   def logger
     @logger ||= new_logger
-  end
-
-  private def new_logger
-    logger = ::Logger.new(STDOUT)
-    logger.level = ::Logger::INFO
-    logger
   end
 
   def agent
@@ -64,16 +61,20 @@ class Codeforces::Client
     values.join ";"
   end
 
-  def contest
-    @contest ||= ::Codeforces::Client::Contest.new(self)
+  def api
+    @api ||= ::Codeforces::Api.new(self)
   end
 
-  def problemset
-    @problem_set ||= ::Codeforces::Client::ProblemSet.new(self)
+  def submission(status)
+    ::Codeforces::Models::Submission.new self, status
   end
 
-  def user
-    @user ||= ::Codeforces::Client::User.new(self)
+  private
+
+  def new_logger
+    logger = ::Logger.new(STDOUT)
+    logger.level = ::Logger::INFO
+    logger
   end
 
 end

@@ -1,4 +1,4 @@
-class Codeforces::Client
+class Codeforces::Api
 
   class ProblemSet
 
