@@ -1,5 +1,6 @@
 require "sawyer"
 require "logger"
+require "uri"
 require "addressable/uri"
 require "codeforces/api"
 require "codeforces/client"
