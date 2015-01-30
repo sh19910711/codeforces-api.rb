@@ -1,3 +1,4 @@
+module Codeforces; end
 require "codeforces/client"
 require "codeforces/version"
 
