@@ -1,0 +1,549 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://codeforces.com/api/contest.list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 30 Jan 2015 04:39:11 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - 39ce7=CFELMkJ5; Expires=Tue, 10-Feb-2015 18:25:50 GMT; Path=/
+      - JSESSIONID=393857F528C10E4568103A31865A4685-n1; Path=/; HttpOnly
+      Cache-Control:
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","result":[{"id":512,"name":"Codeforces Round #290 (Div.
+        1)","type":"CF","phase":"BEFORE","frozen":false,"durationSeconds":7200,"startTimeSeconds":1422894600,"relativeTimeSeconds":-301850},{"id":510,"name":"Codeforces
+        Round #290 (Div. 2)","type":"CF","phase":"BEFORE","frozen":false,"durationSeconds":7200,"startTimeSeconds":1422894600,"relativeTimeSeconds":-301850},{"id":509,"name":"Codeforces
+        Round #289 (Div. 2, ACM ICPC Rules)","type":"ICPC","phase":"BEFORE","frozen":false,"durationSeconds":10800,"startTimeSeconds":1422705600,"relativeTimeSeconds":-112850},{"id":508,"name":"Codeforces
+        Round #288 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1422376200,"relativeTimeSeconds":216550},{"id":507,"name":"Codeforces
+        Round #287 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1422028800,"relativeTimeSeconds":563950},{"id":505,"name":"Codeforces
+        Round #286 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1421586000,"relativeTimeSeconds":1006750},{"id":506,"name":"Codeforces
+        Round #286 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1421586000,"relativeTimeSeconds":1006750},{"id":501,"name":"Codeforces
+        Round #285 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1421053200,"relativeTimeSeconds":1539550},{"id":504,"name":"Codeforces
+        Round #285 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1421053200,"relativeTimeSeconds":1539550},{"id":500,"name":"Good
+        Bye 2014","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1419951600,"relativeTimeSeconds":2641150},{"id":498,"name":"Codeforces
+        Round #284 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1419438600,"relativeTimeSeconds":3154150},{"id":499,"name":"Codeforces
+        Round #284 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1419438600,"relativeTimeSeconds":3154150},{"id":496,"name":"Codeforces
+        Round #283 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1418833800,"relativeTimeSeconds":3758950},{"id":497,"name":"Codeforces
+        Round #283 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1418833800,"relativeTimeSeconds":3758950},{"id":494,"name":"Codeforces
+        Round #282 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1418488200,"relativeTimeSeconds":4104550},{"id":495,"name":"Codeforces
+        Round #282 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1418488200,"relativeTimeSeconds":4104550},{"id":493,"name":"Codeforces
+        Round #281 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1417618800,"relativeTimeSeconds":4973950},{"id":492,"name":"Codeforces
+        Round #280 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1417451400,"relativeTimeSeconds":5141350},{"id":490,"name":"Codeforces
+        Round #279 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1416733800,"relativeTimeSeconds":5858950},{"id":487,"name":"Codeforces
+        Round #278 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1416590400,"relativeTimeSeconds":6002350},{"id":488,"name":"Codeforces
+        Round #278 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1416590400,"relativeTimeSeconds":6002350},{"id":491,"name":"Testing
+        Round #11","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":5400,"startTimeSeconds":1416519000,"relativeTimeSeconds":6073750},{"id":489,"name":"Codeforces
+        Round #277.5 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1416238500,"relativeTimeSeconds":6354249},{"id":486,"name":"Codeforces
+        Round #277 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1415718000,"relativeTimeSeconds":6874750},{"id":484,"name":"Codeforces
+        Round #276 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1415205000,"relativeTimeSeconds":7387750},{"id":485,"name":"Codeforces
+        Round #276 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1415205000,"relativeTimeSeconds":7387750},{"id":482,"name":"Codeforces
+        Round #275 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1414170000,"relativeTimeSeconds":8422750},{"id":483,"name":"Codeforces
+        Round #275 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1414170000,"relativeTimeSeconds":8422750},{"id":479,"name":"Codeforces
+        Round #274 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1413709200,"relativeTimeSeconds":8883550},{"id":480,"name":"Codeforces
+        Round #274 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1413709200,"relativeTimeSeconds":8883550},{"id":478,"name":"Codeforces
+        Round #273 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1413474000,"relativeTimeSeconds":9118750},{"id":476,"name":"Codeforces
+        Round #272 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1413122400,"relativeTimeSeconds":9470350},{"id":477,"name":"Codeforces
+        Round #272 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1413122400,"relativeTimeSeconds":9470350},{"id":474,"name":"Codeforces
+        Round #271 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1412609400,"relativeTimeSeconds":9983350},{"id":475,"name":"Bayan
+        2015 Contest Warm Up","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1412514000,"relativeTimeSeconds":10078750},{"id":472,"name":"Codeforces
+        Round #270","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1411918500,"relativeTimeSeconds":10674250},{"id":471,"name":"Codeforces
+        Round #269 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1411745400,"relativeTimeSeconds":10847350},{"id":468,"name":"Codeforces
+        Round #268 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1411218000,"relativeTimeSeconds":11374750},{"id":469,"name":"Codeforces
+        Round #268 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1411218000,"relativeTimeSeconds":11374750},{"id":467,"name":"Codeforces
+        Round #267 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1411054200,"relativeTimeSeconds":11538550},{"id":470,"name":"Surprise
+        Language Round #7","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1410622200,"relativeTimeSeconds":11970550},{"id":466,"name":"Codeforces
+        Round #266 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1410535800,"relativeTimeSeconds":12056950},{"id":464,"name":"Codeforces
+        Round #265 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1410103800,"relativeTimeSeconds":12488950},{"id":465,"name":"Codeforces
+        Round #265 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1410103800,"relativeTimeSeconds":12488950},{"id":463,"name":"Codeforces
+        Round #264 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1409383800,"relativeTimeSeconds":13208950},{"id":461,"name":"Codeforces
+        Round #263 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1409061600,"relativeTimeSeconds":13531150},{"id":462,"name":"Codeforces
+        Round #263 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1409061600,"relativeTimeSeconds":13531150},{"id":460,"name":"Codeforces
+        Round #262 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1408548600,"relativeTimeSeconds":14044150},{"id":459,"name":"Codeforces
+        Round #261 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1408116600,"relativeTimeSeconds":14476150},{"id":457,"name":"MemSQL
+        Start[c]UP 2.0 - Round 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1407690000,"relativeTimeSeconds":14902750},{"id":458,"name":"MemSQL
+        Start[c]UP 2.0 - Round 2 - Online Round","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1407690000,"relativeTimeSeconds":14902750},{"id":455,"name":"Codeforces
+        Round #260 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1407511800,"relativeTimeSeconds":15080950},{"id":456,"name":"Codeforces
+        Round #260 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1407511800,"relativeTimeSeconds":15080950},{"id":453,"name":"Codeforces
+        Round #259 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1406907000,"relativeTimeSeconds":15685750},{"id":454,"name":"Codeforces
+        Round #259 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1406907000,"relativeTimeSeconds":15685750},{"id":452,"name":"MemSQL
+        Start[c]UP 2.0 - Round 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1406480400,"relativeTimeSeconds":16112350},{"id":451,"name":"Codeforces
+        Round #258 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1406215800,"relativeTimeSeconds":16376950},{"id":449,"name":"Codeforces
+        Round #257 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1405774800,"relativeTimeSeconds":16817950},{"id":450,"name":"Codeforces
+        Round #257 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1405774800,"relativeTimeSeconds":16817950},{"id":448,"name":"Codeforces
+        Round #256 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1405605600,"relativeTimeSeconds":16987150},{"id":446,"name":"Codeforces
+        Round #FF (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1405256400,"relativeTimeSeconds":17336350},{"id":447,"name":"Codeforces
+        Round #FF (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1405256400,"relativeTimeSeconds":17336350},{"id":444,"name":"Codeforces
+        Round #254 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1404651900,"relativeTimeSeconds":17940850},{"id":445,"name":"Codeforces
+        Round #254 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1404651900,"relativeTimeSeconds":17940850},{"id":442,"name":"Codeforces
+        Round #253 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1403191800,"relativeTimeSeconds":19400950},{"id":443,"name":"Codeforces
+        Round #253 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1403191800,"relativeTimeSeconds":19400950},{"id":436,"name":"Zepto
+        Code Rush 2014","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1402673400,"relativeTimeSeconds":19919350},{"id":441,"name":"Codeforces
+        Round #252 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1402241400,"relativeTimeSeconds":20351350},{"id":439,"name":"Codeforces
+        Round #251 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1401895800,"relativeTimeSeconds":20696950},{"id":440,"name":"Testing
+        Round #10","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":5400,"startTimeSeconds":1401809400,"relativeTimeSeconds":20783350},{"id":437,"name":"Codeforces
+        Round #250 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1401627600,"relativeTimeSeconds":20965150},{"id":438,"name":"Codeforces
+        Round #250 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1401627600,"relativeTimeSeconds":20965150},{"id":435,"name":"Codeforces
+        Round #249 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1401463800,"relativeTimeSeconds":21128950},{"id":433,"name":"Codeforces
+        Round #248 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1400914800,"relativeTimeSeconds":21677950},{"id":434,"name":"Codeforces
+        Round #248 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1400914800,"relativeTimeSeconds":21677950},{"id":431,"name":"Codeforces
+        Round #247 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1400686200,"relativeTimeSeconds":21906550},{"id":432,"name":"Codeforces
+        Round #246 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1400167800,"relativeTimeSeconds":22424950},{"id":429,"name":"Codeforces
+        Round #245 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1399822800,"relativeTimeSeconds":22769950},{"id":430,"name":"Codeforces
+        Round #245 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1399822800,"relativeTimeSeconds":22769950},{"id":427,"name":"Codeforces
+        Round #244 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1399044600,"relativeTimeSeconds":23548150},{"id":425,"name":"Codeforces
+        Round #243 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1398612600,"relativeTimeSeconds":23980150},{"id":426,"name":"Codeforces
+        Round #243 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1398612600,"relativeTimeSeconds":23980150},{"id":424,"name":"Codeforces
+        Round #242 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1398409200,"relativeTimeSeconds":24183550},{"id":419,"name":"Coder-Strike
+        2014 - Finals","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1398169200,"relativeTimeSeconds":24423550},{"id":420,"name":"Coder-Strike
+        2014 - Finals (online edition, Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1398169140,"relativeTimeSeconds":24423610},{"id":421,"name":"Coder-Strike
+        2014 - Finals (online edition, Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1398168900,"relativeTimeSeconds":24423850},{"id":413,"name":"Coder-Strike
+        2014 - Round 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1397977200,"relativeTimeSeconds":24615550},{"id":412,"name":"Coder-Strike
+        2014 - Round 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1397837400,"relativeTimeSeconds":24755350},{"id":417,"name":"RCC
+        2014 Warmup (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1397749200,"relativeTimeSeconds":24843550},{"id":418,"name":"RCC
+        2014 Warmup (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1397749200,"relativeTimeSeconds":24843550},{"id":411,"name":"Coder-Strike
+        2014 - Qualification Round","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":86400,"startTimeSeconds":1397505600,"relativeTimeSeconds":25087150},{"id":416,"name":"Codeforces
+        Round #241 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1397376000,"relativeTimeSeconds":25216750},{"id":414,"name":"Codeforces
+        Round #240 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1396798800,"relativeTimeSeconds":25793950},{"id":415,"name":"Codeforces
+        Round #240 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1396798800,"relativeTimeSeconds":25793950},{"id":409,"name":"April
+        Fools Day Contest 2014","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1396366200,"relativeTimeSeconds":26226550},{"id":407,"name":"Codeforces
+        Round #239 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1396162800,"relativeTimeSeconds":26429950},{"id":408,"name":"Codeforces
+        Round #239 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1396162800,"relativeTimeSeconds":26429950},{"id":405,"name":"Codeforces
+        Round #238 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1395502200,"relativeTimeSeconds":27090550},{"id":406,"name":"Codeforces
+        Round #238 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1395502200,"relativeTimeSeconds":27090550},{"id":404,"name":"Codeforces
+        Round #237 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1395243000,"relativeTimeSeconds":27349750},{"id":402,"name":"Codeforces
+        Round #236 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1394983800,"relativeTimeSeconds":27608950},{"id":403,"name":"Codeforces
+        Round #236 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1394983800,"relativeTimeSeconds":27608950},{"id":401,"name":"Codeforces
+        Round #235 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1394465400,"relativeTimeSeconds":28127350},{"id":400,"name":"Codeforces
+        Round #234 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1394033400,"relativeTimeSeconds":28559350},{"id":398,"name":"Codeforces
+        Round #233 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1393687800,"relativeTimeSeconds":28904950},{"id":399,"name":"Codeforces
+        Round #233 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1393687800,"relativeTimeSeconds":28904950},{"id":396,"name":"Codeforces
+        Round #232 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1393428600,"relativeTimeSeconds":29164150},{"id":397,"name":"Codeforces
+        Round #232 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1393428600,"relativeTimeSeconds":29164150},{"id":394,"name":"Codeforces
+        Round #231 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1392910200,"relativeTimeSeconds":29682550},{"id":392,"name":"Codeforces
+        Round #230 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1392728400,"relativeTimeSeconds":29864350},{"id":393,"name":"Codeforces
+        Round #230 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1392728400,"relativeTimeSeconds":29864350},{"id":391,"name":"Rockethon
+        2014","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1392573600,"relativeTimeSeconds":30019150},{"id":390,"name":"Codeforces
+        Round #229 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1392132600,"relativeTimeSeconds":30460150},{"id":388,"name":"Codeforces
+        Round #228 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7500,"startTimeSeconds":1391442000,"relativeTimeSeconds":31150750},{"id":389,"name":"Codeforces
+        Round #228 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7500,"startTimeSeconds":1391442000,"relativeTimeSeconds":31150750},{"id":387,"name":"Codeforces
+        Round #227 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1391095800,"relativeTimeSeconds":31496950},{"id":385,"name":"Codeforces
+        Round #226 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1390577700,"relativeTimeSeconds":32015050},{"id":383,"name":"Codeforces
+        Round #225 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1390231800,"relativeTimeSeconds":32360950},{"id":384,"name":"Codeforces
+        Round #225 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1390231800,"relativeTimeSeconds":32360950},{"id":382,"name":"Codeforces
+        Round #224 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1389972600,"relativeTimeSeconds":32620150},{"id":386,"name":"Testing
+        Round #9","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":5400,"startTimeSeconds":1389906900,"relativeTimeSeconds":32685850},{"id":380,"name":"Codeforces
+        Round #223 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1389540600,"relativeTimeSeconds":33052150},{"id":381,"name":"Codeforces
+        Round #223 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1389540600,"relativeTimeSeconds":33052150},{"id":379,"name":"Good
+        Bye 2013","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1388417400,"relativeTimeSeconds":34175350},{"id":377,"name":"Codeforces
+        Round #222 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1388331000,"relativeTimeSeconds":34261750},{"id":378,"name":"Codeforces
+        Round #222 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1388331000,"relativeTimeSeconds":34261750},{"id":375,"name":"Codeforces
+        Round #221 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1387893600,"relativeTimeSeconds":34699150},{"id":376,"name":"Codeforces
+        Round #221 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1387893600,"relativeTimeSeconds":34699150},{"id":374,"name":"Codeforces
+        Round #220 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1387380600,"relativeTimeSeconds":35212150},{"id":372,"name":"Codeforces
+        Round #219 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1386943200,"relativeTimeSeconds":35649550},{"id":373,"name":"Codeforces
+        Round #219 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1386943200,"relativeTimeSeconds":35649550},{"id":371,"name":"Codeforces
+        Round #218 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1386493200,"relativeTimeSeconds":36099550},{"id":370,"name":"Codeforces
+        Round #217 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1386399600,"relativeTimeSeconds":36193150},{"id":369,"name":"Codeforces
+        Round #216 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1385739000,"relativeTimeSeconds":36853750},{"id":367,"name":"Codeforces
+        Round #215 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1385479800,"relativeTimeSeconds":37112950},{"id":368,"name":"Codeforces
+        Round #215 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1385479800,"relativeTimeSeconds":37112950},{"id":366,"name":"Codeforces
+        Round #214 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1385307000,"relativeTimeSeconds":37285750},{"id":364,"name":"Codeforces
+        Round #213 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7500,"startTimeSeconds":1384875000,"relativeTimeSeconds":37717750},{"id":365,"name":"Codeforces
+        Round #213 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7500,"startTimeSeconds":1384875000,"relativeTimeSeconds":37717750},{"id":362,"name":"Codeforces
+        Round #212 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1384443000,"relativeTimeSeconds":38149750},{"id":363,"name":"Codeforces
+        Round #211 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1384156800,"relativeTimeSeconds":38435950},{"id":360,"name":"Codeforces
+        Round #210 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1384102800,"relativeTimeSeconds":38489950},{"id":361,"name":"Codeforces
+        Round #210 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1384102800,"relativeTimeSeconds":38489950},{"id":359,"name":"Codeforces
+        Round #209 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1383379200,"relativeTimeSeconds":39213550},{"id":358,"name":"Codeforces
+        Round #208 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1382715000,"relativeTimeSeconds":39877750},{"id":356,"name":"Codeforces
+        Round #207 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1381838400,"relativeTimeSeconds":40754350},{"id":357,"name":"Codeforces
+        Round #207 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1381838400,"relativeTimeSeconds":40754350},{"id":354,"name":"Codeforces
+        Round #206 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1381678200,"relativeTimeSeconds":40914550},{"id":355,"name":"Codeforces
+        Round #206 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1381678200,"relativeTimeSeconds":40914550},{"id":353,"name":"Codeforces
+        Round #205 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1381419000,"relativeTimeSeconds":41173750},{"id":351,"name":"Codeforces
+        Round #204 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1380900600,"relativeTimeSeconds":41692150},{"id":352,"name":"Codeforces
+        Round #204 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1380900600,"relativeTimeSeconds":41692150},{"id":350,"name":"Codeforces
+        Round #203 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1380641400,"relativeTimeSeconds":41951350},{"id":348,"name":"Codeforces
+        Round #202 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1380295800,"relativeTimeSeconds":42296950},{"id":349,"name":"Codeforces
+        Round #202 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1380295800,"relativeTimeSeconds":42296950},{"id":346,"name":"Codeforces
+        Round #201 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1379691000,"relativeTimeSeconds":42901750},{"id":347,"name":"Codeforces
+        Round #201 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1379691000,"relativeTimeSeconds":42901750},{"id":343,"name":"Codeforces
+        Round #200 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1379172600,"relativeTimeSeconds":43420150},{"id":344,"name":"Codeforces
+        Round #200 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1379172600,"relativeTimeSeconds":43420150},{"id":345,"name":"Friday
+        the 13th, Programmers Day","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1379086800,"relativeTimeSeconds":43505950},{"id":342,"name":"Codeforces
+        Round #199 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1378540800,"relativeTimeSeconds":44051950},{"id":340,"name":"Codeforces
+        Round #198 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1377876600,"relativeTimeSeconds":44716150},{"id":341,"name":"Codeforces
+        Round #198 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1377876600,"relativeTimeSeconds":44716150},{"id":339,"name":"Codeforces
+        Round #197 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1377531000,"relativeTimeSeconds":45061750},{"id":337,"name":"Codeforces
+        Round #196 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1376668800,"relativeTimeSeconds":45923950},{"id":338,"name":"Codeforces
+        Round #196 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1376668800,"relativeTimeSeconds":45923950},{"id":336,"name":"Codeforces
+        Round #195 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1376062200,"relativeTimeSeconds":46530550},{"id":326,"name":"MemSQL
+        start[c]up Round 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1375549200,"relativeTimeSeconds":47043550},{"id":335,"name":"MemSQL
+        start[c]up Round 2 - online version","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1375549200,"relativeTimeSeconds":47043550},{"id":333,"name":"Codeforces
+        Round #194 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1374913800,"relativeTimeSeconds":47678950},{"id":334,"name":"Codeforces
+        Round #194 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1374913800,"relativeTimeSeconds":47678950},{"id":332,"name":"Codeforces
+        Round #193 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":8100,"startTimeSeconds":1374679800,"relativeTimeSeconds":47912950},{"id":329,"name":"Codeforces
+        Round #192 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1374327000,"relativeTimeSeconds":48265750},{"id":330,"name":"Codeforces
+        Round #192 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1374327000,"relativeTimeSeconds":48265750},{"id":331,"name":"ABBYY
+        Cup 3.0 - Finals (online version)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":8100,"startTimeSeconds":1374075000,"relativeTimeSeconds":48517750},{"id":324,"name":"ABBYY
+        Cup 3.0 - Finals","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1374043200,"relativeTimeSeconds":48549550},{"id":325,"name":"MemSQL
+        start[c]up Round 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1373734800,"relativeTimeSeconds":48857950},{"id":328,"name":"Testing
+        Round #8","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":3600,"startTimeSeconds":1373662800,"relativeTimeSeconds":48929950},{"id":327,"name":"Codeforces
+        Round #191 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1372941000,"relativeTimeSeconds":49651750},{"id":321,"name":"Codeforces
+        Round #190 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1372433400,"relativeTimeSeconds":50159350},{"id":322,"name":"Codeforces
+        Round #190 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1372433400,"relativeTimeSeconds":50159350},{"id":323,"name":"Testing
+        Round #7","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":3600,"startTimeSeconds":1372363200,"relativeTimeSeconds":50229550},{"id":319,"name":"Codeforces
+        Round #189 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1371992400,"relativeTimeSeconds":50600350},{"id":320,"name":"Codeforces
+        Round #189 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1371992400,"relativeTimeSeconds":50600350},{"id":317,"name":"Codeforces
+        Round #188 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1371223800,"relativeTimeSeconds":51368950},{"id":318,"name":"Codeforces
+        Round #188 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1371223800,"relativeTimeSeconds":51368950},{"id":316,"name":"ABBYY
+        Cup 3.0","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":14400,"startTimeSeconds":1371042000,"relativeTimeSeconds":51550750},{"id":314,"name":"Codeforces
+        Round #187 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1370619000,"relativeTimeSeconds":51973750},{"id":315,"name":"Codeforces
+        Round #187 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1370619000,"relativeTimeSeconds":51973750},{"id":313,"name":"Codeforces
+        Round #186 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1369927800,"relativeTimeSeconds":52664950},{"id":311,"name":"Codeforces
+        Round #185 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1369582200,"relativeTimeSeconds":53010550},{"id":312,"name":"Codeforces
+        Round #185 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1369582200,"relativeTimeSeconds":53010550},{"id":305,"name":"Codeforces
+        Round #184 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1368968400,"relativeTimeSeconds":53624350},{"id":309,"name":"Croc
+        Champ 2013 - Finals (online version, Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1368803400,"relativeTimeSeconds":53789350},{"id":308,"name":"Croc
+        Champ 2013 - Finals","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1368784800,"relativeTimeSeconds":53807950},{"id":307,"name":"Croc
+        Champ 2013 - Trial Contest (Finals)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":2400,"startTimeSeconds":1368693000,"relativeTimeSeconds":53899750},{"id":303,"name":"Codeforces
+        Round #183 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1368363600,"relativeTimeSeconds":54229150},{"id":304,"name":"Codeforces
+        Round #183 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1368363600,"relativeTimeSeconds":54229150},{"id":306,"name":"Testing
+        Round #6","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":6000,"startTimeSeconds":1368302400,"relativeTimeSeconds":54290350},{"id":301,"name":"Codeforces
+        Round #182 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1367769900,"relativeTimeSeconds":54822850},{"id":302,"name":"Codeforces
+        Round #182 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1367769900,"relativeTimeSeconds":54822850},{"id":300,"name":"Codeforces
+        Round #181 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1366903800,"relativeTimeSeconds":55688950},{"id":293,"name":"Croc
+        Champ 2013 - Round 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1366644900,"relativeTimeSeconds":55947850},{"id":299,"name":"Croc
+        Champ 2013 - Round 2 (Div. 2 Edition)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1366644600,"relativeTimeSeconds":55948150},{"id":297,"name":"Codeforces
+        Round #180 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1366385400,"relativeTimeSeconds":56207350},{"id":298,"name":"Codeforces
+        Round #180 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1366385400,"relativeTimeSeconds":56207350},{"id":292,"name":"Croc
+        Champ 2013 - Round 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1366040100,"relativeTimeSeconds":56552650},{"id":291,"name":"Croc
+        Champ 2013 - Qualification Round","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":172800,"startTimeSeconds":1365796800,"relativeTimeSeconds":56795950},{"id":295,"name":"Codeforces
+        Round #179 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1365694200,"relativeTimeSeconds":56898550},{"id":296,"name":"Codeforces
+        Round #179 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1365694200,"relativeTimeSeconds":56898550},{"id":294,"name":"Codeforces
+        Round #178 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1365348600,"relativeTimeSeconds":57244150},{"id":288,"name":"Codeforces
+        Round #177 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1364916600,"relativeTimeSeconds":57676150},{"id":289,"name":"Codeforces
+        Round #177 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1364916600,"relativeTimeSeconds":57676150},{"id":290,"name":"April
+        Fools Day Contest 2013","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1364830200,"relativeTimeSeconds":57762550},{"id":286,"name":"Codeforces
+        Round #176 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1364025600,"relativeTimeSeconds":58567150},{"id":287,"name":"Codeforces
+        Round #176 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1364025600,"relativeTimeSeconds":58567150},{"id":285,"name":"Codeforces
+        Round #175 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1363879800,"relativeTimeSeconds":58712950},{"id":283,"name":"Codeforces
+        Round #174 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7500,"startTimeSeconds":1363534200,"relativeTimeSeconds":59058550},{"id":284,"name":"Codeforces
+        Round #174 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7500,"startTimeSeconds":1363534200,"relativeTimeSeconds":59058550},{"id":282,"name":"Codeforces
+        Round #173 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1363188600,"relativeTimeSeconds":59404150},{"id":280,"name":"Codeforces
+        Round #172 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1362929400,"relativeTimeSeconds":59663350},{"id":281,"name":"Codeforces
+        Round #172 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1362929400,"relativeTimeSeconds":59663350},{"id":279,"name":"Codeforces
+        Round #171 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1362411000,"relativeTimeSeconds":60181750},{"id":277,"name":"Codeforces
+        Round #170 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1362065400,"relativeTimeSeconds":60527350},{"id":278,"name":"Codeforces
+        Round #170 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1362065400,"relativeTimeSeconds":60527350},{"id":276,"name":"Codeforces
+        Round #169 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1361719800,"relativeTimeSeconds":60872950},{"id":274,"name":"Codeforces
+        Round #168 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1361374200,"relativeTimeSeconds":61218550},{"id":275,"name":"Codeforces
+        Round #168 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1361374200,"relativeTimeSeconds":61218550},{"id":272,"name":"Codeforces
+        Round #167 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1360769400,"relativeTimeSeconds":61823350},{"id":273,"name":"Codeforces
+        Round #167 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1360769400,"relativeTimeSeconds":61823350},{"id":271,"name":"Codeforces
+        Round #166 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1360596600,"relativeTimeSeconds":61996150},{"id":269,"name":"Codeforces
+        Round #165 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1359732600,"relativeTimeSeconds":62860150},{"id":270,"name":"Codeforces
+        Round #165 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1359732600,"relativeTimeSeconds":62860150},{"id":268,"name":"Codeforces
+        Round #164 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1359387000,"relativeTimeSeconds":63205750},{"id":266,"name":"Codeforces
+        Round #163 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1358868600,"relativeTimeSeconds":63724150},{"id":264,"name":"Codeforces
+        Round #162 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1358686800,"relativeTimeSeconds":63905950},{"id":265,"name":"Codeforces
+        Round #162 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1358686800,"relativeTimeSeconds":63905950},{"id":263,"name":"Codeforces
+        Round #161 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1358350200,"relativeTimeSeconds":64242551},{"id":261,"name":"Codeforces
+        Round #160 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1358091000,"relativeTimeSeconds":64501750},{"id":262,"name":"Codeforces
+        Round #160 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1358091000,"relativeTimeSeconds":64501750},{"id":267,"name":"Codeforces
+        Testing Round #5","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":6300,"startTimeSeconds":1358002800,"relativeTimeSeconds":64589950},{"id":257,"name":"Codeforces
+        Round #159 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1357659000,"relativeTimeSeconds":64933750},{"id":260,"name":"Codeforces
+        Round #158 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1356622500,"relativeTimeSeconds":65970250},{"id":258,"name":"Codeforces
+        Round #157 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1356190200,"relativeTimeSeconds":66402550},{"id":259,"name":"Codeforces
+        Round #157 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1356190200,"relativeTimeSeconds":66402550},{"id":256,"name":"Codeforces
+        Round #156 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1355671800,"relativeTimeSeconds":66920950},{"id":255,"name":"Codeforces
+        Round #156 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1355671800,"relativeTimeSeconds":66920950},{"id":254,"name":"Codeforces
+        Round #155 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1355047200,"relativeTimeSeconds":67545550},{"id":253,"name":"Codeforces
+        Round #154 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1354960800,"relativeTimeSeconds":67631950},{"id":251,"name":"Codeforces
+        Round #153 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1354807800,"relativeTimeSeconds":67784950},{"id":252,"name":"Codeforces
+        Round #153 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1354807800,"relativeTimeSeconds":67784950},{"id":250,"name":"CROC-MBTU
+        2012, Final Round (Online version, Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1353938400,"relativeTimeSeconds":68654350},{"id":247,"name":"CROC-MBTU
+        2012, Final Round","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1353927300,"relativeTimeSeconds":68665450},{"id":248,"name":"Codeforces
+        Round #152 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":8100,"startTimeSeconds":1353857400,"relativeTimeSeconds":68735350},{"id":249,"name":"Codeforces
+        Round #152 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":8100,"startTimeSeconds":1353857400,"relativeTimeSeconds":68735350},{"id":246,"name":"Codeforces
+        Round #151 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1353511800,"relativeTimeSeconds":69080950},{"id":245,"name":"CROC-MBTU
+        2012, Elimination Round (ACM-ICPC)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1353339000,"relativeTimeSeconds":69253750},{"id":243,"name":"Codeforces
+        Round #150 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1353079800,"relativeTimeSeconds":69512950},{"id":244,"name":"Codeforces
+        Round #150 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1353079800,"relativeTimeSeconds":69512950},{"id":242,"name":"Codeforces
+        Round #149 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1352647800,"relativeTimeSeconds":69944950},{"id":238,"name":"Codeforces
+        Round #148 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1352044800,"relativeTimeSeconds":70547950},{"id":239,"name":"Codeforces
+        Round #148 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1352044800,"relativeTimeSeconds":70547950},{"id":241,"name":"Bayan
+        2012-2013 Elimination Round (ACM ICPC Rules, English statements)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1351783800,"relativeTimeSeconds":70808950},{"id":237,"name":"Codeforces
+        Round #147 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1351179000,"relativeTimeSeconds":71413750},{"id":235,"name":"Codeforces
+        Round #146 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1350803400,"relativeTimeSeconds":71789350},{"id":236,"name":"Codeforces
+        Round #146 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1350803400,"relativeTimeSeconds":71789350},{"id":234,"name":"Codeforces
+        Round #145 (Div. 2, ACM-ICPC Rules)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":12600,"startTimeSeconds":1350370800,"relativeTimeSeconds":72221950},{"id":240,"name":"Codeforces
+        Round #145 (Div. 1, ACM-ICPC Rules)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1350370800,"relativeTimeSeconds":72221950},{"id":232,"name":"Codeforces
+        Round #144 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1349969400,"relativeTimeSeconds":72623350},{"id":233,"name":"Codeforces
+        Round #144 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1349969400,"relativeTimeSeconds":72623350},{"id":231,"name":"Codeforces
+        Round #143 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1349623800,"relativeTimeSeconds":72968950},{"id":229,"name":"Codeforces
+        Round #142 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7500,"startTimeSeconds":1349105400,"relativeTimeSeconds":73487350},{"id":230,"name":"Codeforces
+        Round #142 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7500,"startTimeSeconds":1349105400,"relativeTimeSeconds":73487350},{"id":228,"name":"Codeforces
+        Round #141 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1348759800,"relativeTimeSeconds":73832950},{"id":226,"name":"Codeforces
+        Round #140 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1348500600,"relativeTimeSeconds":74092150},{"id":227,"name":"Codeforces
+        Round #140 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1348500600,"relativeTimeSeconds":74092150},{"id":225,"name":"Codeforces
+        Round #139 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1348069500,"relativeTimeSeconds":74523250},{"id":223,"name":"Codeforces
+        Round #138 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1347809400,"relativeTimeSeconds":74783350},{"id":224,"name":"Codeforces
+        Round #138 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1347809400,"relativeTimeSeconds":74783350},{"id":222,"name":"Codeforces
+        Round #137 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1347291900,"relativeTimeSeconds":75300850},{"id":220,"name":"Codeforces
+        Round #136 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1346427000,"relativeTimeSeconds":76165750},{"id":221,"name":"Codeforces
+        Round #136 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1346427000,"relativeTimeSeconds":76165750},{"id":219,"name":"Codeforces
+        Round #135 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1346081400,"relativeTimeSeconds":76511350},{"id":217,"name":"Codeforces
+        Round #134 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1345273500,"relativeTimeSeconds":77319250},{"id":218,"name":"Codeforces
+        Round #134 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1345273500,"relativeTimeSeconds":77319250},{"id":216,"name":"Codeforces
+        Round #133 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1344958200,"relativeTimeSeconds":77634550},{"id":215,"name":"Codeforces
+        Round #132 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1344267000,"relativeTimeSeconds":78325750},{"id":213,"name":"Codeforces
+        Round #131 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1343662200,"relativeTimeSeconds":78930550},{"id":214,"name":"Codeforces
+        Round #131 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1343662200,"relativeTimeSeconds":78930550},{"id":208,"name":"Codeforces
+        Round #130 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7800,"startTimeSeconds":1343057400,"relativeTimeSeconds":79535350},{"id":212,"name":"VK
+        Cup 2012 Finals (unofficial online-version)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1342450800,"relativeTimeSeconds":80141950},{"id":211,"name":"VK
+        Cup 2012 Finals","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1342335600,"relativeTimeSeconds":80257150},{"id":209,"name":"VK
+        Cup 2012 Finals, Practice Session","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":5400,"startTimeSeconds":1342252500,"relativeTimeSeconds":80340250},{"id":204,"name":"Codeforces
+        Round #129 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1342020600,"relativeTimeSeconds":80572150},{"id":205,"name":"Codeforces
+        Round #129 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1342020600,"relativeTimeSeconds":80572150},{"id":207,"name":"Abbyy
+        Cup 2.0 - Final (unofficial)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1341730800,"relativeTimeSeconds":80861950},{"id":206,"name":"Abbyy
+        Cup 2.0 - Final","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1341576900,"relativeTimeSeconds":81015850},{"id":203,"name":"Codeforces
+        Round #128 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1341329400,"relativeTimeSeconds":81263350},{"id":201,"name":"Codeforces
+        Round #127 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1340983800,"relativeTimeSeconds":81608950},{"id":202,"name":"Codeforces
+        Round #127 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1340983800,"relativeTimeSeconds":81608950},{"id":200,"name":"Codeforces
+        Round #126 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1340551800,"relativeTimeSeconds":82040950},{"id":198,"name":"Codeforces
+        Round #125 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1340379000,"relativeTimeSeconds":82213750},{"id":199,"name":"Codeforces
+        Round #125 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1340379000,"relativeTimeSeconds":82213750},{"id":196,"name":"Codeforces
+        Round #124 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1339506000,"relativeTimeSeconds":83086750},{"id":197,"name":"Codeforces
+        Round #124 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1339506000,"relativeTimeSeconds":83086750},{"id":195,"name":"Codeforces
+        Round #123 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1339342200,"relativeTimeSeconds":83250550},{"id":193,"name":"Codeforces
+        Round #122 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1338737400,"relativeTimeSeconds":83855350},{"id":194,"name":"Codeforces
+        Round #122 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1338737400,"relativeTimeSeconds":83855350},{"id":191,"name":"Codeforces
+        Round #121 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1338132600,"relativeTimeSeconds":84460150},{"id":192,"name":"Codeforces
+        Round #121 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1338132600,"relativeTimeSeconds":84460150},{"id":188,"name":"Surprise
+        Language Round #6","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1337959800,"relativeTimeSeconds":84632950},{"id":190,"name":"Codeforces
+        Round #120 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1337182200,"relativeTimeSeconds":85410550},{"id":187,"name":"Codeforces
+        Round #119 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1336663800,"relativeTimeSeconds":85928950},{"id":189,"name":"Codeforces
+        Round #119 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1336663800,"relativeTimeSeconds":85928950},{"id":185,"name":"Codeforces
+        Round #118 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1336145400,"relativeTimeSeconds":86447350},{"id":186,"name":"Codeforces
+        Round #118 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1336145400,"relativeTimeSeconds":86447350},{"id":178,"name":"ABBYY
+        Cup 2.0 - Hard","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":18000,"startTimeSeconds":1335614400,"relativeTimeSeconds":86978350},{"id":183,"name":"Croc
+        Champ 2012 - Final","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1335532800,"relativeTimeSeconds":87059950},{"id":182,"name":"Codeforces
+        Round #117 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1335280200,"relativeTimeSeconds":87312550},{"id":180,"name":"Codeforces
+        Round #116 (Div. 2, ACM-ICPC Rules)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1335078000,"relativeTimeSeconds":87514750},{"id":177,"name":"ABBYY
+        Cup 2.0 - Easy","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":14400,"startTimeSeconds":1335016800,"relativeTimeSeconds":87575950},{"id":176,"name":"Croc
+        Champ 2012 - Round 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1334934300,"relativeTimeSeconds":87658450},{"id":181,"name":"Croc
+        Champ 2012 - Round 2 (Unofficial Div. 2 Edition)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1334934300,"relativeTimeSeconds":87658450},{"id":175,"name":"Codeforces
+        Round #115","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1334390400,"relativeTimeSeconds":88202350},{"id":179,"name":"RazMERiq
+        2012 (Private Contest)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1334390400,"relativeTimeSeconds":88202350},{"id":164,"name":"VK
+        Cup 2012 Round 3","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1333897500,"relativeTimeSeconds":88695250},{"id":174,"name":"VK
+        Cup 2012 Round 3 (Unofficial Div. 2 Edition)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1333897500,"relativeTimeSeconds":88695250},{"id":173,"name":"Croc
+        Champ 2012 - Round 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1333724400,"relativeTimeSeconds":88868350},{"id":172,"name":"Croc
+        Champ 2012 - Qualification Round","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":86400,"startTimeSeconds":1333440000,"relativeTimeSeconds":89152750},{"id":171,"name":"April
+        Fools Day Contest","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1333292400,"relativeTimeSeconds":89300350},{"id":170,"name":"VK
+        Cup 2012 Wild-card Round 2","type":"IOI","phase":"FINISHED","frozen":false,"durationSeconds":604800,"startTimeSeconds":1332954000,"relativeTimeSeconds":89638750},{"id":167,"name":"Codeforces
+        Round #114 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1332860400,"relativeTimeSeconds":89732350},{"id":168,"name":"Codeforces
+        Round #114 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1332860400,"relativeTimeSeconds":89732350},{"id":163,"name":"VK
+        Cup 2012 Round 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1332687900,"relativeTimeSeconds":89904850},{"id":169,"name":"VK
+        Cup 2012 Round 2 (Unofficial Div. 2 Edition)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1332687900,"relativeTimeSeconds":89904850},{"id":166,"name":"Codeforces
+        Round #113 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1332516600,"relativeTimeSeconds":90076150},{"id":162,"name":"VK
+        Cup 2012 Wild-card Round 1","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1332083400,"relativeTimeSeconds":90509350},{"id":165,"name":"Codeforces
+        Round #112 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1331911800,"relativeTimeSeconds":90680950},{"id":161,"name":"VK
+        Cup 2012 Round 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1331478300,"relativeTimeSeconds":91114450},{"id":159,"name":"VK
+        Cup 2012 Qualification Round 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":86400,"startTimeSeconds":1331280000,"relativeTimeSeconds":91312750},{"id":160,"name":"Codeforces
+        Round #111 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1331046000,"relativeTimeSeconds":91546750},{"id":158,"name":"VK
+        Cup 2012 Qualification Round 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":86400,"startTimeSeconds":1330804800,"relativeTimeSeconds":91787950},{"id":156,"name":"Codeforces
+        Round #110 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1330536600,"relativeTimeSeconds":92056150},{"id":157,"name":"Codeforces
+        Round #110 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1330536600,"relativeTimeSeconds":92056150},{"id":154,"name":"Codeforces
+        Round #109 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1330095600,"relativeTimeSeconds":92497150},{"id":155,"name":"Codeforces
+        Round #109 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1330095600,"relativeTimeSeconds":92497150},{"id":153,"name":"Surprise
+        Language Round #5","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1329922800,"relativeTimeSeconds":92669950},{"id":152,"name":"Codeforces
+        Round #108 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1329750000,"relativeTimeSeconds":92842750},{"id":150,"name":"Codeforces
+        Round #107 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1329490800,"relativeTimeSeconds":93101950},{"id":151,"name":"Codeforces
+        Round #107 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1329490800,"relativeTimeSeconds":93101950},{"id":149,"name":"Codeforces
+        Round #106 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1328886000,"relativeTimeSeconds":93706750},{"id":148,"name":"Codeforces
+        Round #105 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1328198400,"relativeTimeSeconds":94394350},{"id":145,"name":"Codeforces
+        Round #104 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1327215600,"relativeTimeSeconds":95377150},{"id":146,"name":"Codeforces
+        Round #104 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1327215600,"relativeTimeSeconds":95377150},{"id":144,"name":"Codeforces
+        Round #103 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1326899100,"relativeTimeSeconds":95693650},{"id":142,"name":"Codeforces
+        Round #102 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1326380700,"relativeTimeSeconds":96212050},{"id":143,"name":"Codeforces
+        Round #102 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1326380700,"relativeTimeSeconds":96212050},{"id":141,"name":"Codeforces
+        Round #101 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1326034800,"relativeTimeSeconds":96557950},{"id":140,"name":"Codeforces
+        Round #100","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1325689200,"relativeTimeSeconds":96903550},{"id":147,"name":"Codeforces
+        Testing Round #4","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":3600,"startTimeSeconds":1325602800,"relativeTimeSeconds":96989950},{"id":138,"name":"Codeforces
+        Beta Round #99 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1324728000,"relativeTimeSeconds":97864750},{"id":139,"name":"Codeforces
+        Beta Round #99 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1324728000,"relativeTimeSeconds":97864750},{"id":137,"name":"Codeforces
+        Beta Round #98 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1324015200,"relativeTimeSeconds":98577550},{"id":135,"name":"Codeforces
+        Beta Round #97 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1323443100,"relativeTimeSeconds":99149650},{"id":136,"name":"Codeforces
+        Beta Round #97 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1323443100,"relativeTimeSeconds":99149650},{"id":132,"name":"Codeforces
+        Beta Round #96 (Div. 1)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1322924400,"relativeTimeSeconds":99668350},{"id":133,"name":"Codeforces
+        Beta Round #96 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1322924400,"relativeTimeSeconds":99668350},{"id":134,"name":"Codeforces
+        Testing Round #3","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":3600,"startTimeSeconds":1322838000,"relativeTimeSeconds":99754750},{"id":131,"name":"Codeforces
+        Beta Round #95 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1322233200,"relativeTimeSeconds":100359550},{"id":130,"name":"Unknown
+        Language Round #4","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1321801200,"relativeTimeSeconds":100791550},{"id":128,"name":"Codeforces
+        Beta Round #94 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1321337400,"relativeTimeSeconds":101255350},{"id":129,"name":"Codeforces
+        Beta Round #94 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1321337400,"relativeTimeSeconds":101255350},{"id":126,"name":"Codeforces
+        Beta Round #93 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1320858000,"relativeTimeSeconds":101734750},{"id":127,"name":"Codeforces
+        Beta Round #93 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1320858000,"relativeTimeSeconds":101734750},{"id":123,"name":"Codeforces
+        Beta Round #92 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1320333000,"relativeTimeSeconds":102259750},{"id":124,"name":"Codeforces
+        Beta Round #92 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1320333000,"relativeTimeSeconds":102259750},{"id":125,"name":"Codeforces
+        Testing Round #2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1319893200,"relativeTimeSeconds":102699550},{"id":121,"name":"Codeforces
+        Beta Round #91 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1319727600,"relativeTimeSeconds":102865150},{"id":122,"name":"Codeforces
+        Beta Round #91 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1319727600,"relativeTimeSeconds":102865150},{"id":120,"name":"School
+        Regional Team Contest, Saratov, 2011","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":18000,"startTimeSeconds":1318919400,"relativeTimeSeconds":103673350},{"id":119,"name":"Codeforces
+        Beta Round #90","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1318604400,"relativeTimeSeconds":103988350},{"id":118,"name":"Codeforces
+        Beta Round #89 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1317999600,"relativeTimeSeconds":104593150},{"id":117,"name":"Codeforces
+        Beta Round #88","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1316790000,"relativeTimeSeconds":105802750},{"id":115,"name":"Codeforces
+        Beta Round #87 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1316098800,"relativeTimeSeconds":106493950},{"id":116,"name":"Codeforces
+        Beta Round #87 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1316098800,"relativeTimeSeconds":106493950},{"id":113,"name":"Codeforces
+        Beta Round #86 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1315494000,"relativeTimeSeconds":107098750},{"id":114,"name":"Codeforces
+        Beta Round #86 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1315494000,"relativeTimeSeconds":107098750},{"id":111,"name":"Codeforces
+        Beta Round #85 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1315051200,"relativeTimeSeconds":107541550},{"id":112,"name":"Codeforces
+        Beta Round #85 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1315051200,"relativeTimeSeconds":107541550},{"id":109,"name":"Codeforces
+        Beta Round #84 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1314633600,"relativeTimeSeconds":107959150},{"id":110,"name":"Codeforces
+        Beta Round #84 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1314633600,"relativeTimeSeconds":107959150},{"id":107,"name":"Codeforces
+        Beta Round #83 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1314111600,"relativeTimeSeconds":108481150},{"id":108,"name":"Codeforces
+        Beta Round #83 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1314111600,"relativeTimeSeconds":108481150},{"id":106,"name":"Codeforces
+        Beta Round #82 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1313766000,"relativeTimeSeconds":108826750},{"id":105,"name":"Codeforces
+        Beta Round #81","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1313247600,"relativeTimeSeconds":109345150},{"id":103,"name":"Codeforces
+        Beta Round #80 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1312714800,"relativeTimeSeconds":109877950},{"id":104,"name":"Codeforces
+        Beta Round #80 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1312714800,"relativeTimeSeconds":109877950},{"id":101,"name":"Codeforces
+        Beta Round #79 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1312390800,"relativeTimeSeconds":110201950},{"id":102,"name":"Codeforces
+        Beta Round #79 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1312390800,"relativeTimeSeconds":110201950},{"id":100,"name":"Unknown
+        Language Round #3","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1312005600,"relativeTimeSeconds":110587150},{"id":98,"name":"Codeforces
+        Beta Round #78 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1311346800,"relativeTimeSeconds":111245950},{"id":99,"name":"Codeforces
+        Beta Round #78 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1311346800,"relativeTimeSeconds":111245950},{"id":97,"name":"Yandex.Algorithm
+        2011\u003cbr\u003eFinals","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1310731200,"relativeTimeSeconds":111861550},{"id":95,"name":"Codeforces
+        Beta Round #77 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1310137200,"relativeTimeSeconds":112455550},{"id":96,"name":"Codeforces
+        Beta Round #77 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1310137200,"relativeTimeSeconds":112455550},{"id":93,"name":"Codeforces
+        Beta Round #76 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1309446000,"relativeTimeSeconds":113146750},{"id":94,"name":"Codeforces
+        Beta Round #76 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1309446000,"relativeTimeSeconds":113146750},{"id":91,"name":"Codeforces
+        Beta Round #75 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1308582000,"relativeTimeSeconds":114010750},{"id":92,"name":"Codeforces
+        Beta Round #75 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1308582000,"relativeTimeSeconds":114010750},{"id":89,"name":"Codeforces
+        Beta Round #74 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1308236400,"relativeTimeSeconds":114356350},{"id":90,"name":"Codeforces
+        Beta Round #74 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1308236400,"relativeTimeSeconds":114356350},{"id":87,"name":"Codeforces
+        Beta Round #73 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1307458800,"relativeTimeSeconds":115133950},{"id":88,"name":"Codeforces
+        Beta Round #73 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1307458800,"relativeTimeSeconds":115133950},{"id":86,"name":"Yandex.Algorithm
+        2011\u003cbr\u003eRound 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1306077000,"relativeTimeSeconds":116515750},{"id":85,"name":"Yandex.Algorithm
+        2011\u003cbr\u003eRound 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1305903600,"relativeTimeSeconds":116689150},{"id":83,"name":"Codeforces
+        Beta Round #72 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1305299400,"relativeTimeSeconds":117293350},{"id":84,"name":"Codeforces
+        Beta Round #72 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1305299400,"relativeTimeSeconds":117293350},{"id":82,"name":"Yandex.Algorithm
+        2011\u003cbr\u003eQualification 2","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1304694000,"relativeTimeSeconds":117898750},{"id":81,"name":"Yandex.Algorithm
+        Open 2011\u003cbr\u003eQualification 1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1304485200,"relativeTimeSeconds":118107550},{"id":79,"name":"Codeforces
+        Beta Round #71","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1304175600,"relativeTimeSeconds":118417150},{"id":78,"name":"Codeforces
+        Beta Round #70 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1303916400,"relativeTimeSeconds":118676350},{"id":77,"name":"Codeforces
+        Beta Round #69 (Div. 1 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1303226100,"relativeTimeSeconds":119366650},{"id":80,"name":"Codeforces
+        Beta Round #69 (Div. 2 Only)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1303226100,"relativeTimeSeconds":119366650},{"id":74,"name":"Codeforces
+        Beta Round #68","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1302879600,"relativeTimeSeconds":119713150},{"id":75,"name":"Codeforces
+        Beta Round #67 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1302706800,"relativeTimeSeconds":119885950},{"id":76,"name":"All-Ukrainian
+        School Olympiad in Informatics","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":18000,"startTimeSeconds":1302609600,"relativeTimeSeconds":119983150},{"id":73,"name":"Codeforces
+        Beta Round #66","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1302422400,"relativeTimeSeconds":120170350},{"id":71,"name":"Codeforces
+        Beta Round #65 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1301410800,"relativeTimeSeconds":121181950},{"id":70,"name":"Codeforces
+        Beta Round #64","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1301155200,"relativeTimeSeconds":121437550},{"id":69,"name":"Codeforces
+        Beta Round #63 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1300809600,"relativeTimeSeconds":121783150},{"id":72,"name":"Unknown
+        Language Round #2","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1300637400,"relativeTimeSeconds":121955350},{"id":68,"name":"Codeforces
+        Beta Round #62","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1300464000,"relativeTimeSeconds":122128750},{"id":67,"name":"Manthan
+        2011","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1300033800,"relativeTimeSeconds":122558950},{"id":66,"name":"Codeforces
+        Beta Round #61 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1299513600,"relativeTimeSeconds":123079150},{"id":65,"name":"Codeforces
+        Beta Round #60","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1299340800,"relativeTimeSeconds":123251950},{"id":63,"name":"Codeforces
+        Beta Round #59 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1298908800,"relativeTimeSeconds":123683950},{"id":62,"name":"Codeforces
+        Beta Round #58","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1298649600,"relativeTimeSeconds":123943150},{"id":61,"name":"Codeforces
+        Beta Round #57 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1298390400,"relativeTimeSeconds":124202350},{"id":64,"name":"Unknown
+        Language Round #1","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1298304000,"relativeTimeSeconds":124288750},{"id":60,"name":"Codeforces
+        Beta Round #56","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1298131200,"relativeTimeSeconds":124461550},{"id":59,"name":"Codeforces
+        Beta Round #55 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1297440000,"relativeTimeSeconds":125152750},{"id":58,"name":"Codeforces
+        Beta Round #54 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1296489600,"relativeTimeSeconds":126103150},{"id":57,"name":"Codeforces
+        Beta Round #53","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1295971200,"relativeTimeSeconds":126621550},{"id":56,"name":"Codeforces
+        Beta Round #52 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1295626200,"relativeTimeSeconds":126966550},{"id":55,"name":"Codeforces
+        Beta Round #51","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1294992000,"relativeTimeSeconds":127600750},{"id":54,"name":"Codeforces
+        Beta Round #50","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1294733700,"relativeTimeSeconds":127859050},{"id":53,"name":"Codeforces
+        Beta Round #49 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1294329600,"relativeTimeSeconds":128263150},{"id":52,"name":"Codeforces
+        Testing Round #1","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":3600,"startTimeSeconds":1294160400,"relativeTimeSeconds":128432350},{"id":51,"name":"Codeforces
+        Beta Round #48","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":9000,"startTimeSeconds":1293552000,"relativeTimeSeconds":129040750},{"id":50,"name":"Codeforces
+        Beta Round #47","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1292862000,"relativeTimeSeconds":129730750},{"id":49,"name":"Codeforces
+        Beta Round #46 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1292601600,"relativeTimeSeconds":129991150},{"id":48,"name":"School
+        Personal Contest #3 (Winter Computer School 2010/11)\u003cbr\u003e-\u003cbr\u003eCodeforces
+        Beta Round #45 (ACM-ICPC Rules)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1292140800,"relativeTimeSeconds":130451950},{"id":47,"name":"Codeforces
+        Beta Round #44 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1291737600,"relativeTimeSeconds":130855150},{"id":46,"name":"School
+        Personal Contest #2 (Winter Computer School 2010/11)\u003cbr\u003e-\u003cbr\u003eCodeforces
+        Beta Round #43 (ACM-ICPC Rules)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":10800,"startTimeSeconds":1291536000,"relativeTimeSeconds":131056750},{"id":43,"name":"Codeforces
+        Beta Round #42 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1291046400,"relativeTimeSeconds":131546350},{"id":42,"name":"Codeforces
+        Beta Round #41","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1290096000,"relativeTimeSeconds":132496750},{"id":45,"name":"School
+        Team Contest #3 (Winter Computer School 2010/11)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":18000,"startTimeSeconds":1289646000,"relativeTimeSeconds":132946750},{"id":41,"name":"Codeforces
+        Beta Round #40 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1289232000,"relativeTimeSeconds":133360750},{"id":44,"name":"School
+        Team Contest #2 (Winter Computer School 2010/11)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":18000,"startTimeSeconds":1289041200,"relativeTimeSeconds":133551550},{"id":40,"name":"Codeforces
+        Beta Round #39","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1288972800,"relativeTimeSeconds":133619950},{"id":38,"name":"School
+        Personal Contest #1 (Winter Computer School 2010/11)\u003cbr/\u003e-\u003cbr/\u003eCodeforces
+        Beta Round #38 (ACM-ICPC Rules)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":14400,"startTimeSeconds":1288440000,"relativeTimeSeconds":134152750},{"id":37,"name":"Codeforces
+        Beta Round #37","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1288018800,"relativeTimeSeconds":134573950},{"id":39,"name":"School
+        Team Contest #1 (Winter Computer School 2010/11)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":18000,"startTimeSeconds":1287904200,"relativeTimeSeconds":134688550},{"id":36,"name":"Codeforces
+        Beta Round #36","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1287482400,"relativeTimeSeconds":135110350},{"id":35,"name":"Codeforces
+        Beta Round #35 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1287471600,"relativeTimeSeconds":135121150},{"id":34,"name":"Codeforces
+        Beta Round #34 (Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1286802000,"relativeTimeSeconds":135790750},{"id":33,"name":"Codeforces
+        Beta Round #33 (Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1286463600,"relativeTimeSeconds":136129150},{"id":32,"name":"Codeforces
+        Beta Round #32 (Div. 2, Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1286002800,"relativeTimeSeconds":136589950},{"id":31,"name":"Codeforces
+        Beta Round #31 (Div. 2, Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1285599600,"relativeTimeSeconds":136993150},{"id":30,"name":"Codeforces
+        Beta Round #30 (Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1285340400,"relativeTimeSeconds":137252350},{"id":29,"name":"Codeforces
+        Beta Round #29 (Div. 2, Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1284994800,"relativeTimeSeconds":137597950},{"id":28,"name":"Codeforces
+        Beta Round #28 (Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1284735600,"relativeTimeSeconds":137857150},{"id":27,"name":"Codeforces
+        Beta Round #27 (Codeforces format, Div. 2)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1284130800,"relativeTimeSeconds":138461950},{"id":26,"name":"Codeforces
+        Beta Round #26 (Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1281970800,"relativeTimeSeconds":140621950},{"id":25,"name":"Codeforces
+        Beta Round #25 (Div. 2 Only)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1280761200,"relativeTimeSeconds":141831550},{"id":24,"name":"Codeforces
+        Beta Round #24","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1280149200,"relativeTimeSeconds":142443550},{"id":23,"name":"Codeforces
+        Beta Round #23","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1278687600,"relativeTimeSeconds":143905150},{"id":22,"name":"Codeforces
+        Beta Round #22 (Div. 2 Only)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1277823600,"relativeTimeSeconds":144769150},{"id":21,"name":"Codeforces
+        Alpha Round #21 (Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1277730300,"relativeTimeSeconds":144862450},{"id":19,"name":"Codeforces
+        Beta Round #19","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1277391600,"relativeTimeSeconds":145201150},{"id":20,"name":"Codeforces
+        Alpha Round #20 (Codeforces format)","type":"CF","phase":"FINISHED","frozen":false,"durationSeconds":5400,"startTimeSeconds":1276875000,"relativeTimeSeconds":145717751},{"id":18,"name":"Codeforces
+        Beta Round #18 (Div. 2 Only)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1276700400,"relativeTimeSeconds":145892350},{"id":17,"name":"Codeforces
+        Beta Round #17","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1276182000,"relativeTimeSeconds":146410750},{"id":16,"name":"Codeforces
+        Beta Round #16 (Div. 2 Only)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1275570000,"relativeTimeSeconds":147022750},{"id":15,"name":"Codeforces
+        Beta Round #15","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":8100,"startTimeSeconds":1275145200,"relativeTimeSeconds":147447550},{"id":14,"name":"Codeforces
+        Beta Round #14 (Div. 2)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1274283000,"relativeTimeSeconds":148309750},{"id":13,"name":"Codeforces
+        Beta Round #13","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1273154400,"relativeTimeSeconds":149438350},{"id":12,"name":"Codeforces
+        Beta Round #12 (Div 2 Only)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1272538800,"relativeTimeSeconds":150053950},{"id":11,"name":"Codeforces
+        Beta Round #11","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1272294000,"relativeTimeSeconds":150298750},{"id":10,"name":"Codeforces
+        Beta Round #10","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1271346300,"relativeTimeSeconds":151246450},{"id":9,"name":"Codeforces
+        Beta Round #9 (Div. 2 Only)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1270983600,"relativeTimeSeconds":151609150},{"id":8,"name":"Codeforces
+        Beta Round #8","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1270741500,"relativeTimeSeconds":151851250},{"id":7,"name":"Codeforces
+        Beta Round #7","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1270136700,"relativeTimeSeconds":152456050},{"id":6,"name":"Codeforces
+        Beta Round #6 (Div. 2 Only)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1269673200,"relativeTimeSeconds":152919550},{"id":5,"name":"Codeforces
+        Beta Round #5","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1269100800,"relativeTimeSeconds":153491951},{"id":4,"name":"Codeforces
+        Beta Round #4 (Div. 2 Only)","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1268395200,"relativeTimeSeconds":154197550},{"id":3,"name":"Codeforces
+        Beta Round #3","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1267963200,"relativeTimeSeconds":154629550},{"id":2,"name":"Codeforces
+        Beta Round #2","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1267117200,"relativeTimeSeconds":155475550},{"id":1,"name":"Codeforces
+        Beta Round #1","type":"ICPC","phase":"FINISHED","frozen":false,"durationSeconds":7200,"startTimeSeconds":1266580800,"relativeTimeSeconds":156011950}]}'
+    http_version: 
+  recorded_at: Fri, 30 Jan 2015 04:39:11 GMT
+recorded_with: VCR 2.9.3

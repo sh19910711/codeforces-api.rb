@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://codeforces.com/api/problemset.recentStatus?count=50&from=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 30 Jan 2015 04:39:36 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - 39ce7=CFJgkddh; Expires=Tue, 10-Feb-2015 18:26:16 GMT; Path=/
+      - JSESSIONID=3C1917AD2D211C8DBFCE71273B5EB68D-n1; Path=/; HttpOnly
+      Cache-Control:
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","result":[{"id":9622147,"contestId":508,"creationTimeSeconds":1422592770,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"A","name":"Pasha
+        and Pixels","type":"PROGRAMMING","points":500.0,"tags":["brute force"]},"author":{"contestId":508,"members":[{"handle":"dwangster"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"Java
+        7","verdict":"TESTING","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":0,"memoryConsumedBytes":0},{"id":9622146,"contestId":342,"creationTimeSeconds":1422592736,"relativeTimeSeconds":2147483647,"problem":{"contestId":342,"index":"A","name":"Xenia
+        and Divisors","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation"]},"author":{"contestId":342,"members":[{"handle":"CIKE"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1378540800},"programmingLanguage":"MS
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":10,"timeConsumedMillis":15,"memoryConsumedBytes":102400},{"id":9622145,"contestId":479,"creationTimeSeconds":1422592732,"relativeTimeSeconds":2147483647,"problem":{"contestId":479,"index":"A","name":"Expression","type":"PROGRAMMING","points":500.0,"tags":["brute
+        force","math"]},"author":{"contestId":479,"members":[{"handle":"ar_mbstu2014"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1413709200},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":29,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9622144,"contestId":508,"creationTimeSeconds":1422592717,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"D","name":"Tanya
+        and Password","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","graphs"]},"author":{"contestId":508,"members":[{"handle":"NOJVJ"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":7,"timeConsumedMillis":1965,"memoryConsumedBytes":48230400},{"id":9622142,"contestId":508,"creationTimeSeconds":1422592660,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"D","name":"Tanya
+        and Password","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","graphs"]},"author":{"contestId":508,"members":[{"handle":"tpircsboy"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":44,"timeConsumedMillis":93,"memoryConsumedBytes":8908800},{"id":9622141,"contestId":489,"creationTimeSeconds":1422592647,"relativeTimeSeconds":2147483647,"problem":{"contestId":489,"index":"C","name":"Given
+        Length and Sum of Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},"author":{"contestId":489,"members":[{"handle":"Sandeep_Singh_Chhabada"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1416238500},"programmingLanguage":"Java
+        7","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":41,"timeConsumedMillis":93,"memoryConsumedBytes":0},{"id":9622140,"contestId":507,"creationTimeSeconds":1422592642,"relativeTimeSeconds":2147483647,"problem":{"contestId":507,"index":"E","name":"Breaking
+        Good","type":"PROGRAMMING","points":2500.0,"tags":["dfs and similar","dp","flows","graphs","shortest
+        paths"]},"author":{"contestId":507,"members":[{"handle":"subconscious"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422028800},"programmingLanguage":"FPC","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":1,"timeConsumedMillis":0,"memoryConsumedBytes":8396800},{"id":9622139,"contestId":506,"creationTimeSeconds":1422592631,"relativeTimeSeconds":2147483647,"problem":{"contestId":506,"index":"D","name":"Mr.
+        Kitayuta\u0027s Colorful Graph","type":"PROGRAMMING","points":1750.0,"tags":["brute
+        force","dfs and similar","dsu"]},"author":{"contestId":506,"members":[{"handle":"wilyin"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1421586000},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":2,"timeConsumedMillis":78,"memoryConsumedBytes":19353600},{"id":9622138,"contestId":100229,"creationTimeSeconds":1422592608,"relativeTimeSeconds":108,"problem":{"contestId":100229,"index":"A","name":"A","type":"PROGRAMMING","tags":[]},"author":{"contestId":100229,"members":[{"handle":"Nusratbek"}],"participantType":"VIRTUAL","ghost":false,"startTimeSeconds":1422592500},"programmingLanguage":"Java
+        7","verdict":"OK","testset":"TESTS","passedTestCount":10,"timeConsumedMillis":124,"memoryConsumedBytes":0},{"id":9622137,"contestId":263,"creationTimeSeconds":1422592582,"relativeTimeSeconds":2147483647,"problem":{"contestId":263,"index":"A","name":"Beautiful
+        Matrix","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":263,"members":[{"handle":"vjudge1"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1358350200},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":2,"timeConsumedMillis":0,"memoryConsumedBytes":0},{"id":9622136,"contestId":263,"creationTimeSeconds":1422592555,"relativeTimeSeconds":2147483647,"problem":{"contestId":263,"index":"A","name":"Beautiful
+        Matrix","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":263,"members":[{"handle":"vjudge4"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1358350200},"programmingLanguage":"GNU
+        C++","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":2000,"memoryConsumedBytes":0},{"id":9622135,"contestId":508,"creationTimeSeconds":1422592553,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"D","name":"Tanya
+        and Password","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","graphs"]},"author":{"contestId":508,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"MS
+        C++","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":7,"timeConsumedMillis":2000,"memoryConsumedBytes":4915200},{"id":9622134,"contestId":489,"creationTimeSeconds":1422592541,"relativeTimeSeconds":2147483647,"problem":{"contestId":489,"index":"C","name":"Given
+        Length and Sum of Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},"author":{"contestId":489,"members":[{"handle":"Sandeep_Singh_Chhabada"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1416238500},"programmingLanguage":"Java
+        7","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":41,"timeConsumedMillis":93,"memoryConsumedBytes":0},{"id":9622133,"contestId":20,"creationTimeSeconds":1422592537,"relativeTimeSeconds":2147483647,"problem":{"contestId":20,"index":"C","name":"Dijkstra?","type":"PROGRAMMING","points":1500.0,"tags":["graphs","shortest
+        paths"]},"author":{"contestId":20,"members":[{"handle":"MutaList"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1276875000},"programmingLanguage":"FPC","verdict":"RUNTIME_ERROR","testset":"TESTS","passedTestCount":2,"timeConsumedMillis":30,"memoryConsumedBytes":3379200},{"id":9622132,"contestId":3,"creationTimeSeconds":1422592527,"relativeTimeSeconds":2147483647,"problem":{"contestId":3,"index":"C","name":"Tic-tac-toe","type":"PROGRAMMING","tags":["brute
+        force","games","implementation"]},"author":{"contestId":3,"members":[{"handle":"jrthom18"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1267963200},"programmingLanguage":"Java
+        8","verdict":"COMPILATION_ERROR","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":0,"memoryConsumedBytes":0},{"id":9622131,"contestId":263,"creationTimeSeconds":1422592515,"relativeTimeSeconds":2147483647,"problem":{"contestId":263,"index":"A","name":"Beautiful
+        Matrix","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":263,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1358350200},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":25,"timeConsumedMillis":62,"memoryConsumedBytes":0},{"id":9622130,"contestId":507,"creationTimeSeconds":1422592510,"relativeTimeSeconds":2147483647,"problem":{"contestId":507,"index":"B","name":"Amr
+        and Pins","type":"PROGRAMMING","points":1000.0,"tags":["geometry","math"]},"author":{"contestId":507,"members":[{"handle":"vjudge3"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422028800},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":4,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9622129,"contestId":479,"creationTimeSeconds":1422592482,"relativeTimeSeconds":2147483647,"problem":{"contestId":479,"index":"A","name":"Expression","type":"PROGRAMMING","points":500.0,"tags":["brute
+        force","math"]},"author":{"contestId":479,"members":[{"handle":"ar_mbstu2014"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1413709200},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":2,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9622128,"contestId":451,"creationTimeSeconds":1422592459,"relativeTimeSeconds":2147483647,"problem":{"contestId":451,"index":"B","name":"Sort
+        the Array","type":"PROGRAMMING","points":1000.0,"tags":["implementation","sortings"]},"author":{"contestId":451,"members":[{"handle":"ical"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1406215800},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":4,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9622127,"contestId":489,"creationTimeSeconds":1422592454,"relativeTimeSeconds":2147483647,"problem":{"contestId":489,"index":"C","name":"Given
+        Length and Sum of Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},"author":{"contestId":489,"members":[{"handle":"Sandeep_Singh_Chhabada"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1416238500},"programmingLanguage":"Java
+        7","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":18,"timeConsumedMillis":78,"memoryConsumedBytes":0},{"id":9622126,"contestId":493,"creationTimeSeconds":1422592426,"relativeTimeSeconds":2147483647,"problem":{"contestId":493,"index":"B","name":"Vasya
+        and Wrestling","type":"PROGRAMMING","points":1000.0,"tags":["implementation"]},"author":{"contestId":493,"members":[{"handle":"heendher"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1417618800},"programmingLanguage":"GNU
+        C","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":14,"timeConsumedMillis":46,"memoryConsumedBytes":0},{"id":9622125,"contestId":508,"creationTimeSeconds":1422592394,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"D","name":"Tanya
+        and Password","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","graphs"]},"author":{"contestId":508,"members":[{"handle":"njczy2010"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"GNU
+        C++","verdict":"RUNTIME_ERROR","testset":"TESTS","passedTestCount":7,"timeConsumedMillis":1934,"memoryConsumedBytes":48230400},{"id":9622124,"contestId":248,"creationTimeSeconds":1422592390,"relativeTimeSeconds":2147483647,"problem":{"contestId":248,"index":"A","name":"Cupboards","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":248,"members":[{"handle":"vjudge3"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1353857400},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":57,"timeConsumedMillis":92,"memoryConsumedBytes":0},{"id":9622123,"contestId":208,"creationTimeSeconds":1422592382,"relativeTimeSeconds":2147483647,"problem":{"contestId":208,"index":"A","name":"Dubstep","type":"PROGRAMMING","points":500.0,"tags":["strings"]},"author":{"contestId":208,"members":[{"handle":"ZaimMarzuki"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1343057400},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":71,"timeConsumedMillis":30,"memoryConsumedBytes":0},{"id":9622122,"contestId":508,"creationTimeSeconds":1422592361,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"D","name":"Tanya
+        and Password","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","graphs"]},"author":{"contestId":508,"members":[{"handle":"NOJVJ"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"GNU
+        C++","verdict":"RUNTIME_ERROR","testset":"TESTS","passedTestCount":7,"timeConsumedMillis":1965,"memoryConsumedBytes":48230400},{"id":9622121,"contestId":508,"creationTimeSeconds":1422592360,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"A","name":"Pasha
+        and Pixels","type":"PROGRAMMING","points":500.0,"tags":["brute force"]},"author":{"contestId":508,"members":[{"handle":"dwangster"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"Java
+        7","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":15,"timeConsumedMillis":2000,"memoryConsumedBytes":0},{"id":9622120,"contestId":339,"creationTimeSeconds":1422592356,"relativeTimeSeconds":2147483647,"problem":{"contestId":339,"index":"A","name":"Helpful
+        Maths","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation","sortings","strings"]},"author":{"contestId":339,"members":[{"handle":"FaizRoz"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1377531000},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":21,"timeConsumedMillis":30,"memoryConsumedBytes":0},{"id":9622119,"contestId":455,"creationTimeSeconds":1422592310,"relativeTimeSeconds":2147483647,"problem":{"contestId":455,"index":"A","name":"Boredom","type":"PROGRAMMING","points":500.0,"tags":["dp"]},"author":{"contestId":455,"members":[{"handle":"Carfin"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1407511800},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":11,"timeConsumedMillis":171,"memoryConsumedBytes":1638400},{"id":9622118,"contestId":456,"creationTimeSeconds":1422592296,"relativeTimeSeconds":2147483647,"problem":{"contestId":456,"index":"B","name":"Fedya
+        and Maths","type":"PROGRAMMING","points":1000.0,"tags":["math","number theory"]},"author":{"contestId":456,"members":[{"handle":"agiffaryalfatah"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1407511800},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":22,"timeConsumedMillis":30,"memoryConsumedBytes":0},{"id":9622117,"contestId":489,"creationTimeSeconds":1422592293,"relativeTimeSeconds":2147483647,"problem":{"contestId":489,"index":"C","name":"Given
+        Length and Sum of Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},"author":{"contestId":489,"members":[{"handle":"Sandeep_Singh_Chhabada"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1416238500},"programmingLanguage":"Java
+        7","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":3,"timeConsumedMillis":78,"memoryConsumedBytes":0},{"id":9622116,"contestId":507,"creationTimeSeconds":1422592281,"relativeTimeSeconds":2841,"problem":{"contestId":507,"index":"C","name":"Guess
+        Your Way Out!","type":"PROGRAMMING","points":1500.0,"tags":["implementation","math"]},"author":{"contestId":507,"members":[{"handle":"maxflowmincut"}],"participantType":"VIRTUAL","ghost":false,"startTimeSeconds":1422589440},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":8,"timeConsumedMillis":0,"memoryConsumedBytes":0},{"id":9622115,"contestId":455,"creationTimeSeconds":1422592273,"relativeTimeSeconds":2147483647,"problem":{"contestId":455,"index":"A","name":"Boredom","type":"PROGRAMMING","points":500.0,"tags":["dp"]},"author":{"contestId":455,"members":[{"handle":"Carfin"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1407511800},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":11,"timeConsumedMillis":171,"memoryConsumedBytes":1638400},{"id":9622114,"contestId":508,"creationTimeSeconds":1422592253,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"A","name":"Pasha
+        and Pixels","type":"PROGRAMMING","points":500.0,"tags":["brute force"]},"author":{"contestId":508,"members":[{"handle":"debo"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"Java
+        7","verdict":"OK","testset":"TESTS","passedTestCount":52,"timeConsumedMillis":124,"memoryConsumedBytes":0},{"id":9622112,"contestId":263,"creationTimeSeconds":1422592248,"relativeTimeSeconds":2147483647,"problem":{"contestId":263,"index":"A","name":"Beautiful
+        Matrix","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":263,"members":[{"handle":"vjudge4"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1358350200},"programmingLanguage":"GNU
+        C++","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":2000,"memoryConsumedBytes":0},{"id":9622111,"contestId":5,"creationTimeSeconds":1422592246,"relativeTimeSeconds":2147483647,"problem":{"contestId":5,"index":"A","name":"Chat
+        Servers Outgoing Traffic","type":"PROGRAMMING","tags":["implementation"]},"author":{"contestId":5,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1269100800},"programmingLanguage":"GNU
+        C++","verdict":"RUNTIME_ERROR","testset":"TESTS","passedTestCount":1,"timeConsumedMillis":0,"memoryConsumedBytes":0},{"id":9622110,"contestId":508,"creationTimeSeconds":1422592237,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"C","name":"Anya
+        and Ghosts","type":"PROGRAMMING","points":1500.0,"tags":["greedy"]},"author":{"contestId":508,"members":[{"handle":"rahuljain1311"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":61,"timeConsumedMillis":15,"memoryConsumedBytes":3993600},{"id":9622109,"contestId":489,"creationTimeSeconds":1422592221,"relativeTimeSeconds":2147483647,"problem":{"contestId":489,"index":"C","name":"Given
+        Length and Sum of Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},"author":{"contestId":489,"members":[{"handle":"Sandeep_Singh_Chhabada"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1416238500},"programmingLanguage":"Java
+        7","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":3,"timeConsumedMillis":77,"memoryConsumedBytes":0},{"id":9622108,"contestId":263,"creationTimeSeconds":1422592216,"relativeTimeSeconds":2147483647,"problem":{"contestId":263,"index":"A","name":"Beautiful
+        Matrix","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":263,"members":[{"handle":"vjudge2"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1358350200},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":2,"timeConsumedMillis":0,"memoryConsumedBytes":0},{"id":9622107,"contestId":405,"creationTimeSeconds":1422592210,"relativeTimeSeconds":2147483647,"problem":{"contestId":405,"index":"A","name":"Gravity
+        Flip","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation","sortings"]},"author":{"contestId":405,"members":[{"handle":"Hari_Sridhar"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1395502200},"programmingLanguage":"Java
+        7","verdict":"OK","testset":"TESTS","passedTestCount":32,"timeConsumedMillis":93,"memoryConsumedBytes":0},{"id":9622106,"contestId":479,"creationTimeSeconds":1422592207,"relativeTimeSeconds":2147483647,"problem":{"contestId":479,"index":"A","name":"Expression","type":"PROGRAMMING","points":500.0,"tags":["brute
+        force","math"]},"author":{"contestId":479,"members":[{"handle":"marcha"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1413709200},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":5,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9622105,"contestId":486,"creationTimeSeconds":1422592204,"relativeTimeSeconds":2147483647,"problem":{"contestId":486,"index":"A","name":"Calculating
+        Function","type":"PROGRAMMING","points":500.0,"tags":["implementation","math"]},"author":{"contestId":486,"members":[{"handle":"alvinfr"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1415718000},"programmingLanguage":"FPC","verdict":"RUNTIME_ERROR","testset":"TESTS","passedTestCount":4,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9622104,"contestId":431,"creationTimeSeconds":1422592203,"relativeTimeSeconds":2147483647,"problem":{"contestId":431,"index":"A","name":"Black
+        Square","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":431,"members":[{"handle":"computer_"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1400686200},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":49,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9622103,"contestId":508,"creationTimeSeconds":1422592172,"relativeTimeSeconds":2147483647,"problem":{"contestId":508,"index":"D","name":"Tanya
+        and Password","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","graphs"]},"author":{"contestId":508,"members":[{"handle":"NOJVJ"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1422376200},"programmingLanguage":"GNU
+        C++","verdict":"RUNTIME_ERROR","testset":"TESTS","passedTestCount":7,"timeConsumedMillis":1933,"memoryConsumedBytes":48025600},{"id":9622102,"contestId":3,"creationTimeSeconds":1422592123,"relativeTimeSeconds":2147483647,"problem":{"contestId":3,"index":"B","name":"Lorry","type":"PROGRAMMING","tags":["greedy","sortings"]},"author":{"contestId":3,"members":[{"handle":"Sessamekesh"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1267963200},"programmingLanguage":"Java
+        7","verdict":"OK","testset":"TESTS","passedTestCount":32,"timeConsumedMillis":1340,"memoryConsumedBytes":0},{"id":9622101,"contestId":483,"creationTimeSeconds":1422592116,"relativeTimeSeconds":2147483647,"problem":{"contestId":483,"index":"A","name":"Counterexample
+        ","type":"PROGRAMMING","points":500.0,"tags":["brute force","implementation"]},"author":{"contestId":483,"members":[{"handle":"jjyyg1123"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1414170000},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":42,"timeConsumedMillis":31,"memoryConsumedBytes":0},{"id":9622100,"contestId":263,"creationTimeSeconds":1422592109,"relativeTimeSeconds":2147483647,"problem":{"contestId":263,"index":"A","name":"Beautiful
+        Matrix","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":263,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1358350200},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":25,"timeConsumedMillis":30,"memoryConsumedBytes":0},{"id":9622099,"contestId":499,"creationTimeSeconds":1422592102,"relativeTimeSeconds":2147483647,"problem":{"contestId":499,"index":"A","name":"Watching
+        a movie","type":"PROGRAMMING","points":500.0,"tags":["implementation"]},"author":{"contestId":499,"members":[{"handle":"jinixin"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1419438600},"programmingLanguage":"Ruby","verdict":"OK","testset":"TESTS","passedTestCount":41,"timeConsumedMillis":62,"memoryConsumedBytes":102400},{"id":9622098,"contestId":456,"creationTimeSeconds":1422592089,"relativeTimeSeconds":2147483647,"problem":{"contestId":456,"index":"B","name":"Fedya
+        and Maths","type":"PROGRAMMING","points":1000.0,"tags":["math","number theory"]},"author":{"contestId":456,"members":[{"handle":"agiffaryalfatah"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1407511800},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":22,"timeConsumedMillis":30,"memoryConsumedBytes":0},{"id":9622097,"contestId":455,"creationTimeSeconds":1422592075,"relativeTimeSeconds":2147483647,"problem":{"contestId":455,"index":"A","name":"Boredom","type":"PROGRAMMING","points":500.0,"tags":["dp"]},"author":{"contestId":455,"members":[{"handle":"Carfin"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1407511800},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":11,"timeConsumedMillis":171,"memoryConsumedBytes":1638400},{"id":9622095,"contestId":489,"creationTimeSeconds":1422592073,"relativeTimeSeconds":2147483647,"problem":{"contestId":489,"index":"C","name":"Given
+        Length and Sum of Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},"author":{"contestId":489,"members":[{"handle":"Sandeep_Singh_Chhabada"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1416238500},"programmingLanguage":"Java
+        7","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":16,"timeConsumedMillis":93,"memoryConsumedBytes":0}]}'
+    http_version: 
+  recorded_at: Fri, 30 Jan 2015 04:39:37 GMT
+recorded_with: VCR 2.9.3

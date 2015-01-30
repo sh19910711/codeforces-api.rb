@@ -1,0 +1,176 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://codeforces.com/api/contest.status?contestId=374&count=50&from=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 30 Jan 2015 04:39:14 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - 39ce7=CFRB7c13; Expires=Tue, 10-Feb-2015 18:25:54 GMT; Path=/
+      - JSESSIONID=09DE5249196DDF5BDB115FE14BEED179-n1; Path=/; HttpOnly
+      Cache-Control:
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","result":[{"id":9620441,"contestId":374,"creationTimeSeconds":1422569796,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"k790alex"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":3,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9617784,"contestId":374,"creationTimeSeconds":1422550107,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"A","name":"Inna
+        and Pink Pony","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation"]},"author":{"contestId":374,"members":[{"handle":"Wenyuan"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":47,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9617707,"contestId":374,"creationTimeSeconds":1422549650,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"OK","testset":"TESTS","passedTestCount":65,"timeConsumedMillis":1388,"memoryConsumedBytes":56115200},{"id":9617699,"contestId":374,"creationTimeSeconds":1422549600,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"RUNTIME_ERROR","testset":"TESTS","passedTestCount":7,"timeConsumedMillis":1232,"memoryConsumedBytes":20070400},{"id":9617687,"contestId":374,"creationTimeSeconds":1422549560,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"A","name":"Inna
+        and Pink Pony","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation"]},"author":{"contestId":374,"members":[{"handle":"Wenyuan"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":5,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9617500,"contestId":374,"creationTimeSeconds":1422548563,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"A","name":"Inna
+        and Pink Pony","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation"]},"author":{"contestId":374,"members":[{"handle":"Wenyuan"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":3,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9617042,"contestId":374,"creationTimeSeconds":1422546108,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":10,"timeConsumedMillis":1247,"memoryConsumedBytes":20070400},{"id":9617024,"contestId":374,"creationTimeSeconds":1422546036,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":8,"timeConsumedMillis":1231,"memoryConsumedBytes":20070400},{"id":9616992,"contestId":374,"creationTimeSeconds":1422545854,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":8,"timeConsumedMillis":1200,"memoryConsumedBytes":20070400},{"id":9616908,"contestId":374,"creationTimeSeconds":1422545408,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":8,"timeConsumedMillis":1216,"memoryConsumedBytes":20070400},{"id":9616890,"contestId":374,"creationTimeSeconds":1422545322,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":8,"timeConsumedMillis":1232,"memoryConsumedBytes":20070400},{"id":9616811,"contestId":374,"creationTimeSeconds":1422544951,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":8,"timeConsumedMillis":1216,"memoryConsumedBytes":20070400},{"id":9616788,"contestId":374,"creationTimeSeconds":1422544846,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":7,"timeConsumedMillis":1185,"memoryConsumedBytes":20070400},{"id":9611382,"contestId":374,"creationTimeSeconds":1422512793,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge2"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Java
+        8","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":28,"timeConsumedMillis":2000,"memoryConsumedBytes":103936000},{"id":9610547,"contestId":374,"creationTimeSeconds":1422504001,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"Diego1149"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":65,"timeConsumedMillis":483,"memoryConsumedBytes":39321600},{"id":9610540,"contestId":374,"creationTimeSeconds":1422503948,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"Diego1149"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"RUNTIME_ERROR","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":0,"memoryConsumedBytes":39321600},{"id":9610532,"contestId":374,"creationTimeSeconds":1422503843,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"Diego1149"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":39321600},{"id":9610420,"contestId":374,"creationTimeSeconds":1422502515,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"Diego1149"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":30412800},{"id":9609794,"contestId":374,"creationTimeSeconds":1422496177,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Java
+        8","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":53862400},{"id":9609780,"contestId":374,"creationTimeSeconds":1422496071,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":31,"memoryConsumedBytes":23961600},{"id":9609758,"contestId":374,"creationTimeSeconds":1422495874,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge4"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":0,"memoryConsumedBytes":23961600},{"id":9609751,"contestId":374,"creationTimeSeconds":1422495824,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge1"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"COMPILATION_ERROR","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":0,"memoryConsumedBytes":0},{"id":9609440,"contestId":374,"creationTimeSeconds":1422492939,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"flashion"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":8,"timeConsumedMillis":1497,"memoryConsumedBytes":43008000},{"id":9609329,"contestId":374,"creationTimeSeconds":1422491380,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge3"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":1,"timeConsumedMillis":31,"memoryConsumedBytes":23961600},{"id":9609325,"contestId":374,"creationTimeSeconds":1422491333,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":1,"timeConsumedMillis":15,"memoryConsumedBytes":23961600},{"id":9609307,"contestId":374,"creationTimeSeconds":1422491014,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge4"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":1,"timeConsumedMillis":30,"memoryConsumedBytes":23961600},{"id":9606835,"contestId":374,"creationTimeSeconds":1422469815,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"A","name":"Inna
+        and Pink Pony","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation"]},"author":{"contestId":374,"members":[{"handle":"sswinx"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":3,"timeConsumedMillis":0,"memoryConsumedBytes":0},{"id":9606800,"contestId":374,"creationTimeSeconds":1422469604,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"A","name":"Inna
+        and Pink Pony","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation"]},"author":{"contestId":374,"members":[{"handle":"sswinx"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":3,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9604687,"contestId":374,"creationTimeSeconds":1422459106,"relativeTimeSeconds":1906,"problem":{"contestId":374,"index":"A","name":"Inna
+        and Pink Pony","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation"]},"author":{"contestId":374,"members":[{"handle":"sswinx"}],"participantType":"VIRTUAL","ghost":false,"startTimeSeconds":1422457200},"programmingLanguage":"GNU
+        C++11","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":3,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9600420,"contestId":374,"creationTimeSeconds":1422439626,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge1"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Python
+        2","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":57753600},{"id":9600168,"contestId":374,"creationTimeSeconds":1422438213,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge4"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Python
+        2","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":57651200},{"id":9599782,"contestId":374,"creationTimeSeconds":1422435985,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge4"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Python
+        2","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":57856000},{"id":9599718,"contestId":374,"creationTimeSeconds":1422435614,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge2"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Python
+        2","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":57856000},{"id":9594237,"contestId":374,"creationTimeSeconds":1422393443,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"A","name":"Inna
+        and Pink Pony","type":"PROGRAMMING","points":500.0,"tags":["greedy","implementation"]},"author":{"contestId":374,"members":[{"handle":"calmhandtitan"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":36,"timeConsumedMillis":31,"memoryConsumedBytes":0},{"id":9572921,"contestId":374,"creationTimeSeconds":1422368791,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"C","name":"Inna
+        and Dima","type":"PROGRAMMING","points":1500.0,"tags":["dfs and similar","dp","graphs","implementation"]},"author":{"contestId":374,"members":[{"handle":"achiever202"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":9,"timeConsumedMillis":1000,"memoryConsumedBytes":2048000},{"id":9571511,"contestId":374,"creationTimeSeconds":1422360670,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"C","name":"Inna
+        and Dima","type":"PROGRAMMING","points":1500.0,"tags":["dfs and similar","dp","graphs","implementation"]},"author":{"contestId":374,"members":[{"handle":"Ed_Os"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":10,"timeConsumedMillis":468,"memoryConsumedBytes":22220800},{"id":9571505,"contestId":374,"creationTimeSeconds":1422360639,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"C","name":"Inna
+        and Dima","type":"PROGRAMMING","points":1500.0,"tags":["dfs and similar","dp","graphs","implementation"]},"author":{"contestId":374,"members":[{"handle":"Ed_Os"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":0,"timeConsumedMillis":0,"memoryConsumedBytes":9011200},{"id":9566761,"contestId":374,"creationTimeSeconds":1422317122,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":25,"timeConsumedMillis":15,"memoryConsumedBytes":307200},{"id":9566730,"contestId":374,"creationTimeSeconds":1422316534,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"Elouan"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":5,"timeConsumedMillis":15,"memoryConsumedBytes":307200},{"id":9566727,"contestId":374,"creationTimeSeconds":1422316479,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"vjudge1"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":5,"timeConsumedMillis":15,"memoryConsumedBytes":307200},{"id":9566713,"contestId":374,"creationTimeSeconds":1422316286,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":5,"timeConsumedMillis":15,"memoryConsumedBytes":307200},{"id":9566372,"contestId":374,"creationTimeSeconds":1422312490,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"vjudge2"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Python
+        2","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":5,"timeConsumedMillis":109,"memoryConsumedBytes":204800},{"id":9554806,"contestId":374,"creationTimeSeconds":1422230053,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge2"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":7987200},{"id":9554703,"contestId":374,"creationTimeSeconds":1422228630,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},"author":{"contestId":374,"members":[{"handle":"vjudge1"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Java
+        8","verdict":"TIME_LIMIT_EXCEEDED","testset":"TESTS","passedTestCount":6,"timeConsumedMillis":2000,"memoryConsumedBytes":0},{"id":9541017,"contestId":374,"creationTimeSeconds":1422121999,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"HidenoriS"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":25,"timeConsumedMillis":30,"memoryConsumedBytes":307200},{"id":9537811,"contestId":374,"creationTimeSeconds":1422101427,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++11","verdict":"OK","testset":"TESTS","passedTestCount":25,"timeConsumedMillis":93,"memoryConsumedBytes":307200},{"id":9535481,"contestId":374,"creationTimeSeconds":1422086427,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"Python
+        2","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":5,"timeConsumedMillis":109,"memoryConsumedBytes":204800},{"id":9534255,"contestId":374,"creationTimeSeconds":1422077726,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"C","name":"Inna
+        and Dima","type":"PROGRAMMING","points":1500.0,"tags":["dfs and similar","dp","graphs","implementation"]},"author":{"contestId":374,"members":[{"handle":"vjudge3"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":1,"timeConsumedMillis":15,"memoryConsumedBytes":0},{"id":9534224,"contestId":374,"creationTimeSeconds":1422077520,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"B","name":"Inna
+        and Nine","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","greedy"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"OK","testset":"TESTS","passedTestCount":25,"timeConsumedMillis":30,"memoryConsumedBytes":307200},{"id":9534194,"contestId":374,"creationTimeSeconds":1422077300,"relativeTimeSeconds":2147483647,"problem":{"contestId":374,"index":"C","name":"Inna
+        and Dima","type":"PROGRAMMING","points":1500.0,"tags":["dfs and similar","dp","graphs","implementation"]},"author":{"contestId":374,"members":[{"handle":"vjudge5"}],"participantType":"PRACTICE","ghost":false,"startTimeSeconds":1387380600},"programmingLanguage":"GNU
+        C++","verdict":"WRONG_ANSWER","testset":"TESTS","passedTestCount":2,"timeConsumedMillis":15,"memoryConsumedBytes":0}]}'
+    http_version: 
+  recorded_at: Fri, 30 Jan 2015 04:39:14 GMT
+recorded_with: VCR 2.9.3

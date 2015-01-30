@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://codeforces.com/api/user.info?handles=test_tarou
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 30 Jan 2015 04:39:37 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '139'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 39ce7=CFlWBSUc; Expires=Tue, 10-Feb-2015 18:26:17 GMT; Path=/
+      - JSESSIONID=6DE123B1BCB4D8BE0ABD4E33B5A0863F-n1; Path=/; HttpOnly
+      Cache-Control:
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: '{"status":"OK","result":[{"handle":"test_tarou","contribution":0,"lastOnlineTimeSeconds":1390143990,"registrationTimeSeconds":1379588406}]}'
+    http_version: 
+  recorded_at: Fri, 30 Jan 2015 04:39:37 GMT
+recorded_with: VCR 2.9.3

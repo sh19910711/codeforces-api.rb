@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://codeforces.com/api/problemset.problems?tags=dp%3Bimplementation
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 30 Jan 2015 04:39:35 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - 39ce7=CF45d0ng; Expires=Tue, 10-Feb-2015 18:26:15 GMT; Path=/
+      - JSESSIONID=87C39A296DDA99BCA5132799E06345D2-n1; Path=/; HttpOnly
+      Cache-Control:
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","result":{"problems":[{"contestId":507,"index":"D","name":"The
+        Maths Lecture","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":489,"index":"C","name":"Given
+        Length and Sum of Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},{"contestId":467,"index":"C","name":"George
+        and Job","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation"]},{"contestId":455,"index":"B","name":"A
+        Lot of Games","type":"PROGRAMMING","points":1000.0,"tags":["dfs and similar","dp","games","implementation","strings","trees"]},{"contestId":446,"index":"A","name":"DZY
+        Loves Sequences","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation","two
+        pointers"]},{"contestId":433,"index":"B","name":"Kuriyama Mirai\u0027s Stones","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","sortings"]},{"contestId":431,"index":"C","name":"k-Tree","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","trees"]},{"contestId":417,"index":"A","name":"Elimination","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation","math"]},{"contestId":416,"index":"C","name":"Booking
+        System","type":"PROGRAMMING","points":1500.0,"tags":["binary search","dp","greedy","implementation"]},{"contestId":416,"index":"B","name":"Art
+        Union","type":"PROGRAMMING","points":1000.0,"tags":["brute force","dp","implementation"]},{"contestId":407,"index":"B","name":"Long
+        Path","type":"PROGRAMMING","points":1000.0,"tags":["dp","implementation"]},{"contestId":404,"index":"D","name":"Minesweeper
+        1D","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":400,"index":"A","name":"Inna
+        and Choose Options","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation"]},{"contestId":385,"index":"C","name":"Bear
+        and Prime Numbers","type":"PROGRAMMING","points":1500.0,"tags":["binary search","brute
+        force","data structures","dp","implementation","math","number theory"]},{"contestId":386,"index":"D","name":"Game
+        with Points","type":"PROGRAMMING","points":2000.0,"tags":["dp","graphs","implementation","shortest
+        paths"]},{"contestId":375,"index":"E","name":"Red and Black Tree","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","math"]},{"contestId":375,"index":"B","name":"Maximum
+        Submatrix 2","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp","implementation","sortings"]},{"contestId":374,"index":"C","name":"Inna
+        and Dima","type":"PROGRAMMING","points":1500.0,"tags":["dfs and similar","dp","graphs","implementation"]},{"contestId":362,"index":"C","name":"Insertion
+        Sort","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp","implementation","math"]},{"contestId":356,"index":"E","name":"Xenia
+        and String Problem","type":"PROGRAMMING","points":2500.0,"tags":["dp","hashing","implementation","string
+        suffix structures","strings"]},{"contestId":351,"index":"A","name":"Jeff and
+        Rounding","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy","implementation","math"]},{"contestId":336,"index":"E","name":"Vasily
+        the Bear and Painting Square","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","combinatorics","dp","implementation"]},{"contestId":332,"index":"E","name":"Binary
+        Key","type":"PROGRAMMING","points":3000.0,"tags":["dp","greedy","implementation"]},{"contestId":332,"index":"B","name":"Maximum
+        Absurdity","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp","implementation"]},{"contestId":327,"index":"A","name":"Flipping
+        Game","type":"PROGRAMMING","points":500.0,"tags":["brute force","dp","implementation"]},{"contestId":313,"index":"B","name":"Ilya
+        and Queries","type":"PROGRAMMING","points":1000.0,"tags":["dp","implementation"]},{"contestId":288,"index":"E","name":"Polo
+        the Penguin and Lucky Numbers","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","math"]},{"contestId":289,"index":"B","name":"Polo
+        the Penguin and Matrix","type":"PROGRAMMING","points":1000.0,"tags":["brute
+        force","dp","implementation","sortings","ternary search"]},{"contestId":285,"index":"D","name":"Permutation
+        Sum","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","combinatorics","dp","implementation","meet-in-the-middle"]},{"contestId":280,"index":"E","name":"Sequence
+        Transformation","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp","implementation","math"]},{"contestId":279,"index":"C","name":"Ladder","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","two
+        pointers"]},{"contestId":276,"index":"D","name":"Little Girl and Maximum XOR","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dp","greedy","implementation","math"]},{"contestId":254,"index":"E","name":"Dormitory","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation"]},{"contestId":251,"index":"E","name":"Tree
+        and Table","type":"PROGRAMMING","points":2500.0,"tags":["dfs and similar","dp","implementation","trees"]},{"contestId":235,"index":"E","name":"Number
+        Challenge","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","dp","implementation","number
+        theory"]},{"contestId":234,"index":"C","name":"Weather","type":"PROGRAMMING","tags":["dp","implementation"]},{"contestId":174,"index":"B","name":"File
+        List","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy","implementation"]},{"contestId":89,"index":"B","name":"Widget
+        Library","type":"PROGRAMMING","points":1000.0,"tags":["dp","expression parsing","graphs","implementation"]},{"contestId":87,"index":"D","name":"Beautiful
+        Road","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","dp","dsu","implementation","sortings","trees"]},{"contestId":81,"index":"E","name":"Pairs","type":"PROGRAMMING","points":2500.0,"tags":["dfs
+        and similar","dp","dsu","graphs","implementation","trees"]},{"contestId":77,"index":"D","name":"Domino
+        Carpet","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":75,"index":"D","name":"Big
+        Maximum Sum","type":"PROGRAMMING","points":2000.0,"tags":["data structures","dp","greedy","implementation","math","trees"]},{"contestId":70,"index":"E","name":"Information
+        Reform","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","trees"]},{"contestId":67,"index":"A","name":"Partial
+        Teacher","type":"PROGRAMMING","points":500.0,"tags":["dp","graphs","greedy","implementation"]},{"contestId":63,"index":"E","name":"Sweets
+        Game","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","dfs and similar","dp","games","implementation"]},{"contestId":49,"index":"D","name":"Game","type":"PROGRAMMING","points":2000.0,"tags":["brute
+        force","dp","implementation"]},{"contestId":10,"index":"B","name":"Cinema
+        Cashier","type":"PROGRAMMING","tags":["dp","implementation"]},{"contestId":7,"index":"E","name":"Defining
+        Macros","type":"PROGRAMMING","tags":["dp","expression parsing","implementation"]}],"problemStatistics":[{"contestId":507,"index":"D","solvedCount":453},{"contestId":489,"index":"C","solvedCount":3035},{"contestId":467,"index":"C","solvedCount":2309},{"contestId":455,"index":"B","solvedCount":1019},{"contestId":446,"index":"A","solvedCount":1424},{"contestId":433,"index":"B","solvedCount":2535},{"contestId":431,"index":"C","solvedCount":2073},{"contestId":417,"index":"A","solvedCount":1082},{"contestId":416,"index":"C","solvedCount":1478},{"contestId":416,"index":"B","solvedCount":2019},{"contestId":407,"index":"B","solvedCount":1075},{"contestId":404,"index":"D","solvedCount":748},{"contestId":400,"index":"A","solvedCount":3039},{"contestId":385,"index":"C","solvedCount":1441},{"contestId":386,"index":"D","solvedCount":130},{"contestId":375,"index":"E","solvedCount":45},{"contestId":375,"index":"B","solvedCount":936},{"contestId":374,"index":"C","solvedCount":706},{"contestId":362,"index":"C","solvedCount":703},{"contestId":356,"index":"E","solvedCount":60},{"contestId":351,"index":"A","solvedCount":1001},{"contestId":336,"index":"E","solvedCount":39},{"contestId":332,"index":"E","solvedCount":124},{"contestId":332,"index":"B","solvedCount":1933},{"contestId":327,"index":"A","solvedCount":4020},{"contestId":313,"index":"B","solvedCount":3485},{"contestId":288,"index":"E","solvedCount":105},{"contestId":289,"index":"B","solvedCount":2138},{"contestId":285,"index":"D","solvedCount":838},{"contestId":280,"index":"E","solvedCount":41},{"contestId":279,"index":"C","solvedCount":1392},{"contestId":276,"index":"D","solvedCount":1431},{"contestId":254,"index":"E","solvedCount":229},{"contestId":251,"index":"E","solvedCount":38},{"contestId":235,"index":"E","solvedCount":113},{"contestId":234,"index":"C","solvedCount":1610},{"contestId":174,"index":"B","solvedCount":641},{"contestId":89,"index":"B","solvedCount":255},{"contestId":87,"index":"D","solvedCount":229},{"contestId":81,"index":"E","solvedCount":121},{"contestId":77,"index":"D","solvedCount":166},{"contestId":75,"index":"D","solvedCount":414},{"contestId":70,"index":"E","solvedCount":143},{"contestId":67,"index":"A","solvedCount":744},{"contestId":63,"index":"E","solvedCount":263},{"contestId":49,"index":"D","solvedCount":498},{"contestId":10,"index":"B","solvedCount":675},{"contestId":7,"index":"E","solvedCount":178}]}}'
+    http_version: 
+  recorded_at: Fri, 30 Jan 2015 04:39:35 GMT
+recorded_with: VCR 2.9.3

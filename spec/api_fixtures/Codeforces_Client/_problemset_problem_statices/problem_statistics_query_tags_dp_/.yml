@@ -1,0 +1,432 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://codeforces.com/api/problemset.problems?tags=dp
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 30 Jan 2015 04:39:34 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - 39ce7=CFa38CwC; Expires=Tue, 10-Feb-2015 18:26:13 GMT; Path=/
+      - JSESSIONID=638022EDC4873C175D3EBE00D3D88951-n1; Path=/; HttpOnly
+      Cache-Control:
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"OK","result":{"problems":[{"contestId":508,"index":"E","name":"Arthur
+        and Brackets","type":"PROGRAMMING","points":2500.0,"tags":["dp","greedy"]},{"contestId":507,"index":"E","name":"Breaking
+        Good","type":"PROGRAMMING","points":2500.0,"tags":["dfs and similar","dp","flows","graphs","shortest
+        paths"]},{"contestId":507,"index":"D","name":"The Maths Lecture","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":506,"index":"E","name":"Mr.
+        Kitayuta\u0027s Gift","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","dp","matrices","strings"]},{"contestId":505,"index":"C","name":"Mr.
+        Kitayuta, the Treasure Hunter","type":"PROGRAMMING","points":1500.0,"tags":["dp","two
+        pointers"]},{"contestId":505,"index":"B","name":"Mr. Kitayuta\u0027s Colorful
+        Graph","type":"PROGRAMMING","points":1000.0,"tags":["dfs and similar","dp","dsu","graphs"]},{"contestId":500,"index":"F","name":"New
+        Year Shopping","type":"PROGRAMMING","points":2750.0,"tags":["divide and conquer","dp"]},{"contestId":500,"index":"E","name":"New
+        Year Domino","type":"PROGRAMMING","points":2750.0,"tags":["data structures","dp","dsu"]},{"contestId":498,"index":"E","name":"Stairs
+        and Lines","type":"PROGRAMMING","points":2500.0,"tags":["dp","matrices"]},{"contestId":498,"index":"D","name":"Traffic
+        Jams in the Land","type":"PROGRAMMING","points":2000.0,"tags":["data structures","dp","number
+        theory"]},{"contestId":498,"index":"B","name":"Name That Tune","type":"PROGRAMMING","points":2000.0,"tags":["dp","probabilities","two
+        pointers"]},{"contestId":497,"index":"E","name":"Subsequences Return","type":"PROGRAMMING","points":2500.0,"tags":["dp","matrices"]},{"contestId":494,"index":"D","name":"Birthday","type":"PROGRAMMING","points":1750.0,"tags":["data
+        structures","dfs and similar","dp","trees"]},{"contestId":494,"index":"C","name":"Helping
+        People","type":"PROGRAMMING","points":1750.0,"tags":["dp","probabilities"]},{"contestId":494,"index":"B","name":"Obsessive
+        String","type":"PROGRAMMING","points":1000.0,"tags":["dp","strings"]},{"contestId":490,"index":"F","name":"Treeland
+        Tour","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dfs
+        and similar","dp","trees"]},{"contestId":487,"index":"B","name":"Strip","type":"PROGRAMMING","points":1500.0,"tags":["binary
+        search","data structures","dp","two pointers"]},{"contestId":489,"index":"F","name":"Special
+        Matrices","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","dp"]},{"contestId":489,"index":"E","name":"Hiking","type":"PROGRAMMING","points":2500.0,"tags":["binary
+        search","dp"]},{"contestId":489,"index":"C","name":"Given Length and Sum of
+        Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},{"contestId":489,"index":"B","name":"BerSU
+        Ball","type":"PROGRAMMING","points":1000.0,"tags":["dfs and similar","dp","graph
+        matchings","greedy","sortings","two pointers"]},{"contestId":486,"index":"E","name":"LIS
+        of Sequence","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp","greedy","hashing","math"]},{"contestId":486,"index":"D","name":"Valid
+        Sets","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","dp","math","trees"]},{"contestId":484,"index":"D","name":"Kindergarten","type":"PROGRAMMING","points":2000.0,"tags":["data
+        structures","dp","greedy"]},{"contestId":482,"index":"D","name":"Random Function
+        and Tree","type":"PROGRAMMING","points":2000.0,"tags":["combinatorics","dp","trees"]},{"contestId":482,"index":"C","name":"Game
+        with Strings","type":"PROGRAMMING","points":1500.0,"tags":["bitmasks","dp","probabilities"]},{"contestId":480,"index":"D","name":"Parcels","type":"PROGRAMMING","points":2000.0,"tags":["dp","graphs"]},{"contestId":479,"index":"E","name":"Riding
+        in a Lift","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":478,"index":"D","name":"Red-Green
+        Towers","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":477,"index":"D","name":"Dreamoon
+        and Binary","type":"PROGRAMMING","points":2000.0,"tags":["dp","strings"]},{"contestId":476,"index":"E","name":"Dreamoon
+        and Strings","type":"PROGRAMMING","points":2500.0,"tags":["dp","strings"]},{"contestId":476,"index":"B","name":"Dreamoon
+        and WiFi","type":"PROGRAMMING","points":1500.0,"tags":["bitmasks","brute force","combinatorics","dp","math","probabilities"]},{"contestId":474,"index":"E","name":"Pillars","type":"PROGRAMMING","points":3000.0,"tags":["binary
+        search","data structures","dp","sortings","trees"]},{"contestId":474,"index":"D","name":"Flowers","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":468,"index":"E","name":"Permanent","type":"PROGRAMMING","points":2500.0,"tags":["dp","graph
+        matchings","math","meet-in-the-middle"]},{"contestId":467,"index":"E","name":"Alex
+        and Complicated Task","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp","greedy"]},{"contestId":467,"index":"D","name":"Fedor
+        and Essay","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","dp","graphs","hashing","strings"]},{"contestId":467,"index":"C","name":"George
+        and Job","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation"]},{"contestId":466,"index":"D","name":"Increase
+        Sequence","type":"PROGRAMMING","points":2000.0,"tags":["combinatorics","dp"]},{"contestId":466,"index":"C","name":"Number
+        of Ways","type":"PROGRAMMING","points":1500.0,"tags":["binary search","brute
+        force","data structures","dp","two pointers"]},{"contestId":464,"index":"D","name":"World
+        of Darkraft - 2","type":"PROGRAMMING","points":2000.0,"tags":["dp","probabilities"]},{"contestId":464,"index":"C","name":"Substitutes
+        in Number","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":463,"index":"D","name":"Gargari
+        and Permutations","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","dp","graphs"]},{"contestId":461,"index":"B","name":"Appleman
+        and Tree","type":"PROGRAMMING","points":1000.0,"tags":["dfs and similar","dp","trees"]},{"contestId":459,"index":"E","name":"Pashmak
+        and Graph","type":"PROGRAMMING","points":3000.0,"tags":["dp","sortings"]},{"contestId":457,"index":"F","name":"An
+        easy problem about trees","type":"PROGRAMMING","points":3000.0,"tags":["dp","games","greedy","trees"]},{"contestId":455,"index":"C","name":"Civilization","type":"PROGRAMMING","points":1500.0,"tags":["dfs
+        and similar","dp","dsu","ternary search","trees"]},{"contestId":455,"index":"B","name":"A
+        Lot of Games","type":"PROGRAMMING","points":1000.0,"tags":["dfs and similar","dp","games","implementation","strings","trees"]},{"contestId":455,"index":"A","name":"Boredom","type":"PROGRAMMING","points":500.0,"tags":["dp"]},{"contestId":453,"index":"D","name":"Little
+        Pony and Elements of Harmony","type":"PROGRAMMING","points":2500.0,"tags":["dp","matrices"]},{"contestId":453,"index":"B","name":"Little
+        Pony and Harmony Chest","type":"PROGRAMMING","points":1000.0,"tags":["bitmasks","brute
+        force","dp"]},{"contestId":449,"index":"E","name":"Jzzhu and Squares","type":"PROGRAMMING","points":2500.0,"tags":["dp","math","number
+        theory"]},{"contestId":449,"index":"D","name":"Jzzhu and Numbers","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","combinatorics","dp"]},{"contestId":448,"index":"C","name":"Painting
+        Fence","type":"PROGRAMMING","points":2500.0,"tags":["divide and conquer","dp","greedy"]},{"contestId":446,"index":"A","name":"DZY
+        Loves Sequences","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation","two
+        pointers"]},{"contestId":436,"index":"F","name":"Banners","type":"PROGRAMMING","points":3000.0,"tags":["brute
+        force","data structures","dp"]},{"contestId":436,"index":"D","name":"Pudding
+        Monsters","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":441,"index":"E","name":"Valera
+        and Number","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","dp"]},{"contestId":439,"index":"E","name":"Devu
+        and Birthday Celebration","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","dp","math"]},{"contestId":440,"index":"D","name":"Berland
+        Federalization","type":"PROGRAMMING","points":2000.0,"tags":["dp","trees"]},{"contestId":435,"index":"D","name":"Special
+        Grid","type":"PROGRAMMING","points":2000.0,"tags":["brute force","dp","greedy"]},{"contestId":433,"index":"E","name":"Tachibana
+        Kanade\u0027s Tofu","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":433,"index":"B","name":"Kuriyama
+        Mirai\u0027s Stones","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","sortings"]},{"contestId":431,"index":"D","name":"Random
+        Task","type":"PROGRAMMING","points":2000.0,"tags":["binary search","bitmasks","combinatorics","dp","math"]},{"contestId":431,"index":"C","name":"k-Tree","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","trees"]},{"contestId":432,"index":"D","name":"Prefixes
+        and Suffixes","type":"PROGRAMMING","points":2000.0,"tags":["dp","string suffix
+        structures","strings","two pointers"]},{"contestId":429,"index":"C","name":"Guess
+        the Tree","type":"PROGRAMMING","points":1500.0,"tags":["bitmasks","constructive
+        algorithms","dp","greedy","trees"]},{"contestId":429,"index":"B","name":"Working
+        out","type":"PROGRAMMING","points":1000.0,"tags":["dp"]},{"contestId":427,"index":"D","name":"Match
+        \u0026 Catch","type":"PROGRAMMING","points":2000.0,"tags":["dp","string suffix
+        structures","strings"]},{"contestId":425,"index":"E","name":"Sereja and Sets","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":425,"index":"C","name":"Sereja
+        and Two Sequences","type":"PROGRAMMING","points":1500.0,"tags":["data structures","dp"]},{"contestId":424,"index":"E","name":"Colored
+        Jenga","type":"PROGRAMMING","points":3000.0,"tags":["dfs and similar","dp","probabilities"]},{"contestId":424,"index":"D","name":"Biathlon
+        Track","type":"PROGRAMMING","points":2500.0,"tags":["binary search","brute
+        force","constructive algorithms","data structures","dp"]},{"contestId":413,"index":"D","name":"2048","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dp"]},{"contestId":417,"index":"D","name":"Cunning
+        Gena","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dp","greedy","sortings"]},{"contestId":417,"index":"A","name":"Elimination","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation","math"]},{"contestId":416,"index":"E","name":"President\u0027s
+        Path","type":"PROGRAMMING","points":2500.0,"tags":["dp","graphs","shortest
+        paths"]},{"contestId":416,"index":"C","name":"Booking System","type":"PROGRAMMING","points":1500.0,"tags":["binary
+        search","dp","greedy","implementation"]},{"contestId":416,"index":"B","name":"Art
+        Union","type":"PROGRAMMING","points":1000.0,"tags":["brute force","dp","implementation"]},{"contestId":414,"index":"B","name":"Mashmokh
+        and ACM","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","dp"]},{"contestId":407,"index":"D","name":"Largest
+        Submatrix 3","type":"PROGRAMMING","points":2000.0,"tags":["dp","hashing"]},{"contestId":407,"index":"B","name":"Long
+        Path","type":"PROGRAMMING","points":1000.0,"tags":["dp","implementation"]},{"contestId":404,"index":"D","name":"Minesweeper
+        1D","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":403,"index":"D","name":"Beautiful
+        Pairs of Numbers","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp"]},{"contestId":402,"index":"D","name":"Upgrading
+        Array","type":"PROGRAMMING","points":2000.0,"tags":["dp","greedy","math"]},{"contestId":401,"index":"D","name":"Roman
+        and Numbers","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","brute
+        force","combinatorics","dp","number theory"]},{"contestId":400,"index":"A","name":"Inna
+        and Choose Options","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation"]},{"contestId":391,"index":"F1","name":"Stock
+        Trading","type":"PROGRAMMING","points":8.0,"tags":["dp"]},{"contestId":398,"index":"B","name":"Painting
+        The Wall","type":"PROGRAMMING","points":1000.0,"tags":["dp","probabilities"]},{"contestId":392,"index":"B","name":"Tower
+        of Hanoi","type":"PROGRAMMING","points":1000.0,"tags":["dp"]},{"contestId":385,"index":"D","name":"Bear
+        and Floodlight","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dp","geometry"]},{"contestId":385,"index":"C","name":"Bear
+        and Prime Numbers","type":"PROGRAMMING","points":1500.0,"tags":["binary search","brute
+        force","data structures","dp","implementation","math","number theory"]},{"contestId":383,"index":"E","name":"Vowels","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","divide
+        and conquer","dp"]},{"contestId":383,"index":"D","name":"Antimatter","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":382,"index":"E","name":"Ksenia
+        and Combinatorics","type":"PROGRAMMING","points":3000.0,"tags":["combinatorics","dp"]},{"contestId":386,"index":"D","name":"Game
+        with Points","type":"PROGRAMMING","points":2000.0,"tags":["dp","graphs","implementation","shortest
+        paths"]},{"contestId":386,"index":"C","name":"Diverse Substrings","type":"PROGRAMMING","points":1500.0,"tags":["dp","two
+        pointers"]},{"contestId":379,"index":"G","name":"New Year Cactus","type":"PROGRAMMING","points":3500.0,"tags":["dp"]},{"contestId":379,"index":"D","name":"New
+        Year Letter","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","brute
+        force","dp"]},{"contestId":377,"index":"E","name":"Cookie Clicker","type":"PROGRAMMING","points":2500.0,"tags":["dp","geometry"]},{"contestId":377,"index":"C","name":"Captains
+        Mode","type":"PROGRAMMING","points":1000.0,"tags":["bitmasks","dp","games"]},{"contestId":375,"index":"E","name":"Red
+        and Black Tree","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","math"]},{"contestId":375,"index":"B","name":"Maximum
+        Submatrix 2","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp","implementation","sortings"]},{"contestId":374,"index":"D","name":"Inna
+        and Sequence ","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp","trees"]},{"contestId":374,"index":"C","name":"Inna and Dima","type":"PROGRAMMING","points":1500.0,"tags":["dfs
+        and similar","dp","graphs","implementation"]},{"contestId":372,"index":"C","name":"Watching
+        Fireworks is Fun","type":"PROGRAMMING","points":1500.0,"tags":["data structures","dp","math"]},{"contestId":372,"index":"B","name":"Counting
+        Rectangles is Fun","type":"PROGRAMMING","points":1000.0,"tags":["brute force","divide
+        and conquer","dp"]},{"contestId":370,"index":"E","name":"Summer Reading","type":"PROGRAMMING","points":3000.0,"tags":["dp","greedy"]},{"contestId":369,"index":"D","name":"Valera
+        and Fools","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","dp","shortest
+        paths"]},{"contestId":367,"index":"E","name":"Sereja and Intervals","type":"PROGRAMMING","points":2000.0,"tags":["combinatorics","dp"]},{"contestId":368,"index":"B","name":"Sereja
+        and Suffixes","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp"]},{"contestId":366,"index":"C","name":"Dima
+        and Salad","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":364,"index":"B","name":"Free
+        Market","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy"]},{"contestId":362,"index":"C","name":"Insertion
+        Sort","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp","implementation","math"]},{"contestId":363,"index":"B","name":"Fence","type":"PROGRAMMING","points":1000.0,"tags":["brute
+        force","dp"]},{"contestId":360,"index":"C","name":"Levko and Strings","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp"]},{"contestId":360,"index":"B","name":"Levko
+        and Array","type":"PROGRAMMING","points":1000.0,"tags":["binary search","dp"]},{"contestId":359,"index":"B","name":"Permutation","type":"PROGRAMMING","points":1000.0,"tags":["constructive
+        algorithms","dp","math"]},{"contestId":358,"index":"D","name":"Dima and Hares","type":"PROGRAMMING","points":2000.0,"tags":["dp","greedy"]},{"contestId":356,"index":"E","name":"Xenia
+        and String Problem","type":"PROGRAMMING","points":2500.0,"tags":["dp","hashing","implementation","string
+        suffix structures","strings"]},{"contestId":356,"index":"D","name":"Bags and
+        Coins","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","constructive
+        algorithms","dp","greedy"]},{"contestId":354,"index":"E","name":"Lucky Number
+        Representation","type":"PROGRAMMING","points":2500.0,"tags":["constructive
+        algorithms","dfs and similar","dp"]},{"contestId":354,"index":"D","name":"Transferring
+        Pyramid","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":354,"index":"C","name":"Vasya
+        and Beautiful Arrays","type":"PROGRAMMING","points":1500.0,"tags":["brute
+        force","dp","number theory"]},{"contestId":354,"index":"B","name":"Game with
+        Strings","type":"PROGRAMMING","points":1000.0,"tags":["bitmasks","dp","games"]},{"contestId":353,"index":"E","name":"Antichain","type":"PROGRAMMING","points":3000.0,"tags":["dp","graph
+        matchings","greedy"]},{"contestId":351,"index":"C","name":"Jeff and Brackets","type":"PROGRAMMING","points":1500.0,"tags":["dp","matrices"]},{"contestId":351,"index":"B","name":"Jeff
+        and Furik","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","dp","probabilities"]},{"contestId":351,"index":"A","name":"Jeff
+        and Rounding","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy","implementation","math"]},{"contestId":348,"index":"E","name":"Pilgrims","type":"PROGRAMMING","points":2500.0,"tags":["dfs
+        and similar","dp","trees"]},{"contestId":348,"index":"D","name":"Turtles","type":"PROGRAMMING","points":2000.0,"tags":["dp","matrices"]},{"contestId":349,"index":"B","name":"Color
+        the Fence","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp","greedy"]},{"contestId":346,"index":"B","name":"Lucky
+        Common Subsequence","type":"PROGRAMMING","points":1000.0,"tags":["dp","strings"]},{"contestId":342,"index":"D","name":"Xenia
+        and Dominoes","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dfs
+        and similar","dp"]},{"contestId":340,"index":"D","name":"Bubble Sort Graph","type":"PROGRAMMING","points":2000.0,"tags":["binary
+        search","data structures","dp"]},{"contestId":339,"index":"C","name":"Xenia
+        and Weights","type":"PROGRAMMING","points":1500.0,"tags":["constructive algorithms","dfs
+        and similar","dp","greedy"]},{"contestId":337,"index":"D","name":"Book of
+        Evil","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","divide
+        and conquer","dp","trees"]},{"contestId":337,"index":"A","name":"Puzzles","type":"PROGRAMMING","points":500.0,"tags":["dp","graph
+        matchings","greedy"]},{"contestId":336,"index":"E","name":"Vasily the Bear
+        and Painting Square","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","combinatorics","dp","implementation"]},{"contestId":335,"index":"F","name":"Buy
+        One, Get One Free","type":"PROGRAMMING","points":3000.0,"tags":["dp","greedy"]},{"contestId":335,"index":"E","name":"Counting
+        Skyscrapers","type":"PROGRAMMING","points":2500.0,"tags":["dp","math","probabilities"]},{"contestId":335,"index":"D","name":"Rectangles
+        and Square","type":"PROGRAMMING","points":2000.0,"tags":["brute force","dp"]},{"contestId":335,"index":"B","name":"Palindrome","type":"PROGRAMMING","points":1000.0,"tags":["constructive
+        algorithms","dp"]},{"contestId":332,"index":"E","name":"Binary Key","type":"PROGRAMMING","points":3000.0,"tags":["dp","greedy","implementation"]},{"contestId":332,"index":"B","name":"Maximum
+        Absurdity","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp","implementation"]},{"contestId":331,"index":"E2","name":"Deja
+        Vu","type":"PROGRAMMING","points":50.0,"tags":["constructive algorithms","dp"]},{"contestId":331,"index":"C3","name":"The
+        Great Julya Calendar","type":"PROGRAMMING","points":60.0,"tags":["dp"]},{"contestId":331,"index":"C2","name":"The
+        Great Julya Calendar","type":"PROGRAMMING","points":20.0,"tags":["dp"]},{"contestId":331,"index":"C1","name":"The
+        Great Julya Calendar","type":"PROGRAMMING","points":20.0,"tags":["dp"]},{"contestId":327,"index":"E","name":"Axis
+        Walking","type":"PROGRAMMING","points":3000.0,"tags":["bitmasks","combinatorics","constructive
+        algorithms","dp","meet-in-the-middle"]},{"contestId":327,"index":"A","name":"Flipping
+        Game","type":"PROGRAMMING","points":500.0,"tags":["brute force","dp","implementation"]},{"contestId":321,"index":"E","name":"Ciel
+        and Gondolas","type":"PROGRAMMING","points":2500.0,"tags":["data structures","divide
+        and conquer","dp"]},{"contestId":321,"index":"D","name":"Ciel and Flipboard","type":"PROGRAMMING","points":2000.0,"tags":["dp","greedy","math"]},{"contestId":321,"index":"B","name":"Ciel
+        and Duel","type":"PROGRAMMING","points":1000.0,"tags":["dp","flows","greedy"]},{"contestId":319,"index":"C","name":"Kalila
+        and Dimna in the Logging Industry","type":"PROGRAMMING","points":1500.0,"tags":["dp","geometry"]},{"contestId":317,"index":"D","name":"Game
+        with Powers","type":"PROGRAMMING","points":1500.0,"tags":["dp","games"]},{"contestId":316,"index":"D3","name":"PE
+        Lesson","type":"PROGRAMMING","points":30.0,"tags":["dp","math"]},{"contestId":316,"index":"D2","name":"PE
+        Lesson","type":"PROGRAMMING","points":40.0,"tags":["dp"]},{"contestId":316,"index":"D1","name":"PE
+        Lesson","type":"PROGRAMMING","points":30.0,"tags":["brute force","dp"]},{"contestId":316,"index":"B2","name":"EKG","type":"PROGRAMMING","points":70.0,"tags":["dfs
+        and similar","dp"]},{"contestId":314,"index":"E","name":"Sereja and Squares","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":314,"index":"C","name":"Sereja
+        and Subsequences","type":"PROGRAMMING","points":1500.0,"tags":["data structures","dp"]},{"contestId":313,"index":"D","name":"Ilya
+        and Roads","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":313,"index":"B","name":"Ilya
+        and Queries","type":"PROGRAMMING","points":1000.0,"tags":["dp","implementation"]},{"contestId":311,"index":"B","name":"Cats
+        Transport","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp"]},{"contestId":303,"index":"E","name":"Random
+        Ranking","type":"PROGRAMMING","points":3000.0,"tags":["dp"]},{"contestId":301,"index":"E","name":"Yaroslav
+        and Arrangements","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":300,"index":"D","name":"Painting
+        Square","type":"PROGRAMMING","points":3000.0,"tags":["dp","fft"]},{"contestId":292,"index":"D","name":"Connected
+        Components","type":"PROGRAMMING","points":2000.0,"tags":["data structures","dfs
+        and similar","dp","dsu"]},{"contestId":295,"index":"D","name":"Greg and Caves","type":"PROGRAMMING","points":2000.0,"tags":["combinatorics","dp"]},{"contestId":295,"index":"C","name":"Greg
+        and Friends","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp","graphs","shortest
+        paths"]},{"contestId":295,"index":"B","name":"Greg and Graph","type":"PROGRAMMING","points":1000.0,"tags":["dp","graphs","shortest
+        paths"]},{"contestId":296,"index":"B","name":"Yaroslav and Two Strings","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp"]},{"contestId":294,"index":"E","name":"Shaass
+        the Great","type":"PROGRAMMING","points":2500.0,"tags":["dp","trees"]},{"contestId":294,"index":"B","name":"Shaass
+        and Bookshelf","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy"]},{"contestId":288,"index":"E","name":"Polo
+        the Penguin and Lucky Numbers","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","math"]},{"contestId":289,"index":"B","name":"Polo
+        the Penguin and Matrix","type":"PROGRAMMING","points":1000.0,"tags":["brute
+        force","dp","implementation","sortings","ternary search"]},{"contestId":285,"index":"E","name":"Positions
+        in Permutations","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","dp","math"]},{"contestId":285,"index":"D","name":"Permutation
+        Sum","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","combinatorics","dp","implementation","meet-in-the-middle"]},{"contestId":283,"index":"D","name":"Cows
+        and Cool Sequences","type":"PROGRAMMING","points":2000.0,"tags":["dp","math","number
+        theory"]},{"contestId":283,"index":"C","name":"Coin Troubles","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":283,"index":"B","name":"Cow
+        Program","type":"PROGRAMMING","points":1000.0,"tags":["dfs and similar","dp","graphs"]},{"contestId":282,"index":"D","name":"Yet
+        Another Number Game","type":"PROGRAMMING","points":2000.0,"tags":["dp","games"]},{"contestId":280,"index":"E","name":"Sequence
+        Transformation","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp","implementation","math"]},{"contestId":279,"index":"D","name":"The
+        Minimum Number of Variables","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dp"]},{"contestId":279,"index":"C","name":"Ladder","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","two
+        pointers"]},{"contestId":277,"index":"D","name":"Google Code Jam","type":"PROGRAMMING","points":3000.0,"tags":["dp","probabilities"]},{"contestId":276,"index":"D","name":"Little
+        Girl and Maximum XOR","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dp","greedy","implementation","math"]},{"contestId":274,"index":"B","name":"Zero
+        Tree","type":"PROGRAMMING","points":1000.0,"tags":["dfs and similar","dp","greedy","trees"]},{"contestId":273,"index":"E","name":"Dima
+        and Game","type":"PROGRAMMING","points":2500.0,"tags":["dp","games"]},{"contestId":273,"index":"D","name":"Dima
+        and Figure","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":269,"index":"D","name":"Maximum
+        Waterfall","type":"PROGRAMMING","points":2000.0,"tags":["data structures","dp"]},{"contestId":269,"index":"B","name":"Greenhouse
+        Effect","type":"PROGRAMMING","points":1000.0,"tags":["dp"]},{"contestId":268,"index":"D","name":"Wall
+        Bars","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":264,"index":"E","name":"Roadside
+        Trees","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp"]},{"contestId":264,"index":"D","name":"Colorful
+        Stones","type":"PROGRAMMING","points":2000.0,"tags":["dp","two pointers"]},{"contestId":264,"index":"C","name":"Choosing
+        Balls","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":264,"index":"B","name":"Good
+        Sequences","type":"PROGRAMMING","points":1000.0,"tags":["dp","number theory"]},{"contestId":263,"index":"E","name":"Rhombus","type":"PROGRAMMING","points":3000.0,"tags":["brute
+        force","data structures","dp"]},{"contestId":261,"index":"E","name":"Maxim
+        and Calculator","type":"PROGRAMMING","points":2500.0,"tags":["brute force","dp","two
+        pointers"]},{"contestId":261,"index":"D","name":"Maxim and Increasing Subsequence","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":261,"index":"C","name":"Maxim
+        and Matrix","type":"PROGRAMMING","points":1500.0,"tags":["constructive algorithms","dp","math"]},{"contestId":261,"index":"B","name":"Maxim
+        and Restaurant","type":"PROGRAMMING","points":1000.0,"tags":["dp","math","probabilities"]},{"contestId":258,"index":"D","name":"Little
+        Elephant and Broken Sorting","type":"PROGRAMMING","points":2000.0,"tags":["dp","math","probabilities"]},{"contestId":258,"index":"C","name":"Little
+        Elephant and LCM","type":"PROGRAMMING","points":1500.0,"tags":["binary search","combinatorics","dp","math"]},{"contestId":258,"index":"B","name":"Little
+        Elephant and Elections","type":"PROGRAMMING","points":1000.0,"tags":["brute
+        force","combinatorics","dp"]},{"contestId":256,"index":"D","name":"Liars and
+        Serge","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":255,"index":"C","name":"Almost
+        Arithmetical Progression","type":"PROGRAMMING","points":1500.0,"tags":["brute
+        force","dp"]},{"contestId":254,"index":"E","name":"Dormitory","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation"]},{"contestId":253,"index":"B","name":"Physics
+        Practical","type":"PROGRAMMING","points":1000.0,"tags":["binary search","dp","two
+        pointers"]},{"contestId":251,"index":"E","name":"Tree and Table","type":"PROGRAMMING","points":2500.0,"tags":["dfs
+        and similar","dp","implementation","trees"]},{"contestId":251,"index":"C","name":"Number
+        Transformation","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","number
+        theory"]},{"contestId":249,"index":"D","name":"Donkey and Stars","type":"PROGRAMMING","points":1500.0,"tags":["data
+        structures","dp","math","sortings"]},{"contestId":248,"index":"E","name":"Piglet\u0027s
+        Birthday","type":"PROGRAMMING","points":2500.0,"tags":["dp","probabilities"]},{"contestId":246,"index":"E","name":"Blood
+        Cousins Return","type":"PROGRAMMING","points":2500.0,"tags":["binary search","data
+        structures","dfs and similar","dp","sortings"]},{"contestId":245,"index":"H","name":"Queries
+        for Number of Palindromes","type":"PROGRAMMING","tags":["dp","hashing","strings"]},{"contestId":243,"index":"D","name":"Cubes","type":"PROGRAMMING","points":2000.0,"tags":["data
+        structures","dp","geometry","two pointers"]},{"contestId":238,"index":"E","name":"Meeting
+        Her","type":"PROGRAMMING","points":2500.0,"tags":["dp","graphs","shortest
+        paths"]},{"contestId":238,"index":"C","name":"World Eater Brothers","type":"PROGRAMMING","points":1500.0,"tags":["dfs
+        and similar","dp","greedy","trees"]},{"contestId":235,"index":"E","name":"Number
+        Challenge","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","dp","implementation","number
+        theory"]},{"contestId":235,"index":"B","name":"Let\u0027s Play Osu!","type":"PROGRAMMING","points":1000.0,"tags":["dp","math","probabilities"]},{"contestId":234,"index":"F","name":"Fence","type":"PROGRAMMING","tags":["dp"]},{"contestId":234,"index":"C","name":"Weather","type":"PROGRAMMING","tags":["dp","implementation"]},{"contestId":232,"index":"E","name":"Quick
+        Tortoise","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","divide
+        and conquer","dp"]},{"contestId":232,"index":"C","name":"Doe Graphs","type":"PROGRAMMING","points":1500.0,"tags":["constructive
+        algorithms","divide and conquer","dp","graphs","shortest paths"]},{"contestId":232,"index":"B","name":"Table","type":"PROGRAMMING","points":1000.0,"tags":["bitmasks","combinatorics","dp","math"]},{"contestId":231,"index":"E","name":"Cactus","type":"PROGRAMMING","points":2500.0,"tags":["data
+        structures","dfs and similar","dp","graphs","trees"]},{"contestId":229,"index":"E","name":"Gifts","type":"PROGRAMMING","points":3000.0,"tags":["combinatorics","dp","probabilities"]},{"contestId":229,"index":"D","name":"Towers","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy","two
+        pointers"]},{"contestId":228,"index":"C","name":"Fractal Detector","type":"PROGRAMMING","points":1500.0,"tags":["dp","hashing"]},{"contestId":225,"index":"C","name":"Barcode","type":"PROGRAMMING","points":1500.0,"tags":["dp","matrices"]},{"contestId":223,"index":"B","name":"Two
+        Strings","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp","strings"]},{"contestId":219,"index":"D","name":"Choosing
+        Capital for Treeland","type":"PROGRAMMING","points":2000.0,"tags":["dfs and
+        similar","dp","trees"]},{"contestId":219,"index":"C","name":"Color Stripe","type":"PROGRAMMING","points":1500.0,"tags":["brute
+        force","dp","greedy"]},{"contestId":217,"index":"C","name":"Formurosa","type":"PROGRAMMING","points":2500.0,"tags":["divide
+        and conquer","dp","expression parsing"]},{"contestId":215,"index":"E","name":"Periodical
+        Numbers","type":"PROGRAMMING","points":3000.0,"tags":["combinatorics","dp","number
+        theory"]},{"contestId":213,"index":"C","name":"Relay Race","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":213,"index":"B","name":"Numbers","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","dp"]},{"contestId":208,"index":"C","name":"Police
+        Station","type":"PROGRAMMING","points":2500.0,"tags":["dp","graphs","shortest
+        paths"]},{"contestId":208,"index":"B","name":"Solitaire","type":"PROGRAMMING","points":2000.0,"tags":["dfs
+        and similar","dp"]},{"contestId":212,"index":"E","name":"IT Restaurants","type":"PROGRAMMING","points":500.0,"tags":["dfs
+        and similar","dp","trees"]},{"contestId":212,"index":"C","name":"Cowboys","type":"PROGRAMMING","points":1500.0,"tags":["dp","math"]},{"contestId":209,"index":"A","name":"Multicolored
+        Marbles","type":"PROGRAMMING","points":500.0,"tags":["dp","math"]},{"contestId":204,"index":"D","name":"Little
+        Elephant and Retro Strings","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":204,"index":"A","name":"Little
+        Elephant and Interval","type":"PROGRAMMING","points":500.0,"tags":["binary
+        search","combinatorics","dp"]},{"contestId":201,"index":"D","name":"Brand
+        New Problem","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","brute
+        force","dp"]},{"contestId":201,"index":"C","name":"Fragile Bridges","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":201,"index":"A","name":"Clear
+        Symmetry","type":"PROGRAMMING","points":1000.0,"tags":["constructive algorithms","dp","math"]},{"contestId":191,"index":"A","name":"Dynasty
+        Puzzles","type":"PROGRAMMING","points":500.0,"tags":["dp"]},{"contestId":187,"index":"B","name":"AlgoRace","type":"PROGRAMMING","points":1000.0,"tags":["dp","shortest
+        paths"]},{"contestId":189,"index":"A","name":"Cut Ribbon","type":"PROGRAMMING","points":500.0,"tags":["brute
+        force","dp"]},{"contestId":185,"index":"C","name":"Clever Fat Rat","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":178,"index":"F2","name":"Representative
+        Sampling","type":"PROGRAMMING","points":30.0,"tags":["dp","sortings","strings"]},{"contestId":183,"index":"D","name":"T-shirt","type":"PROGRAMMING","points":2000.0,"tags":["dp","greedy","probabilities"]},{"contestId":182,"index":"E","name":"Wooden
+        Fence","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":180,"index":"E","name":"Cubes","type":"PROGRAMMING","tags":["binary
+        search","dp","two pointers"]},{"contestId":180,"index":"C","name":"Letter","type":"PROGRAMMING","tags":["dp"]},{"contestId":176,"index":"D","name":"Hyper
+        String","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":176,"index":"B","name":"Word
+        Cut","type":"PROGRAMMING","points":1000.0,"tags":["dp"]},{"contestId":175,"index":"E","name":"Power
+        Defence","type":"PROGRAMMING","points":3000.0,"tags":["brute force","dp","greedy"]},{"contestId":175,"index":"D","name":"Plane
+        of Tanks: Duel","type":"PROGRAMMING","points":2500.0,"tags":["brute force","dp","probabilities"]},{"contestId":174,"index":"B","name":"File
+        List","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy","implementation"]},{"contestId":173,"index":"C","name":"Spiral
+        Maximum","type":"PROGRAMMING","points":1500.0,"tags":["brute force","dp"]},{"contestId":167,"index":"B","name":"Wizards
+        and Huge Prize","type":"PROGRAMMING","points":1000.0,"tags":["dp","probabilities"]},{"contestId":163,"index":"E","name":"e-Government","type":"PROGRAMMING","points":2500.0,"tags":["data
+        structures","dfs and similar","dp","strings","trees"]},{"contestId":163,"index":"A","name":"Substring
+        and Subsequence","type":"PROGRAMMING","points":1000.0,"tags":["dp"]},{"contestId":166,"index":"E","name":"Tetrahedron","type":"PROGRAMMING","points":1000.0,"tags":["dp","math","matrices"]},{"contestId":166,"index":"D","name":"Shoe
+        Store","type":"PROGRAMMING","points":3000.0,"tags":["dp","graph matchings","greedy","sortings","two
+        pointers"]},{"contestId":165,"index":"E","name":"Compatible Numbers","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","brute
+        force","dfs and similar","dp"]},{"contestId":165,"index":"C","name":"Another
+        Problem on Strings","type":"PROGRAMMING","points":1500.0,"tags":["binary search","brute
+        force","dp","math","strings","two pointers"]},{"contestId":161,"index":"E","name":"Polycarpus
+        the Safecracker","type":"PROGRAMMING","points":2500.0,"tags":["brute force","dp"]},{"contestId":161,"index":"D","name":"Distance
+        in Tree","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","dp","trees"]},{"contestId":159,"index":"D","name":"Palindrome
+        pairs","type":"PROGRAMMING","points":2000.0,"tags":["brute force","dp","strings"]},{"contestId":158,"index":"E","name":"Phone
+        Talks","type":"PROGRAMMING","points":2000.0,"tags":["dp","sortings"]},{"contestId":156,"index":"E","name":"Mrs.
+        Hudson\u0027s Pancakes","type":"PROGRAMMING","points":2500.0,"tags":["brute
+        force","dp"]},{"contestId":156,"index":"C","name":"Cipher","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp"]},{"contestId":152,"index":"E","name":"Garden","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","dp","graphs","trees"]},{"contestId":150,"index":"D","name":"Mission
+        Impassable","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":149,"index":"D","name":"Coloring
+        Brackets","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":148,"index":"E","name":"Porcelain","type":"PROGRAMMING","points":1000.0,"tags":["dp"]},{"contestId":148,"index":"D","name":"Bag
+        of mice","type":"PROGRAMMING","points":1000.0,"tags":["dp","games","math","probabilities"]},{"contestId":145,"index":"C","name":"Lucky
+        Subsequence","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp","math"]},{"contestId":142,"index":"C","name":"Help
+        Caretaker","type":"PROGRAMMING","points":1500.0,"tags":["brute force","dp"]},{"contestId":141,"index":"E","name":"Clearing
+        Up","type":"PROGRAMMING","points":2500.0,"tags":["constructive algorithms","dp","dsu","graphs"]},{"contestId":140,"index":"E","name":"New
+        Year Garland","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","dp"]},{"contestId":138,"index":"E","name":"Hellish
+        Constraints","type":"PROGRAMMING","points":2500.0,"tags":["brute force","dp","two
+        pointers"]},{"contestId":138,"index":"D","name":"World of Darkraft","type":"PROGRAMMING","points":2000.0,"tags":["dp","games"]},{"contestId":137,"index":"D","name":"Palindromes","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":132,"index":"D","name":"Constants
+        in the language of Shakespeare","type":"PROGRAMMING","points":2000.0,"tags":["constructive
+        algorithms","dp","greedy"]},{"contestId":132,"index":"C","name":"Logo Turtle","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":128,"index":"C","name":"Games
+        with Rectangle","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp"]},{"contestId":126,"index":"D","name":"Fibonacci
+        Sums","type":"PROGRAMMING","points":2000.0,"tags":["dp","math"]},{"contestId":126,"index":"B","name":"Password","type":"PROGRAMMING","points":1000.0,"tags":["binary
+        search","dp","hashing","string suffix structures","strings"]},{"contestId":123,"index":"E","name":"Maze","type":"PROGRAMMING","points":2500.0,"tags":["dfs
+        and similar","dp","probabilities","trees"]},{"contestId":123,"index":"C","name":"Brackets","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp","greedy"]},{"contestId":120,"index":"F","name":"Spiders","type":"PROGRAMMING","tags":["dp","greedy","trees"]},{"contestId":119,"index":"C","name":"Education
+        Reform","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":118,"index":"D","name":"Caesar\u0027s
+        Legions","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":115,"index":"E","name":"Linear
+        Kingdom Races","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp"]},{"contestId":115,"index":"D","name":"Unambiguous
+        Arithmetic Expression","type":"PROGRAMMING","points":2000.0,"tags":["dp","expression
+        parsing"]},{"contestId":111,"index":"D","name":"Petya and Coloring","type":"PROGRAMMING","points":2000.0,"tags":["combinatorics","dp"]},{"contestId":111,"index":"C","name":"Petya
+        and Spiders","type":"PROGRAMMING","points":1500.0,"tags":["bitmasks","dp","dsu"]},{"contestId":109,"index":"C","name":"Lucky
+        Tree","type":"PROGRAMMING","points":1500.0,"tags":["dp","dsu","trees"]},{"contestId":107,"index":"D","name":"Crime
+        Management","type":"PROGRAMMING","points":2000.0,"tags":["dp","matrices"]},{"contestId":107,"index":"C","name":"Arrangement","type":"PROGRAMMING","points":1500.0,"tags":["bitmasks","dp"]},{"contestId":107,"index":"B","name":"Basketball
+        Team","type":"PROGRAMMING","points":1000.0,"tags":["combinatorics","dp","probabilities"]},{"contestId":101,"index":"E","name":"Candies
+        and Stones","type":"PROGRAMMING","points":2500.0,"tags":["divide and conquer","dp"]},{"contestId":101,"index":"D","name":"Castle","type":"PROGRAMMING","points":2000.0,"tags":["dp","greedy","probabilities","sortings","trees"]},{"contestId":101,"index":"B","name":"Buses","type":"PROGRAMMING","points":1000.0,"tags":["binary
+        search","data structures","dp"]},{"contestId":98,"index":"E","name":"Help
+        Shrek and Donkey","type":"PROGRAMMING","points":2500.0,"tags":["dp","games","math","probabilities"]},{"contestId":95,"index":"E","name":"Lucky
+        Country","type":"PROGRAMMING","points":2500.0,"tags":["dp","dsu","graphs"]},{"contestId":95,"index":"D","name":"Horse
+        Races","type":"PROGRAMMING","points":2000.0,"tags":["dp","math"]},{"contestId":95,"index":"B","name":"Lucky
+        Numbers","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy"]},{"contestId":93,"index":"E","name":"Lostborn","type":"PROGRAMMING","points":2500.0,"tags":["dp","math"]},{"contestId":93,"index":"D","name":"Flags","type":"PROGRAMMING","points":2000.0,"tags":["dp","math","matrices"]},{"contestId":89,"index":"B","name":"Widget
+        Library","type":"PROGRAMMING","points":1000.0,"tags":["dp","expression parsing","graphs","implementation"]},{"contestId":87,"index":"D","name":"Beautiful
+        Road","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","dp","dsu","implementation","sortings","trees"]},{"contestId":87,"index":"C","name":"Interesting
+        Game","type":"PROGRAMMING","points":1500.0,"tags":["dp","games"]},{"contestId":86,"index":"C","name":"Genetic
+        engineering","type":"PROGRAMMING","points":2000.0,"tags":["dp","string suffix
+        structures","trees"]},{"contestId":83,"index":"E","name":"Two Subsequences","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","dp"]},{"contestId":83,"index":"D","name":"Numbers","type":"PROGRAMMING","points":2000.0,"tags":["dp","math","number
+        theory"]},{"contestId":82,"index":"D","name":"Two out of Three","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":81,"index":"E","name":"Pairs","type":"PROGRAMMING","points":2500.0,"tags":["dfs
+        and similar","dp","dsu","graphs","implementation","trees"]},{"contestId":79,"index":"D","name":"Password","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dp","shortest
+        paths"]},{"contestId":79,"index":"C","name":"Beaver","type":"PROGRAMMING","points":1500.0,"tags":["data
+        structures","dp","greedy","hashing","strings","two pointers"]},{"contestId":78,"index":"C","name":"Beaver
+        Game","type":"PROGRAMMING","points":1500.0,"tags":["dp","games","number theory"]},{"contestId":77,"index":"D","name":"Domino
+        Carpet","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":77,"index":"C","name":"Beavermuncher-0xFF","type":"PROGRAMMING","points":1500.0,"tags":["dfs
+        and similar","dp","dsu","greedy","trees"]},{"contestId":74,"index":"B","name":"Train","type":"PROGRAMMING","points":1000.0,"tags":["dp","games","greedy"]},{"contestId":75,"index":"D","name":"Big
+        Maximum Sum","type":"PROGRAMMING","points":2000.0,"tags":["data structures","dp","greedy","implementation","math","trees"]},{"contestId":76,"index":"F","name":"Tourist","type":"PROGRAMMING","tags":["binary
+        search","data structures","dp"]},{"contestId":76,"index":"D","name":"Plus
+        and xor","type":"PROGRAMMING","tags":["dp","greedy","math"]},{"contestId":76,"index":"C","name":"Mutation","type":"PROGRAMMING","tags":["bitmasks","dp","math"]},{"contestId":73,"index":"C","name":"LionAge
+        II","type":"PROGRAMMING","points":1000.0,"tags":["dp"]},{"contestId":71,"index":"E","name":"Nuclear
+        Fusion","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","dp"]},{"contestId":71,"index":"C","name":"Round
+        Table Knights","type":"PROGRAMMING","points":1500.0,"tags":["dp","math","number
+        theory"]},{"contestId":70,"index":"E","name":"Information Reform","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","trees"]},{"contestId":69,"index":"D","name":"Dot","type":"PROGRAMMING","points":2000.0,"tags":["dp","games"]},{"contestId":72,"index":"G","name":"Fibonacci
+        army","type":"PROGRAMMING","tags":["dp"]},{"contestId":68,"index":"D","name":"Half-decay
+        tree","type":"PROGRAMMING","points":2000.0,"tags":["data structures","divide
+        and conquer","dp","probabilities"]},{"contestId":67,"index":"D","name":"Optical
+        Experiment","type":"PROGRAMMING","points":2000.0,"tags":["binary search","data
+        structures","dp"]},{"contestId":67,"index":"C","name":"Sequence of Balls","type":"PROGRAMMING","points":1500.0,"tags":["dp"]},{"contestId":67,"index":"A","name":"Partial
+        Teacher","type":"PROGRAMMING","points":500.0,"tags":["dp","graphs","greedy","implementation"]},{"contestId":66,"index":"E","name":"Petya
+        and Post","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp"]},{"contestId":63,"index":"E","name":"Sweets
+        Game","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","dfs and similar","dp","games","implementation"]},{"contestId":62,"index":"E","name":"World
+        Evil","type":"PROGRAMMING","points":2500.0,"tags":["dp","flows"]},{"contestId":58,"index":"E","name":"Expression","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":57,"index":"D","name":"Journey","type":"PROGRAMMING","points":2000.0,"tags":["dp","math"]},{"contestId":56,"index":"D","name":"Changing
+        a String","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":55,"index":"D","name":"Beautiful
+        numbers","type":"PROGRAMMING","points":2000.0,"tags":["dp","number theory"]},{"contestId":54,"index":"D","name":"Writing
+        a Song","type":"PROGRAMMING","points":2000.0,"tags":["brute force","dp"]},{"contestId":54,"index":"C","name":"First
+        Digit Law","type":"PROGRAMMING","points":1500.0,"tags":["dp","math","probabilities"]},{"contestId":53,"index":"E","name":"Dead
+        Ends","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","dp"]},{"contestId":51,"index":"F","name":"Caterpillar","type":"PROGRAMMING","points":3000.0,"tags":["dfs
+        and similar","dp","graphs","trees"]},{"contestId":50,"index":"D","name":"Bombing","type":"PROGRAMMING","points":2000.0,"tags":["binary
+        search","dp","probabilities"]},{"contestId":49,"index":"E","name":"Common
+        ancestor","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":49,"index":"D","name":"Game","type":"PROGRAMMING","points":2000.0,"tags":["brute
+        force","dp","implementation"]},{"contestId":48,"index":"G","name":"Galaxy
+        Union","type":"PROGRAMMING","tags":["dp","trees","two pointers"]},{"contestId":48,"index":"E","name":"Ivan
+        the Fool VS Gorynych the Dragon","type":"PROGRAMMING","tags":["dp","games","graphs"]},{"contestId":46,"index":"E","name":"Comb","type":"PROGRAMMING","tags":["data
+        structures","dp"]},{"contestId":45,"index":"B","name":"School","type":"PROGRAMMING","tags":["dp","dsu"]},{"contestId":41,"index":"D","name":"Pawn","type":"PROGRAMMING","points":2000.0,"tags":["dp"]},{"contestId":44,"index":"H","name":"Phone
+        Number","type":"PROGRAMMING","tags":["dp"]},{"contestId":44,"index":"E","name":"Anfisa
+        the Monkey","type":"PROGRAMMING","tags":["dp"]},{"contestId":38,"index":"H","name":"The
+        Great Marathon","type":"PROGRAMMING","tags":["dp"]},{"contestId":38,"index":"F","name":"Smart
+        Boy","type":"PROGRAMMING","tags":["dp","games","strings"]},{"contestId":38,"index":"E","name":"Let\u0027s
+        Go Rolling!","type":"PROGRAMMING","tags":["dp","sortings"]},{"contestId":37,"index":"D","name":"Lesson
+        Timetable","type":"PROGRAMMING","points":2000.0,"tags":["combinatorics","dp","math"]},{"contestId":39,"index":"E","name":"What
+        Has Dirichlet Got to Do with That?","type":"PROGRAMMING","tags":["dp","games"]},{"contestId":39,"index":"C","name":"Moon
+        Craters","type":"PROGRAMMING","tags":["dp","sortings"]},{"contestId":35,"index":"D","name":"Animals","type":"PROGRAMMING","points":2000.0,"tags":["dp","greedy"]},{"contestId":31,"index":"E","name":"TV
+        Game","type":"PROGRAMMING","points":2500.0,"tags":["dp"]},{"contestId":30,"index":"C","name":"Shooting
+        Gallery","type":"PROGRAMMING","points":1500.0,"tags":["dp","probabilities"]},{"contestId":28,"index":"D","name":"Don\u0027t
+        fear, DravDe is kind","type":"PROGRAMMING","points":2000.0,"tags":["binary
+        search","data structures","dp","hashing"]},{"contestId":28,"index":"C","name":"Bath
+        Queue","type":"PROGRAMMING","points":1500.0,"tags":["combinatorics","dp","probabilities"]},{"contestId":27,"index":"E","name":"Number
+        With The Given Amount Of Divisors","type":"PROGRAMMING","points":2500.0,"tags":["brute
+        force","dp","number theory"]},{"contestId":24,"index":"D","name":"Broken robot","type":"PROGRAMMING","tags":["dp","probabilities"]},{"contestId":23,"index":"E","name":"Tree","type":"PROGRAMMING","tags":["dp"]},{"contestId":22,"index":"B","name":"Bargaining
+        Table","type":"PROGRAMMING","tags":["brute force","dp"]},{"contestId":21,"index":"C","name":"Stripe
+        2","type":"PROGRAMMING","points":1500.0,"tags":["binary search","dp","sortings"]},{"contestId":19,"index":"B","name":"Checkout
+        Assistant","type":"PROGRAMMING","tags":["dp"]},{"contestId":18,"index":"E","name":"Flag
+        2","type":"PROGRAMMING","tags":["dp"]},{"contestId":18,"index":"D","name":"Seller
+        Bob","type":"PROGRAMMING","tags":["brute force","dp","greedy"]},{"contestId":17,"index":"C","name":"Balance","type":"PROGRAMMING","tags":["dp"]},{"contestId":16,"index":"E","name":"Fish","type":"PROGRAMMING","tags":["bitmasks","dp","probabilities"]},{"contestId":15,"index":"E","name":"Triangles","type":"PROGRAMMING","tags":["combinatorics","dp"]},{"contestId":14,"index":"E","name":"Camels","type":"PROGRAMMING","tags":["dp"]},{"contestId":14,"index":"D","name":"Two
+        Paths","type":"PROGRAMMING","tags":["dfs and similar","dp","graphs","shortest
+        paths","trees","two pointers"]},{"contestId":13,"index":"D","name":"Triangles","type":"PROGRAMMING","tags":["dp","geometry"]},{"contestId":13,"index":"C","name":"Sequence","type":"PROGRAMMING","tags":["dp","sortings"]},{"contestId":11,"index":"E","name":"Forward,
+        march!","type":"PROGRAMMING","tags":["binary search","dp","greedy"]},{"contestId":11,"index":"D","name":"A
+        Simple Task","type":"PROGRAMMING","tags":["bitmasks","dp","graphs"]},{"contestId":10,"index":"D","name":"LCIS","type":"PROGRAMMING","tags":["dp"]},{"contestId":10,"index":"B","name":"Cinema
+        Cashier","type":"PROGRAMMING","tags":["dp","implementation"]},{"contestId":9,"index":"D","name":"How
+        many trees?","type":"PROGRAMMING","tags":["combinatorics","divide and conquer","dp"]},{"contestId":8,"index":"E","name":"Beads","type":"PROGRAMMING","tags":["dp","graphs"]},{"contestId":8,"index":"C","name":"Looking
+        for Order","type":"PROGRAMMING","tags":["bitmasks","dp"]},{"contestId":7,"index":"E","name":"Defining
+        Macros","type":"PROGRAMMING","tags":["dp","expression parsing","implementation"]},{"contestId":6,"index":"D","name":"Lizards
+        and Basements 2","type":"PROGRAMMING","tags":["brute force","dp"]},{"contestId":5,"index":"C","name":"Longest
+        Regular Bracket Sequence","type":"PROGRAMMING","tags":["constructive algorithms","data
+        structures","dp","greedy","sortings","strings"]},{"contestId":4,"index":"D","name":"Mysterious
+        Present","type":"PROGRAMMING","tags":["dp","sortings"]},{"contestId":2,"index":"B","name":"The
+        least round way","type":"PROGRAMMING","tags":["dp","math"]}],"problemStatistics":[{"contestId":508,"index":"E","solvedCount":336},{"contestId":507,"index":"E","solvedCount":552},{"contestId":507,"index":"D","solvedCount":453},{"contestId":506,"index":"E","solvedCount":19},{"contestId":505,"index":"C","solvedCount":467},{"contestId":505,"index":"B","solvedCount":1615},{"contestId":500,"index":"F","solvedCount":150},{"contestId":500,"index":"E","solvedCount":495},{"contestId":498,"index":"E","solvedCount":110},{"contestId":498,"index":"D","solvedCount":287},{"contestId":498,"index":"B","solvedCount":358},{"contestId":497,"index":"E","solvedCount":45},{"contestId":494,"index":"D","solvedCount":135},{"contestId":494,"index":"C","solvedCount":176},{"contestId":494,"index":"B","solvedCount":717},{"contestId":490,"index":"F","solvedCount":397},{"contestId":487,"index":"B","solvedCount":744},{"contestId":489,"index":"F","solvedCount":695},{"contestId":489,"index":"E","solvedCount":340},{"contestId":489,"index":"C","solvedCount":3035},{"contestId":489,"index":"B","solvedCount":3551},{"contestId":486,"index":"E","solvedCount":476},{"contestId":486,"index":"D","solvedCount":770},{"contestId":484,"index":"D","solvedCount":575},{"contestId":482,"index":"D","solvedCount":103},{"contestId":482,"index":"C","solvedCount":245},{"contestId":480,"index":"D","solvedCount":177},{"contestId":479,"index":"E","solvedCount":566},{"contestId":478,"index":"D","solvedCount":1012},{"contestId":477,"index":"D","solvedCount":160},{"contestId":476,"index":"E","solvedCount":246},{"contestId":476,"index":"B","solvedCount":3134},{"contestId":474,"index":"E","solvedCount":689},{"contestId":474,"index":"D","solvedCount":2246},{"contestId":468,"index":"E","solvedCount":10},{"contestId":467,"index":"E","solvedCount":235},{"contestId":467,"index":"D","solvedCount":561},{"contestId":467,"index":"C","solvedCount":2309},{"contestId":466,"index":"D","solvedCount":647},{"contestId":466,"index":"C","solvedCount":2355},{"contestId":464,"index":"D","solvedCount":160},{"contestId":464,"index":"C","solvedCount":703},{"contestId":463,"index":"D","solvedCount":1273},{"contestId":461,"index":"B","solvedCount":976},{"contestId":459,"index":"E","solvedCount":987},{"contestId":457,"index":"F","solvedCount":9},{"contestId":455,"index":"C","solvedCount":856},{"contestId":455,"index":"B","solvedCount":1019},{"contestId":455,"index":"A","solvedCount":2173},{"contestId":453,"index":"D","solvedCount":51},{"contestId":453,"index":"B","solvedCount":873},{"contestId":449,"index":"E","solvedCount":73},{"contestId":449,"index":"D","solvedCount":434},{"contestId":448,"index":"C","solvedCount":1472},{"contestId":446,"index":"A","solvedCount":1424},{"contestId":436,"index":"F","solvedCount":42},{"contestId":436,"index":"D","solvedCount":96},{"contestId":441,"index":"E","solvedCount":161},{"contestId":439,"index":"E","solvedCount":359},{"contestId":440,"index":"D","solvedCount":68},{"contestId":435,"index":"D","solvedCount":381},{"contestId":433,"index":"E","solvedCount":40},{"contestId":433,"index":"B","solvedCount":2535},{"contestId":431,"index":"D","solvedCount":672},{"contestId":431,"index":"C","solvedCount":2073},{"contestId":432,"index":"D","solvedCount":815},{"contestId":429,"index":"C","solvedCount":350},{"contestId":429,"index":"B","solvedCount":1128},{"contestId":427,"index":"D","solvedCount":527},{"contestId":425,"index":"E","solvedCount":191},{"contestId":425,"index":"C","solvedCount":406},{"contestId":424,"index":"E","solvedCount":27},{"contestId":424,"index":"D","solvedCount":305},{"contestId":413,"index":"D","solvedCount":218},{"contestId":417,"index":"D","solvedCount":313},{"contestId":417,"index":"A","solvedCount":1082},{"contestId":416,"index":"E","solvedCount":270},{"contestId":416,"index":"C","solvedCount":1478},{"contestId":416,"index":"B","solvedCount":2019},{"contestId":414,"index":"B","solvedCount":1625},{"contestId":407,"index":"D","solvedCount":176},{"contestId":407,"index":"B","solvedCount":1075},{"contestId":404,"index":"D","solvedCount":748},{"contestId":403,"index":"D","solvedCount":350},{"contestId":402,"index":"D","solvedCount":345},{"contestId":401,"index":"D","solvedCount":829},{"contestId":400,"index":"A","solvedCount":3039},{"contestId":391,"index":"F1","solvedCount":37},{"contestId":398,"index":"B","solvedCount":247},{"contestId":392,"index":"B","solvedCount":173},{"contestId":385,"index":"D","solvedCount":349},{"contestId":385,"index":"C","solvedCount":1441},{"contestId":383,"index":"E","solvedCount":161},{"contestId":383,"index":"D","solvedCount":605},{"contestId":382,"index":"E","solvedCount":67},{"contestId":386,"index":"D","solvedCount":130},{"contestId":386,"index":"C","solvedCount":216},{"contestId":379,"index":"G","solvedCount":29},{"contestId":379,"index":"D","solvedCount":881},{"contestId":377,"index":"E","solvedCount":67},{"contestId":377,"index":"C","solvedCount":417},{"contestId":375,"index":"E","solvedCount":45},{"contestId":375,"index":"B","solvedCount":936},{"contestId":374,"index":"D","solvedCount":360},{"contestId":374,"index":"C","solvedCount":706},{"contestId":372,"index":"C","solvedCount":493},{"contestId":372,"index":"B","solvedCount":781},{"contestId":370,"index":"E","solvedCount":89},{"contestId":369,"index":"D","solvedCount":416},{"contestId":367,"index":"E","solvedCount":137},{"contestId":368,"index":"B","solvedCount":3251},{"contestId":366,"index":"C","solvedCount":1014},{"contestId":364,"index":"B","solvedCount":477},{"contestId":362,"index":"C","solvedCount":703},{"contestId":363,"index":"B","solvedCount":2885},{"contestId":360,"index":"C","solvedCount":248},{"contestId":360,"index":"B","solvedCount":592},{"contestId":359,"index":"B","solvedCount":1797},{"contestId":358,"index":"D","solvedCount":983},{"contestId":356,"index":"E","solvedCount":60},{"contestId":356,"index":"D","solvedCount":169},{"contestId":354,"index":"E","solvedCount":410},{"contestId":354,"index":"D","solvedCount":60},{"contestId":354,"index":"C","solvedCount":694},{"contestId":354,"index":"B","solvedCount":189},{"contestId":353,"index":"E","solvedCount":237},{"contestId":351,"index":"C","solvedCount":186},{"contestId":351,"index":"B","solvedCount":764},{"contestId":351,"index":"A","solvedCount":1001},{"contestId":348,"index":"E","solvedCount":77},{"contestId":348,"index":"D","solvedCount":221},{"contestId":349,"index":"B","solvedCount":1913},{"contestId":346,"index":"B","solvedCount":620},{"contestId":342,"index":"D","solvedCount":224},{"contestId":340,"index":"D","solvedCount":896},{"contestId":339,"index":"C","solvedCount":1575},{"contestId":337,"index":"D","solvedCount":550},{"contestId":337,"index":"A","solvedCount":4991},{"contestId":336,"index":"E","solvedCount":39},{"contestId":335,"index":"F","solvedCount":33},{"contestId":335,"index":"E","solvedCount":42},{"contestId":335,"index":"D","solvedCount":139},{"contestId":335,"index":"B","solvedCount":602},{"contestId":332,"index":"E","solvedCount":124},{"contestId":332,"index":"B","solvedCount":1933},{"contestId":331,"index":"E2","solvedCount":25},{"contestId":331,"index":"C3","solvedCount":143},{"contestId":331,"index":"C2","solvedCount":130},{"contestId":331,"index":"C1","solvedCount":1028},{"contestId":327,"index":"E","solvedCount":405},{"contestId":327,"index":"A","solvedCount":4020},{"contestId":321,"index":"E","solvedCount":250},{"contestId":321,"index":"D","solvedCount":111},{"contestId":321,"index":"B","solvedCount":682},{"contestId":319,"index":"C","solvedCount":553},{"contestId":317,"index":"D","solvedCount":400},{"contestId":316,"index":"D3","solvedCount":199},{"contestId":316,"index":"D2","solvedCount":202},{"contestId":316,"index":"D1","solvedCount":231},{"contestId":316,"index":"B2","solvedCount":1033},{"contestId":314,"index":"E","solvedCount":90},{"contestId":314,"index":"C","solvedCount":633},{"contestId":313,"index":"D","solvedCount":568},{"contestId":313,"index":"B","solvedCount":3485},{"contestId":311,"index":"B","solvedCount":315},{"contestId":303,"index":"E","solvedCount":60},{"contestId":301,"index":"E","solvedCount":74},{"contestId":300,"index":"D","solvedCount":218},{"contestId":292,"index":"D","solvedCount":747},{"contestId":295,"index":"D","solvedCount":224},{"contestId":295,"index":"C","solvedCount":532},{"contestId":295,"index":"B","solvedCount":1133},{"contestId":296,"index":"B","solvedCount":571},{"contestId":294,"index":"E","solvedCount":261},{"contestId":294,"index":"B","solvedCount":1327},{"contestId":288,"index":"E","solvedCount":105},{"contestId":289,"index":"B","solvedCount":2138},{"contestId":285,"index":"E","solvedCount":152},{"contestId":285,"index":"D","solvedCount":838},{"contestId":283,"index":"D","solvedCount":233},{"contestId":283,"index":"C","solvedCount":543},{"contestId":283,"index":"B","solvedCount":924},{"contestId":282,"index":"D","solvedCount":618},{"contestId":280,"index":"E","solvedCount":41},{"contestId":279,"index":"D","solvedCount":310},{"contestId":279,"index":"C","solvedCount":1392},{"contestId":277,"index":"D","solvedCount":91},{"contestId":276,"index":"D","solvedCount":1431},{"contestId":274,"index":"B","solvedCount":835},{"contestId":273,"index":"E","solvedCount":107},{"contestId":273,"index":"D","solvedCount":155},{"contestId":269,"index":"D","solvedCount":172},{"contestId":269,"index":"B","solvedCount":1026},{"contestId":268,"index":"D","solvedCount":190},{"contestId":264,"index":"E","solvedCount":73},{"contestId":264,"index":"D","solvedCount":148},{"contestId":264,"index":"C","solvedCount":665},{"contestId":264,"index":"B","solvedCount":1181},{"contestId":263,"index":"E","solvedCount":149},{"contestId":261,"index":"E","solvedCount":124},{"contestId":261,"index":"D","solvedCount":160},{"contestId":261,"index":"C","solvedCount":404},{"contestId":261,"index":"B","solvedCount":554},{"contestId":258,"index":"D","solvedCount":242},{"contestId":258,"index":"C","solvedCount":491},{"contestId":258,"index":"B","solvedCount":634},{"contestId":256,"index":"D","solvedCount":126},{"contestId":255,"index":"C","solvedCount":749},{"contestId":254,"index":"E","solvedCount":229},{"contestId":253,"index":"B","solvedCount":2018},{"contestId":251,"index":"E","solvedCount":38},{"contestId":251,"index":"C","solvedCount":445},{"contestId":249,"index":"D","solvedCount":114},{"contestId":248,"index":"E","solvedCount":91},{"contestId":246,"index":"E","solvedCount":246},{"contestId":245,"index":"H","solvedCount":888},{"contestId":243,"index":"D","solvedCount":67},{"contestId":238,"index":"E","solvedCount":75},{"contestId":238,"index":"C","solvedCount":370},{"contestId":235,"index":"E","solvedCount":113},{"contestId":235,"index":"B","solvedCount":620},{"contestId":234,"index":"F","solvedCount":463},{"contestId":234,"index":"C","solvedCount":1610},{"contestId":232,"index":"E","solvedCount":77},{"contestId":232,"index":"C","solvedCount":65},{"contestId":232,"index":"B","solvedCount":518},{"contestId":231,"index":"E","solvedCount":291},{"contestId":229,"index":"E","solvedCount":220},{"contestId":229,"index":"D","solvedCount":564},{"contestId":228,"index":"C","solvedCount":282},{"contestId":225,"index":"C","solvedCount":1359},{"contestId":223,"index":"B","solvedCount":519},{"contestId":219,"index":"D","solvedCount":1213},{"contestId":219,"index":"C","solvedCount":1625},{"contestId":217,"index":"C","solvedCount":151},{"contestId":215,"index":"E","solvedCount":220},{"contestId":213,"index":"C","solvedCount":559},{"contestId":213,"index":"B","solvedCount":562},{"contestId":208,"index":"C","solvedCount":638},{"contestId":208,"index":"B","solvedCount":751},{"contestId":212,"index":"E","solvedCount":253},{"contestId":212,"index":"C","solvedCount":152},{"contestId":209,"index":"A","solvedCount":202},{"contestId":204,"index":"D","solvedCount":183},{"contestId":204,"index":"A","solvedCount":929},{"contestId":201,"index":"D","solvedCount":178},{"contestId":201,"index":"C","solvedCount":471},{"contestId":201,"index":"A","solvedCount":786},{"contestId":191,"index":"A","solvedCount":781},{"contestId":187,"index":"B","solvedCount":536},{"contestId":189,"index":"A","solvedCount":3361},{"contestId":185,"index":"C","solvedCount":26},{"contestId":178,"index":"F2","solvedCount":106},{"contestId":183,"index":"D","solvedCount":99},{"contestId":182,"index":"E","solvedCount":566},{"contestId":180,"index":"E","solvedCount":478},{"contestId":180,"index":"C","solvedCount":980},{"contestId":176,"index":"D","solvedCount":139},{"contestId":176,"index":"B","solvedCount":443},{"contestId":175,"index":"E","solvedCount":109},{"contestId":175,"index":"D","solvedCount":154},{"contestId":174,"index":"B","solvedCount":641},{"contestId":173,"index":"C","solvedCount":553},{"contestId":167,"index":"B","solvedCount":577},{"contestId":163,"index":"E","solvedCount":197},{"contestId":163,"index":"A","solvedCount":885},{"contestId":166,"index":"E","solvedCount":2472},{"contestId":166,"index":"D","solvedCount":151},{"contestId":165,"index":"E","solvedCount":620},{"contestId":165,"index":"C","solvedCount":1989},{"contestId":161,"index":"E","solvedCount":261},{"contestId":161,"index":"D","solvedCount":1530},{"contestId":159,"index":"D","solvedCount":1798},{"contestId":158,"index":"E","solvedCount":1007},{"contestId":156,"index":"E","solvedCount":77},{"contestId":156,"index":"C","solvedCount":551},{"contestId":152,"index":"E","solvedCount":151},{"contestId":150,"index":"D","solvedCount":144},{"contestId":149,"index":"D","solvedCount":487},{"contestId":148,"index":"E","solvedCount":751},{"contestId":148,"index":"D","solvedCount":1189},{"contestId":145,"index":"C","solvedCount":484},{"contestId":142,"index":"C","solvedCount":273},{"contestId":141,"index":"E","solvedCount":191},{"contestId":140,"index":"E","solvedCount":143},{"contestId":138,"index":"E","solvedCount":53},{"contestId":138,"index":"D","solvedCount":154},{"contestId":137,"index":"D","solvedCount":563},{"contestId":132,"index":"D","solvedCount":326},{"contestId":132,"index":"C","solvedCount":654},{"contestId":128,"index":"C","solvedCount":600},{"contestId":126,"index":"D","solvedCount":280},{"contestId":126,"index":"B","solvedCount":1152},{"contestId":123,"index":"E","solvedCount":115},{"contestId":123,"index":"C","solvedCount":222},{"contestId":120,"index":"F","solvedCount":843},{"contestId":119,"index":"C","solvedCount":456},{"contestId":118,"index":"D","solvedCount":1517},{"contestId":115,"index":"E","solvedCount":218},{"contestId":115,"index":"D","solvedCount":113},{"contestId":111,"index":"D","solvedCount":196},{"contestId":111,"index":"C","solvedCount":435},{"contestId":109,"index":"C","solvedCount":603},{"contestId":107,"index":"D","solvedCount":177},{"contestId":107,"index":"C","solvedCount":163},{"contestId":107,"index":"B","solvedCount":710},{"contestId":101,"index":"E","solvedCount":142},{"contestId":101,"index":"D","solvedCount":183},{"contestId":101,"index":"B","solvedCount":501},{"contestId":98,"index":"E","solvedCount":36},{"contestId":95,"index":"E","solvedCount":259},{"contestId":95,"index":"D","solvedCount":137},{"contestId":95,"index":"B","solvedCount":444},{"contestId":93,"index":"E","solvedCount":180},{"contestId":93,"index":"D","solvedCount":168},{"contestId":89,"index":"B","solvedCount":255},{"contestId":87,"index":"D","solvedCount":229},{"contestId":87,"index":"C","solvedCount":481},{"contestId":86,"index":"C","solvedCount":208},{"contestId":83,"index":"E","solvedCount":138},{"contestId":83,"index":"D","solvedCount":265},{"contestId":82,"index":"D","solvedCount":604},{"contestId":81,"index":"E","solvedCount":121},{"contestId":79,"index":"D","solvedCount":183},{"contestId":79,"index":"C","solvedCount":716},{"contestId":78,"index":"C","solvedCount":565},{"contestId":77,"index":"D","solvedCount":166},{"contestId":77,"index":"C","solvedCount":383},{"contestId":74,"index":"B","solvedCount":863},{"contestId":75,"index":"D","solvedCount":414},{"contestId":76,"index":"F","solvedCount":204},{"contestId":76,"index":"D","solvedCount":468},{"contestId":76,"index":"C","solvedCount":37},{"contestId":73,"index":"C","solvedCount":533},{"contestId":71,"index":"E","solvedCount":205},{"contestId":71,"index":"C","solvedCount":1018},{"contestId":70,"index":"E","solvedCount":143},{"contestId":69,"index":"D","solvedCount":341},{"contestId":72,"index":"G","solvedCount":251},{"contestId":68,"index":"D","solvedCount":170},{"contestId":67,"index":"D","solvedCount":466},{"contestId":67,"index":"C","solvedCount":193},{"contestId":67,"index":"A","solvedCount":744},{"contestId":66,"index":"E","solvedCount":309},{"contestId":63,"index":"E","solvedCount":263},{"contestId":62,"index":"E","solvedCount":68},{"contestId":58,"index":"E","solvedCount":53},{"contestId":57,"index":"D","solvedCount":154},{"contestId":56,"index":"D","solvedCount":266},{"contestId":55,"index":"D","solvedCount":373},{"contestId":54,"index":"D","solvedCount":214},{"contestId":54,"index":"C","solvedCount":368},{"contestId":53,"index":"E","solvedCount":211},{"contestId":51,"index":"F","solvedCount":126},{"contestId":50,"index":"D","solvedCount":296},{"contestId":49,"index":"E","solvedCount":199},{"contestId":49,"index":"D","solvedCount":498},{"contestId":48,"index":"G","solvedCount":35},{"contestId":48,"index":"E","solvedCount":158},{"contestId":46,"index":"E","solvedCount":374},{"contestId":45,"index":"B","solvedCount":48},{"contestId":41,"index":"D","solvedCount":426},{"contestId":44,"index":"H","solvedCount":254},{"contestId":44,"index":"E","solvedCount":360},{"contestId":38,"index":"H","solvedCount":42},{"contestId":38,"index":"F","solvedCount":181},{"contestId":38,"index":"E","solvedCount":517},{"contestId":37,"index":"D","solvedCount":140},{"contestId":39,"index":"E","solvedCount":210},{"contestId":39,"index":"C","solvedCount":135},{"contestId":35,"index":"D","solvedCount":526},{"contestId":31,"index":"E","solvedCount":280},{"contestId":30,"index":"C","solvedCount":567},{"contestId":28,"index":"D","solvedCount":197},{"contestId":28,"index":"C","solvedCount":240},{"contestId":27,"index":"E","solvedCount":496},{"contestId":24,"index":"D","solvedCount":209},{"contestId":23,"index":"E","solvedCount":200},{"contestId":22,"index":"B","solvedCount":912},{"contestId":21,"index":"C","solvedCount":468},{"contestId":19,"index":"B","solvedCount":571},{"contestId":18,"index":"E","solvedCount":285},{"contestId":18,"index":"D","solvedCount":376},{"contestId":17,"index":"C","solvedCount":253},{"contestId":16,"index":"E","solvedCount":512},{"contestId":15,"index":"E","solvedCount":168},{"contestId":14,"index":"E","solvedCount":365},{"contestId":14,"index":"D","solvedCount":618},{"contestId":13,"index":"D","solvedCount":180},{"contestId":13,"index":"C","solvedCount":547},{"contestId":11,"index":"E","solvedCount":54},{"contestId":11,"index":"D","solvedCount":530},{"contestId":10,"index":"D","solvedCount":448},{"contestId":10,"index":"B","solvedCount":675},{"contestId":9,"index":"D","solvedCount":580},{"contestId":8,"index":"E","solvedCount":195},{"contestId":8,"index":"C","solvedCount":665},{"contestId":7,"index":"E","solvedCount":178},{"contestId":6,"index":"D","solvedCount":427},{"contestId":5,"index":"C","solvedCount":1319},{"contestId":4,"index":"D","solvedCount":1584},{"contestId":2,"index":"B","solvedCount":1680}]}}'
+    http_version: 
+  recorded_at: Fri, 30 Jan 2015 04:39:34 GMT
+recorded_with: VCR 2.9.3
