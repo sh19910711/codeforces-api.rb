@@ -1,13 +1,13 @@
-# Codeforces
+# Codeforces API Client Library
 
-TODO: Write a gem description
+The wrapper library for Codeforces API written in Ruby.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'codeforces'
+gem "codeforces"
 ```
 
 And then execute:
@@ -20,12 +20,43 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require "codeforces"
+
+Codeforces.each_contest do |contest|
+  puts contest.name
+end
+```
+
+```ruby
+require "codeforces"
+
+tourist = Codeforces.user("tourist")
+
+puts tourist.rating
+# -> 3254
+
+puts tourist.rank
+# -> international grandmaster
+```
+
+### API Access
+
+```ruby
+require "codeforces"
+
+Codeforces.api.contest.list.each do |contest|
+  puts contest.name
+end
+```
+
+See also: http://codeforces.com/api/help/methods
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/codeforces/fork )
+1. Fork it ( https://github.com/sh19910711/codeforces-api-client/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
