@@ -5,7 +5,7 @@ http_interactions:
     uri: http://codeforces.com/api/problemset.problems?tags=dp%3Bimplementation
     body:
       encoding: US-ASCII
-      string: ''
+      base64_string: ''
     headers:
       User-Agent:
       - Faraday v0.9.1
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Fri, 30 Jan 2015 04:39:35 GMT
+      - Fri, 30 Jan 2015 13:21:46 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,8 +31,8 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - 39ce7=CF45d0ng; Expires=Tue, 10-Feb-2015 18:26:15 GMT; Path=/
-      - JSESSIONID=87C39A296DDA99BCA5132799E06345D2-n1; Path=/; HttpOnly
+      - 39ce7=CFgVOnFE; Expires=Wed, 11-Feb-2015 03:08:25 GMT; Path=/
+      - JSESSIONID=F69CBAC422C6BBF1ED6E03F86C969AAE-n1; Path=/; HttpOnly
       Cache-Control:
       - private,no-cache,no-store,max-age=0,must-revalidate
       Expires:
@@ -41,54 +41,212 @@ http_interactions:
       - no-cache
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"OK","result":{"problems":[{"contestId":507,"index":"D","name":"The
-        Maths Lecture","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":489,"index":"C","name":"Given
-        Length and Sum of Digits...","type":"PROGRAMMING","points":1500.0,"tags":["dp","greedy","implementation"]},{"contestId":467,"index":"C","name":"George
-        and Job","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation"]},{"contestId":455,"index":"B","name":"A
-        Lot of Games","type":"PROGRAMMING","points":1000.0,"tags":["dfs and similar","dp","games","implementation","strings","trees"]},{"contestId":446,"index":"A","name":"DZY
-        Loves Sequences","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation","two
-        pointers"]},{"contestId":433,"index":"B","name":"Kuriyama Mirai\u0027s Stones","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","sortings"]},{"contestId":431,"index":"C","name":"k-Tree","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","trees"]},{"contestId":417,"index":"A","name":"Elimination","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation","math"]},{"contestId":416,"index":"C","name":"Booking
-        System","type":"PROGRAMMING","points":1500.0,"tags":["binary search","dp","greedy","implementation"]},{"contestId":416,"index":"B","name":"Art
-        Union","type":"PROGRAMMING","points":1000.0,"tags":["brute force","dp","implementation"]},{"contestId":407,"index":"B","name":"Long
-        Path","type":"PROGRAMMING","points":1000.0,"tags":["dp","implementation"]},{"contestId":404,"index":"D","name":"Minesweeper
-        1D","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":400,"index":"A","name":"Inna
-        and Choose Options","type":"PROGRAMMING","points":500.0,"tags":["dp","implementation"]},{"contestId":385,"index":"C","name":"Bear
-        and Prime Numbers","type":"PROGRAMMING","points":1500.0,"tags":["binary search","brute
-        force","data structures","dp","implementation","math","number theory"]},{"contestId":386,"index":"D","name":"Game
-        with Points","type":"PROGRAMMING","points":2000.0,"tags":["dp","graphs","implementation","shortest
-        paths"]},{"contestId":375,"index":"E","name":"Red and Black Tree","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","math"]},{"contestId":375,"index":"B","name":"Maximum
-        Submatrix 2","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp","implementation","sortings"]},{"contestId":374,"index":"C","name":"Inna
-        and Dima","type":"PROGRAMMING","points":1500.0,"tags":["dfs and similar","dp","graphs","implementation"]},{"contestId":362,"index":"C","name":"Insertion
-        Sort","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp","implementation","math"]},{"contestId":356,"index":"E","name":"Xenia
-        and String Problem","type":"PROGRAMMING","points":2500.0,"tags":["dp","hashing","implementation","string
-        suffix structures","strings"]},{"contestId":351,"index":"A","name":"Jeff and
-        Rounding","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy","implementation","math"]},{"contestId":336,"index":"E","name":"Vasily
-        the Bear and Painting Square","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","combinatorics","dp","implementation"]},{"contestId":332,"index":"E","name":"Binary
-        Key","type":"PROGRAMMING","points":3000.0,"tags":["dp","greedy","implementation"]},{"contestId":332,"index":"B","name":"Maximum
-        Absurdity","type":"PROGRAMMING","points":1000.0,"tags":["data structures","dp","implementation"]},{"contestId":327,"index":"A","name":"Flipping
-        Game","type":"PROGRAMMING","points":500.0,"tags":["brute force","dp","implementation"]},{"contestId":313,"index":"B","name":"Ilya
-        and Queries","type":"PROGRAMMING","points":1000.0,"tags":["dp","implementation"]},{"contestId":288,"index":"E","name":"Polo
-        the Penguin and Lucky Numbers","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","math"]},{"contestId":289,"index":"B","name":"Polo
-        the Penguin and Matrix","type":"PROGRAMMING","points":1000.0,"tags":["brute
-        force","dp","implementation","sortings","ternary search"]},{"contestId":285,"index":"D","name":"Permutation
-        Sum","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","combinatorics","dp","implementation","meet-in-the-middle"]},{"contestId":280,"index":"E","name":"Sequence
-        Transformation","type":"PROGRAMMING","points":2500.0,"tags":["data structures","dp","implementation","math"]},{"contestId":279,"index":"C","name":"Ladder","type":"PROGRAMMING","points":1500.0,"tags":["dp","implementation","two
-        pointers"]},{"contestId":276,"index":"D","name":"Little Girl and Maximum XOR","type":"PROGRAMMING","points":2000.0,"tags":["bitmasks","dp","greedy","implementation","math"]},{"contestId":254,"index":"E","name":"Dormitory","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation"]},{"contestId":251,"index":"E","name":"Tree
-        and Table","type":"PROGRAMMING","points":2500.0,"tags":["dfs and similar","dp","implementation","trees"]},{"contestId":235,"index":"E","name":"Number
-        Challenge","type":"PROGRAMMING","points":2500.0,"tags":["combinatorics","dp","implementation","number
-        theory"]},{"contestId":234,"index":"C","name":"Weather","type":"PROGRAMMING","tags":["dp","implementation"]},{"contestId":174,"index":"B","name":"File
-        List","type":"PROGRAMMING","points":1000.0,"tags":["dp","greedy","implementation"]},{"contestId":89,"index":"B","name":"Widget
-        Library","type":"PROGRAMMING","points":1000.0,"tags":["dp","expression parsing","graphs","implementation"]},{"contestId":87,"index":"D","name":"Beautiful
-        Road","type":"PROGRAMMING","points":2000.0,"tags":["dfs and similar","dp","dsu","implementation","sortings","trees"]},{"contestId":81,"index":"E","name":"Pairs","type":"PROGRAMMING","points":2500.0,"tags":["dfs
-        and similar","dp","dsu","graphs","implementation","trees"]},{"contestId":77,"index":"D","name":"Domino
-        Carpet","type":"PROGRAMMING","points":2000.0,"tags":["dp","implementation"]},{"contestId":75,"index":"D","name":"Big
-        Maximum Sum","type":"PROGRAMMING","points":2000.0,"tags":["data structures","dp","greedy","implementation","math","trees"]},{"contestId":70,"index":"E","name":"Information
-        Reform","type":"PROGRAMMING","points":2500.0,"tags":["dp","implementation","trees"]},{"contestId":67,"index":"A","name":"Partial
-        Teacher","type":"PROGRAMMING","points":500.0,"tags":["dp","graphs","greedy","implementation"]},{"contestId":63,"index":"E","name":"Sweets
-        Game","type":"PROGRAMMING","points":2500.0,"tags":["bitmasks","dfs and similar","dp","games","implementation"]},{"contestId":49,"index":"D","name":"Game","type":"PROGRAMMING","points":2000.0,"tags":["brute
-        force","dp","implementation"]},{"contestId":10,"index":"B","name":"Cinema
-        Cashier","type":"PROGRAMMING","tags":["dp","implementation"]},{"contestId":7,"index":"E","name":"Defining
-        Macros","type":"PROGRAMMING","tags":["dp","expression parsing","implementation"]}],"problemStatistics":[{"contestId":507,"index":"D","solvedCount":453},{"contestId":489,"index":"C","solvedCount":3035},{"contestId":467,"index":"C","solvedCount":2309},{"contestId":455,"index":"B","solvedCount":1019},{"contestId":446,"index":"A","solvedCount":1424},{"contestId":433,"index":"B","solvedCount":2535},{"contestId":431,"index":"C","solvedCount":2073},{"contestId":417,"index":"A","solvedCount":1082},{"contestId":416,"index":"C","solvedCount":1478},{"contestId":416,"index":"B","solvedCount":2019},{"contestId":407,"index":"B","solvedCount":1075},{"contestId":404,"index":"D","solvedCount":748},{"contestId":400,"index":"A","solvedCount":3039},{"contestId":385,"index":"C","solvedCount":1441},{"contestId":386,"index":"D","solvedCount":130},{"contestId":375,"index":"E","solvedCount":45},{"contestId":375,"index":"B","solvedCount":936},{"contestId":374,"index":"C","solvedCount":706},{"contestId":362,"index":"C","solvedCount":703},{"contestId":356,"index":"E","solvedCount":60},{"contestId":351,"index":"A","solvedCount":1001},{"contestId":336,"index":"E","solvedCount":39},{"contestId":332,"index":"E","solvedCount":124},{"contestId":332,"index":"B","solvedCount":1933},{"contestId":327,"index":"A","solvedCount":4020},{"contestId":313,"index":"B","solvedCount":3485},{"contestId":288,"index":"E","solvedCount":105},{"contestId":289,"index":"B","solvedCount":2138},{"contestId":285,"index":"D","solvedCount":838},{"contestId":280,"index":"E","solvedCount":41},{"contestId":279,"index":"C","solvedCount":1392},{"contestId":276,"index":"D","solvedCount":1431},{"contestId":254,"index":"E","solvedCount":229},{"contestId":251,"index":"E","solvedCount":38},{"contestId":235,"index":"E","solvedCount":113},{"contestId":234,"index":"C","solvedCount":1610},{"contestId":174,"index":"B","solvedCount":641},{"contestId":89,"index":"B","solvedCount":255},{"contestId":87,"index":"D","solvedCount":229},{"contestId":81,"index":"E","solvedCount":121},{"contestId":77,"index":"D","solvedCount":166},{"contestId":75,"index":"D","solvedCount":414},{"contestId":70,"index":"E","solvedCount":143},{"contestId":67,"index":"A","solvedCount":744},{"contestId":63,"index":"E","solvedCount":263},{"contestId":49,"index":"D","solvedCount":498},{"contestId":10,"index":"B","solvedCount":675},{"contestId":7,"index":"E","solvedCount":178}]}}'
+      base64_string: |
+        eyJzdGF0dXMiOiJPSyIsInJlc3VsdCI6eyJwcm9ibGVtcyI6W3siY29udGVz
+        dElkIjo1MDcsImluZGV4IjoiRCIsIm5hbWUiOiJUaGUgTWF0aHMgTGVjdHVy
+        ZSIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBvaW50cyI6MjAwMC4wLCJ0YWdz
+        IjpbImRwIiwiaW1wbGVtZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjQ4OSwi
+        aW5kZXgiOiJDIiwibmFtZSI6IkdpdmVuIExlbmd0aCBhbmQgU3VtIG9mIERp
+        Z2l0cy4uLiIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBvaW50cyI6MTUwMC4w
+        LCJ0YWdzIjpbImRwIiwiZ3JlZWR5IiwiaW1wbGVtZW50YXRpb24iXX0seyJj
+        b250ZXN0SWQiOjQ2NywiaW5kZXgiOiJDIiwibmFtZSI6Ikdlb3JnZSBhbmQg
+        Sm9iIiwidHlwZSI6IlBST0dSQU1NSU5HIiwicG9pbnRzIjoxNTAwLjAsInRh
+        Z3MiOlsiZHAiLCJpbXBsZW1lbnRhdGlvbiJdfSx7ImNvbnRlc3RJZCI6NDU1
+        LCJpbmRleCI6IkIiLCJuYW1lIjoiQSBMb3Qgb2YgR2FtZXMiLCJ0eXBlIjoi
+        UFJPR1JBTU1JTkciLCJwb2ludHMiOjEwMDAuMCwidGFncyI6WyJkZnMgYW5k
+        IHNpbWlsYXIiLCJkcCIsImdhbWVzIiwiaW1wbGVtZW50YXRpb24iLCJzdHJp
+        bmdzIiwidHJlZXMiXX0seyJjb250ZXN0SWQiOjQ0NiwiaW5kZXgiOiJBIiwi
+        bmFtZSI6IkRaWSBMb3ZlcyBTZXF1ZW5jZXMiLCJ0eXBlIjoiUFJPR1JBTU1J
+        TkciLCJwb2ludHMiOjUwMC4wLCJ0YWdzIjpbImRwIiwiaW1wbGVtZW50YXRp
+        b24iLCJ0d28gcG9pbnRlcnMiXX0seyJjb250ZXN0SWQiOjQzMywiaW5kZXgi
+        OiJCIiwibmFtZSI6Ikt1cml5YW1hIE1pcmFpXHUwMDI3cyBTdG9uZXMiLCJ0
+        eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMiOjE1MDAuMCwidGFncyI6WyJk
+        cCIsImltcGxlbWVudGF0aW9uIiwic29ydGluZ3MiXX0seyJjb250ZXN0SWQi
+        OjQzMSwiaW5kZXgiOiJDIiwibmFtZSI6ImstVHJlZSIsInR5cGUiOiJQUk9H
+        UkFNTUlORyIsInBvaW50cyI6MTUwMC4wLCJ0YWdzIjpbImRwIiwiaW1wbGVt
+        ZW50YXRpb24iLCJ0cmVlcyJdfSx7ImNvbnRlc3RJZCI6NDE3LCJpbmRleCI6
+        IkEiLCJuYW1lIjoiRWxpbWluYXRpb24iLCJ0eXBlIjoiUFJPR1JBTU1JTkci
+        LCJwb2ludHMiOjUwMC4wLCJ0YWdzIjpbImRwIiwiaW1wbGVtZW50YXRpb24i
+        LCJtYXRoIl19LHsiY29udGVzdElkIjo0MTYsImluZGV4IjoiQyIsIm5hbWUi
+        OiJCb29raW5nIFN5c3RlbSIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBvaW50
+        cyI6MTUwMC4wLCJ0YWdzIjpbImJpbmFyeSBzZWFyY2giLCJkcCIsImdyZWVk
+        eSIsImltcGxlbWVudGF0aW9uIl19LHsiY29udGVzdElkIjo0MTYsImluZGV4
+        IjoiQiIsIm5hbWUiOiJBcnQgVW5pb24iLCJ0eXBlIjoiUFJPR1JBTU1JTkci
+        LCJwb2ludHMiOjEwMDAuMCwidGFncyI6WyJicnV0ZSBmb3JjZSIsImRwIiwi
+        aW1wbGVtZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjQwNywiaW5kZXgiOiJC
+        IiwibmFtZSI6IkxvbmcgUGF0aCIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBv
+        aW50cyI6MTAwMC4wLCJ0YWdzIjpbImRwIiwiaW1wbGVtZW50YXRpb24iXX0s
+        eyJjb250ZXN0SWQiOjQwNCwiaW5kZXgiOiJEIiwibmFtZSI6Ik1pbmVzd2Vl
+        cGVyIDFEIiwidHlwZSI6IlBST0dSQU1NSU5HIiwicG9pbnRzIjoyMDAwLjAs
+        InRhZ3MiOlsiZHAiLCJpbXBsZW1lbnRhdGlvbiJdfSx7ImNvbnRlc3RJZCI6
+        NDAwLCJpbmRleCI6IkEiLCJuYW1lIjoiSW5uYSBhbmQgQ2hvb3NlIE9wdGlv
+        bnMiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMiOjUwMC4wLCJ0YWdz
+        IjpbImRwIiwiaW1wbGVtZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjM4NSwi
+        aW5kZXgiOiJDIiwibmFtZSI6IkJlYXIgYW5kIFByaW1lIE51bWJlcnMiLCJ0
+        eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMiOjE1MDAuMCwidGFncyI6WyJi
+        aW5hcnkgc2VhcmNoIiwiYnJ1dGUgZm9yY2UiLCJkYXRhIHN0cnVjdHVyZXMi
+        LCJkcCIsImltcGxlbWVudGF0aW9uIiwibWF0aCIsIm51bWJlciB0aGVvcnki
+        XX0seyJjb250ZXN0SWQiOjM4NiwiaW5kZXgiOiJEIiwibmFtZSI6IkdhbWUg
+        d2l0aCBQb2ludHMiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMiOjIw
+        MDAuMCwidGFncyI6WyJkcCIsImdyYXBocyIsImltcGxlbWVudGF0aW9uIiwi
+        c2hvcnRlc3QgcGF0aHMiXX0seyJjb250ZXN0SWQiOjM3NSwiaW5kZXgiOiJF
+        IiwibmFtZSI6IlJlZCBhbmQgQmxhY2sgVHJlZSIsInR5cGUiOiJQUk9HUkFN
+        TUlORyIsInBvaW50cyI6MjUwMC4wLCJ0YWdzIjpbImRwIiwiaW1wbGVtZW50
+        YXRpb24iLCJtYXRoIl19LHsiY29udGVzdElkIjozNzUsImluZGV4IjoiQiIs
+        Im5hbWUiOiJNYXhpbXVtIFN1Ym1hdHJpeCAyIiwidHlwZSI6IlBST0dSQU1N
+        SU5HIiwicG9pbnRzIjoxMDAwLjAsInRhZ3MiOlsiZGF0YSBzdHJ1Y3R1cmVz
+        IiwiZHAiLCJpbXBsZW1lbnRhdGlvbiIsInNvcnRpbmdzIl19LHsiY29udGVz
+        dElkIjozNzQsImluZGV4IjoiQyIsIm5hbWUiOiJJbm5hIGFuZCBEaW1hIiwi
+        dHlwZSI6IlBST0dSQU1NSU5HIiwicG9pbnRzIjoxNTAwLjAsInRhZ3MiOlsi
+        ZGZzIGFuZCBzaW1pbGFyIiwiZHAiLCJncmFwaHMiLCJpbXBsZW1lbnRhdGlv
+        biJdfSx7ImNvbnRlc3RJZCI6MzYyLCJpbmRleCI6IkMiLCJuYW1lIjoiSW5z
+        ZXJ0aW9uIFNvcnQiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMiOjI1
+        MDAuMCwidGFncyI6WyJkYXRhIHN0cnVjdHVyZXMiLCJkcCIsImltcGxlbWVu
+        dGF0aW9uIiwibWF0aCJdfSx7ImNvbnRlc3RJZCI6MzU2LCJpbmRleCI6IkUi
+        LCJuYW1lIjoiWGVuaWEgYW5kIFN0cmluZyBQcm9ibGVtIiwidHlwZSI6IlBS
+        T0dSQU1NSU5HIiwicG9pbnRzIjoyNTAwLjAsInRhZ3MiOlsiZHAiLCJoYXNo
+        aW5nIiwiaW1wbGVtZW50YXRpb24iLCJzdHJpbmcgc3VmZml4IHN0cnVjdHVy
+        ZXMiLCJzdHJpbmdzIl19LHsiY29udGVzdElkIjozNTEsImluZGV4IjoiQSIs
+        Im5hbWUiOiJKZWZmIGFuZCBSb3VuZGluZyIsInR5cGUiOiJQUk9HUkFNTUlO
+        RyIsInBvaW50cyI6MTAwMC4wLCJ0YWdzIjpbImRwIiwiZ3JlZWR5IiwiaW1w
+        bGVtZW50YXRpb24iLCJtYXRoIl19LHsiY29udGVzdElkIjozMzYsImluZGV4
+        IjoiRSIsIm5hbWUiOiJWYXNpbHkgdGhlIEJlYXIgYW5kIFBhaW50aW5nIFNx
+        dWFyZSIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBvaW50cyI6MjUwMC4wLCJ0
+        YWdzIjpbImJpdG1hc2tzIiwiY29tYmluYXRvcmljcyIsImRwIiwiaW1wbGVt
+        ZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjMzMiwiaW5kZXgiOiJFIiwibmFt
+        ZSI6IkJpbmFyeSBLZXkiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMi
+        OjMwMDAuMCwidGFncyI6WyJkcCIsImdyZWVkeSIsImltcGxlbWVudGF0aW9u
+        Il19LHsiY29udGVzdElkIjozMzIsImluZGV4IjoiQiIsIm5hbWUiOiJNYXhp
+        bXVtIEFic3VyZGl0eSIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBvaW50cyI6
+        MTAwMC4wLCJ0YWdzIjpbImRhdGEgc3RydWN0dXJlcyIsImRwIiwiaW1wbGVt
+        ZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjMyNywiaW5kZXgiOiJBIiwibmFt
+        ZSI6IkZsaXBwaW5nIEdhbWUiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2lu
+        dHMiOjUwMC4wLCJ0YWdzIjpbImJydXRlIGZvcmNlIiwiZHAiLCJpbXBsZW1l
+        bnRhdGlvbiJdfSx7ImNvbnRlc3RJZCI6MzEzLCJpbmRleCI6IkIiLCJuYW1l
+        IjoiSWx5YSBhbmQgUXVlcmllcyIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBv
+        aW50cyI6MTAwMC4wLCJ0YWdzIjpbImRwIiwiaW1wbGVtZW50YXRpb24iXX0s
+        eyJjb250ZXN0SWQiOjI4OCwiaW5kZXgiOiJFIiwibmFtZSI6IlBvbG8gdGhl
+        IFBlbmd1aW4gYW5kIEx1Y2t5IE51bWJlcnMiLCJ0eXBlIjoiUFJPR1JBTU1J
+        TkciLCJwb2ludHMiOjI1MDAuMCwidGFncyI6WyJkcCIsImltcGxlbWVudGF0
+        aW9uIiwibWF0aCJdfSx7ImNvbnRlc3RJZCI6Mjg5LCJpbmRleCI6IkIiLCJu
+        YW1lIjoiUG9sbyB0aGUgUGVuZ3VpbiBhbmQgTWF0cml4IiwidHlwZSI6IlBS
+        T0dSQU1NSU5HIiwicG9pbnRzIjoxMDAwLjAsInRhZ3MiOlsiYnJ1dGUgZm9y
+        Y2UiLCJkcCIsImltcGxlbWVudGF0aW9uIiwic29ydGluZ3MiLCJ0ZXJuYXJ5
+        IHNlYXJjaCJdfSx7ImNvbnRlc3RJZCI6Mjg1LCJpbmRleCI6IkQiLCJuYW1l
+        IjoiUGVybXV0YXRpb24gU3VtIiwidHlwZSI6IlBST0dSQU1NSU5HIiwicG9p
+        bnRzIjoyMDAwLjAsInRhZ3MiOlsiYml0bWFza3MiLCJjb21iaW5hdG9yaWNz
+        IiwiZHAiLCJpbXBsZW1lbnRhdGlvbiIsIm1lZXQtaW4tdGhlLW1pZGRsZSJd
+        fSx7ImNvbnRlc3RJZCI6MjgwLCJpbmRleCI6IkUiLCJuYW1lIjoiU2VxdWVu
+        Y2UgVHJhbnNmb3JtYXRpb24iLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2lu
+        dHMiOjI1MDAuMCwidGFncyI6WyJkYXRhIHN0cnVjdHVyZXMiLCJkcCIsImlt
+        cGxlbWVudGF0aW9uIiwibWF0aCJdfSx7ImNvbnRlc3RJZCI6Mjc5LCJpbmRl
+        eCI6IkMiLCJuYW1lIjoiTGFkZGVyIiwidHlwZSI6IlBST0dSQU1NSU5HIiwi
+        cG9pbnRzIjoxNTAwLjAsInRhZ3MiOlsiZHAiLCJpbXBsZW1lbnRhdGlvbiIs
+        InR3byBwb2ludGVycyJdfSx7ImNvbnRlc3RJZCI6Mjc2LCJpbmRleCI6IkQi
+        LCJuYW1lIjoiTGl0dGxlIEdpcmwgYW5kIE1heGltdW0gWE9SIiwidHlwZSI6
+        IlBST0dSQU1NSU5HIiwicG9pbnRzIjoyMDAwLjAsInRhZ3MiOlsiYml0bWFz
+        a3MiLCJkcCIsImdyZWVkeSIsImltcGxlbWVudGF0aW9uIiwibWF0aCJdfSx7
+        ImNvbnRlc3RJZCI6MjU0LCJpbmRleCI6IkUiLCJuYW1lIjoiRG9ybWl0b3J5
+        IiwidHlwZSI6IlBST0dSQU1NSU5HIiwicG9pbnRzIjoyNTAwLjAsInRhZ3Mi
+        OlsiZHAiLCJpbXBsZW1lbnRhdGlvbiJdfSx7ImNvbnRlc3RJZCI6MjUxLCJp
+        bmRleCI6IkUiLCJuYW1lIjoiVHJlZSBhbmQgVGFibGUiLCJ0eXBlIjoiUFJP
+        R1JBTU1JTkciLCJwb2ludHMiOjI1MDAuMCwidGFncyI6WyJkZnMgYW5kIHNp
+        bWlsYXIiLCJkcCIsImltcGxlbWVudGF0aW9uIiwidHJlZXMiXX0seyJjb250
+        ZXN0SWQiOjIzNSwiaW5kZXgiOiJFIiwibmFtZSI6Ik51bWJlciBDaGFsbGVu
+        Z2UiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMiOjI1MDAuMCwidGFn
+        cyI6WyJjb21iaW5hdG9yaWNzIiwiZHAiLCJpbXBsZW1lbnRhdGlvbiIsIm51
+        bWJlciB0aGVvcnkiXX0seyJjb250ZXN0SWQiOjIzNCwiaW5kZXgiOiJDIiwi
+        bmFtZSI6IldlYXRoZXIiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJ0YWdzIjpb
+        ImRwIiwiaW1wbGVtZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjE3NCwiaW5k
+        ZXgiOiJCIiwibmFtZSI6IkZpbGUgTGlzdCIsInR5cGUiOiJQUk9HUkFNTUlO
+        RyIsInBvaW50cyI6MTAwMC4wLCJ0YWdzIjpbImRwIiwiZ3JlZWR5IiwiaW1w
+        bGVtZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjg5LCJpbmRleCI6IkIiLCJu
+        YW1lIjoiV2lkZ2V0IExpYnJhcnkiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJw
+        b2ludHMiOjEwMDAuMCwidGFncyI6WyJkcCIsImV4cHJlc3Npb24gcGFyc2lu
+        ZyIsImdyYXBocyIsImltcGxlbWVudGF0aW9uIl19LHsiY29udGVzdElkIjo4
+        NywiaW5kZXgiOiJEIiwibmFtZSI6IkJlYXV0aWZ1bCBSb2FkIiwidHlwZSI6
+        IlBST0dSQU1NSU5HIiwicG9pbnRzIjoyMDAwLjAsInRhZ3MiOlsiZGZzIGFu
+        ZCBzaW1pbGFyIiwiZHAiLCJkc3UiLCJpbXBsZW1lbnRhdGlvbiIsInNvcnRp
+        bmdzIiwidHJlZXMiXX0seyJjb250ZXN0SWQiOjgxLCJpbmRleCI6IkUiLCJu
+        YW1lIjoiUGFpcnMiLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMiOjI1
+        MDAuMCwidGFncyI6WyJkZnMgYW5kIHNpbWlsYXIiLCJkcCIsImRzdSIsImdy
+        YXBocyIsImltcGxlbWVudGF0aW9uIiwidHJlZXMiXX0seyJjb250ZXN0SWQi
+        Ojc3LCJpbmRleCI6IkQiLCJuYW1lIjoiRG9taW5vIENhcnBldCIsInR5cGUi
+        OiJQUk9HUkFNTUlORyIsInBvaW50cyI6MjAwMC4wLCJ0YWdzIjpbImRwIiwi
+        aW1wbGVtZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjc1LCJpbmRleCI6IkQi
+        LCJuYW1lIjoiQmlnIE1heGltdW0gU3VtIiwidHlwZSI6IlBST0dSQU1NSU5H
+        IiwicG9pbnRzIjoyMDAwLjAsInRhZ3MiOlsiZGF0YSBzdHJ1Y3R1cmVzIiwi
+        ZHAiLCJncmVlZHkiLCJpbXBsZW1lbnRhdGlvbiIsIm1hdGgiLCJ0cmVlcyJd
+        fSx7ImNvbnRlc3RJZCI6NzAsImluZGV4IjoiRSIsIm5hbWUiOiJJbmZvcm1h
+        dGlvbiBSZWZvcm0iLCJ0eXBlIjoiUFJPR1JBTU1JTkciLCJwb2ludHMiOjI1
+        MDAuMCwidGFncyI6WyJkcCIsImltcGxlbWVudGF0aW9uIiwidHJlZXMiXX0s
+        eyJjb250ZXN0SWQiOjY3LCJpbmRleCI6IkEiLCJuYW1lIjoiUGFydGlhbCBU
+        ZWFjaGVyIiwidHlwZSI6IlBST0dSQU1NSU5HIiwicG9pbnRzIjo1MDAuMCwi
+        dGFncyI6WyJkcCIsImdyYXBocyIsImdyZWVkeSIsImltcGxlbWVudGF0aW9u
+        Il19LHsiY29udGVzdElkIjo2MywiaW5kZXgiOiJFIiwibmFtZSI6IlN3ZWV0
+        cyBHYW1lIiwidHlwZSI6IlBST0dSQU1NSU5HIiwicG9pbnRzIjoyNTAwLjAs
+        InRhZ3MiOlsiYml0bWFza3MiLCJkZnMgYW5kIHNpbWlsYXIiLCJkcCIsImdh
+        bWVzIiwiaW1wbGVtZW50YXRpb24iXX0seyJjb250ZXN0SWQiOjQ5LCJpbmRl
+        eCI6IkQiLCJuYW1lIjoiR2FtZSIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBv
+        aW50cyI6MjAwMC4wLCJ0YWdzIjpbImJydXRlIGZvcmNlIiwiZHAiLCJpbXBs
+        ZW1lbnRhdGlvbiJdfSx7ImNvbnRlc3RJZCI6MTAsImluZGV4IjoiQiIsIm5h
+        bWUiOiJDaW5lbWEgQ2FzaGllciIsInR5cGUiOiJQUk9HUkFNTUlORyIsInRh
+        Z3MiOlsiZHAiLCJpbXBsZW1lbnRhdGlvbiJdfSx7ImNvbnRlc3RJZCI6Nywi
+        aW5kZXgiOiJFIiwibmFtZSI6IkRlZmluaW5nIE1hY3JvcyIsInR5cGUiOiJQ
+        Uk9HUkFNTUlORyIsInRhZ3MiOlsiZHAiLCJleHByZXNzaW9uIHBhcnNpbmci
+        LCJpbXBsZW1lbnRhdGlvbiJdfV0sInByb2JsZW1TdGF0aXN0aWNzIjpbeyJj
+        b250ZXN0SWQiOjUwNywiaW5kZXgiOiJEIiwic29sdmVkQ291bnQiOjQ1OH0s
+        eyJjb250ZXN0SWQiOjQ4OSwiaW5kZXgiOiJDIiwic29sdmVkQ291bnQiOjMw
+        Mzl9LHsiY29udGVzdElkIjo0NjcsImluZGV4IjoiQyIsInNvbHZlZENvdW50
+        IjoyMzA5fSx7ImNvbnRlc3RJZCI6NDU1LCJpbmRleCI6IkIiLCJzb2x2ZWRD
+        b3VudCI6MTAxOX0seyJjb250ZXN0SWQiOjQ0NiwiaW5kZXgiOiJBIiwic29s
+        dmVkQ291bnQiOjE0MjR9LHsiY29udGVzdElkIjo0MzMsImluZGV4IjoiQiIs
+        InNvbHZlZENvdW50IjoyNTM1fSx7ImNvbnRlc3RJZCI6NDMxLCJpbmRleCI6
+        IkMiLCJzb2x2ZWRDb3VudCI6MjA3NX0seyJjb250ZXN0SWQiOjQxNywiaW5k
+        ZXgiOiJBIiwic29sdmVkQ291bnQiOjEwODJ9LHsiY29udGVzdElkIjo0MTYs
+        ImluZGV4IjoiQyIsInNvbHZlZENvdW50IjoxNDc4fSx7ImNvbnRlc3RJZCI6
+        NDE2LCJpbmRleCI6IkIiLCJzb2x2ZWRDb3VudCI6MjAyMH0seyJjb250ZXN0
+        SWQiOjQwNywiaW5kZXgiOiJCIiwic29sdmVkQ291bnQiOjEwNzV9LHsiY29u
+        dGVzdElkIjo0MDQsImluZGV4IjoiRCIsInNvbHZlZENvdW50Ijo3NDh9LHsi
+        Y29udGVzdElkIjo0MDAsImluZGV4IjoiQSIsInNvbHZlZENvdW50IjozMDQw
+        fSx7ImNvbnRlc3RJZCI6Mzg1LCJpbmRleCI6IkMiLCJzb2x2ZWRDb3VudCI6
+        MTQ0Mn0seyJjb250ZXN0SWQiOjM4NiwiaW5kZXgiOiJEIiwic29sdmVkQ291
+        bnQiOjEzMH0seyJjb250ZXN0SWQiOjM3NSwiaW5kZXgiOiJFIiwic29sdmVk
+        Q291bnQiOjQ1fSx7ImNvbnRlc3RJZCI6Mzc1LCJpbmRleCI6IkIiLCJzb2x2
+        ZWRDb3VudCI6OTM2fSx7ImNvbnRlc3RJZCI6Mzc0LCJpbmRleCI6IkMiLCJz
+        b2x2ZWRDb3VudCI6NzA2fSx7ImNvbnRlc3RJZCI6MzYyLCJpbmRleCI6IkMi
+        LCJzb2x2ZWRDb3VudCI6NzAzfSx7ImNvbnRlc3RJZCI6MzU2LCJpbmRleCI6
+        IkUiLCJzb2x2ZWRDb3VudCI6NjB9LHsiY29udGVzdElkIjozNTEsImluZGV4
+        IjoiQSIsInNvbHZlZENvdW50IjoxMDAxfSx7ImNvbnRlc3RJZCI6MzM2LCJp
+        bmRleCI6IkUiLCJzb2x2ZWRDb3VudCI6Mzl9LHsiY29udGVzdElkIjozMzIs
+        ImluZGV4IjoiRSIsInNvbHZlZENvdW50IjoxMjR9LHsiY29udGVzdElkIjoz
+        MzIsImluZGV4IjoiQiIsInNvbHZlZENvdW50IjoxOTMzfSx7ImNvbnRlc3RJ
+        ZCI6MzI3LCJpbmRleCI6IkEiLCJzb2x2ZWRDb3VudCI6NDAyM30seyJjb250
+        ZXN0SWQiOjMxMywiaW5kZXgiOiJCIiwic29sdmVkQ291bnQiOjM0ODl9LHsi
+        Y29udGVzdElkIjoyODgsImluZGV4IjoiRSIsInNvbHZlZENvdW50IjoxMDZ9
+        LHsiY29udGVzdElkIjoyODksImluZGV4IjoiQiIsInNvbHZlZENvdW50Ijoy
+        MTM4fSx7ImNvbnRlc3RJZCI6Mjg1LCJpbmRleCI6IkQiLCJzb2x2ZWRDb3Vu
+        dCI6ODM4fSx7ImNvbnRlc3RJZCI6MjgwLCJpbmRleCI6IkUiLCJzb2x2ZWRD
+        b3VudCI6NDF9LHsiY29udGVzdElkIjoyNzksImluZGV4IjoiQyIsInNvbHZl
+        ZENvdW50IjoxMzkyfSx7ImNvbnRlc3RJZCI6Mjc2LCJpbmRleCI6IkQiLCJz
+        b2x2ZWRDb3VudCI6MTQzMX0seyJjb250ZXN0SWQiOjI1NCwiaW5kZXgiOiJF
+        Iiwic29sdmVkQ291bnQiOjIyOX0seyJjb250ZXN0SWQiOjI1MSwiaW5kZXgi
+        OiJFIiwic29sdmVkQ291bnQiOjM4fSx7ImNvbnRlc3RJZCI6MjM1LCJpbmRl
+        eCI6IkUiLCJzb2x2ZWRDb3VudCI6MTEzfSx7ImNvbnRlc3RJZCI6MjM0LCJp
+        bmRleCI6IkMiLCJzb2x2ZWRDb3VudCI6MTYxMH0seyJjb250ZXN0SWQiOjE3
+        NCwiaW5kZXgiOiJCIiwic29sdmVkQ291bnQiOjY0MX0seyJjb250ZXN0SWQi
+        Ojg5LCJpbmRleCI6IkIiLCJzb2x2ZWRDb3VudCI6MjU1fSx7ImNvbnRlc3RJ
+        ZCI6ODcsImluZGV4IjoiRCIsInNvbHZlZENvdW50IjoyMjl9LHsiY29udGVz
+        dElkIjo4MSwiaW5kZXgiOiJFIiwic29sdmVkQ291bnQiOjEyMX0seyJjb250
+        ZXN0SWQiOjc3LCJpbmRleCI6IkQiLCJzb2x2ZWRDb3VudCI6MTY2fSx7ImNv
+        bnRlc3RJZCI6NzUsImluZGV4IjoiRCIsInNvbHZlZENvdW50Ijo0MTR9LHsi
+        Y29udGVzdElkIjo3MCwiaW5kZXgiOiJFIiwic29sdmVkQ291bnQiOjE0M30s
+        eyJjb250ZXN0SWQiOjY3LCJpbmRleCI6IkEiLCJzb2x2ZWRDb3VudCI6NzQ0
+        fSx7ImNvbnRlc3RJZCI6NjMsImluZGV4IjoiRSIsInNvbHZlZENvdW50Ijoy
+        NjN9LHsiY29udGVzdElkIjo0OSwiaW5kZXgiOiJEIiwic29sdmVkQ291bnQi
+        OjQ5OH0seyJjb250ZXN0SWQiOjEwLCJpbmRleCI6IkIiLCJzb2x2ZWRDb3Vu
+        dCI6Njc1fSx7ImNvbnRlc3RJZCI6NywiaW5kZXgiOiJFIiwic29sdmVkQ291
+        bnQiOjE3OH1dfX0=
     http_version: 
-  recorded_at: Fri, 30 Jan 2015 04:39:35 GMT
+  recorded_at: Fri, 30 Jan 2015 13:21:46 GMT
 recorded_with: VCR 2.9.3

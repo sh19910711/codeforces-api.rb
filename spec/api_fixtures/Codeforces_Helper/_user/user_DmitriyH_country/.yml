@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://codeforces.com/api/user.info?handles=DmitriyH
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.2
+      Date:
+      - Fri, 30 Jan 2015 13:21:53 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '304'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 39ce7=CFuWBdeF; Expires=Wed, 11-Feb-2015 03:08:33 GMT; Path=/
+      - JSESSIONID=320BB7E11A4B48299708EEA77278FE69-n1; Path=/; HttpOnly
+      Cache-Control:
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+    body:
+      encoding: UTF-8
+      base64_string: |
+        eyJzdGF0dXMiOiJPSyIsInJlc3VsdCI6W3siaGFuZGxlIjoiRG1pdHJpeUgi
+        LCJmaXJzdE5hbWUiOiJEbWl0cml5IiwibGFzdE5hbWUiOiJLaG9keXJldiIs
+        ImNvdW50cnkiOiJSdXNzaWEiLCJjaXR5IjoiTW9zY293Iiwib3JnYW5pemF0
+        aW9uIjoiS0wiLCJjb250cmlidXRpb24iOjEzMCwicmFuayI6Im1hc3RlciIs
+        InJhdGluZyI6MTk0MSwibWF4UmFuayI6Im1hc3RlciIsIm1heFJhdGluZyI6
+        MTk0NywibGFzdE9ubGluZVRpbWVTZWNvbmRzIjoxNDIyNjE1NTc4LCJyZWdp
+        c3RyYXRpb25UaW1lU2Vjb25kcyI6MTI2ODU3MDMxMX1dfQ==
+    http_version: 
+  recorded_at: Fri, 30 Jan 2015 13:21:53 GMT
+recorded_with: VCR 2.9.3

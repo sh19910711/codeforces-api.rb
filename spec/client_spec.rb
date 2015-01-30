@@ -4,11 +4,22 @@ describe Codeforces::Client, :vcr do
 
   let!(:client) { Codeforces::Client.new }
   # before { client.logger.level = ::Logger::DEBUG }
+  
+  describe "#contest.hacks" do
+
+    context "hacks 374" do
+      subject! { client.api.contest.hacks 374 }
+      it { should be_a Array }
+      it { should_not be_empty }
+      it { expect(subject.map &:id).to include 88042 }
+    end
+
+  end
 
   describe "#contest.list" do
 
     context "list" do
-      subject! { client.contest.list }
+      subject! { client.api.contest.list }
       it { should be_a Array }
       it { expect(client.last_response.status).to eq 200 }
     end
@@ -18,7 +29,7 @@ describe Codeforces::Client, :vcr do
   describe "#contest.standings" do
 
     context "standings 374" do
-      subject! { client.contest.standings 374 }
+      subject! { client.api.contest.standings 374 }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -29,7 +40,7 @@ describe Codeforces::Client, :vcr do
     end
 
     context "standings 374, :offset => 1" do
-      subject! { client.contest.standings 374, :offset => 1 }
+      subject! { client.api.contest.standings 374, :offset => 1 }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -44,7 +55,7 @@ describe Codeforces::Client, :vcr do
   describe "#contest.status" do
 
     context "status 374" do
-      subject! { client.contest.status 374 }
+      subject! { client.api.contest.status 374 }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -53,7 +64,7 @@ describe Codeforces::Client, :vcr do
     end
 
     context "status 374, :offset => 1" do
-      subject! { client.contest.status 374, :offset => 1 }
+      subject! { client.api.contest.status 374, :offset => 1 }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -66,7 +77,7 @@ describe Codeforces::Client, :vcr do
   describe "#problemset.problems" do
 
     context "problems" do
-      subject! { client.problemset.problems }
+      subject! { client.api.problemset.problems }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -79,7 +90,7 @@ describe Codeforces::Client, :vcr do
   describe "#problemset.problem_statices" do
 
     context "problem_statistics" do
-      subject! { client.problemset.problem_statistics }
+      subject! { client.api.problemset.problem_statistics }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -87,7 +98,7 @@ describe Codeforces::Client, :vcr do
     end
 
     context "problem_statistics :query => { :tags => [dp] }" do
-      subject! { client.problemset.problem_statistics :query => { :tags => ["dp"] } }
+      subject! { client.api.problemset.problem_statistics :query => { :tags => ["dp"] } }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -96,7 +107,7 @@ describe Codeforces::Client, :vcr do
     end
 
     context "problem_statistics :query => { :tags => [dp, implementation] }" do
-      subject! { client.problemset.problem_statistics :query => { :tags => ["dp", "implementation"] } }
+      subject! { client.api.problemset.problem_statistics :query => { :tags => ["dp", "implementation"] } }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -109,7 +120,7 @@ describe Codeforces::Client, :vcr do
   describe "#problemset.recent_status" do
 
     context "recent_status" do
-      subject! { client.problemset.recent_status }
+      subject! { client.api.problemset.recent_status }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -121,7 +132,7 @@ describe Codeforces::Client, :vcr do
   describe "#user.info" do
 
     context "info test_tarou" do
-      subject! { client.user.info "test_tarou" }
+      subject! { client.api.user.info "test_tarou" }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -130,7 +141,7 @@ describe Codeforces::Client, :vcr do
     end
 
     context "rated_list" do
-      subject! { client.user.rated_list }
+      subject! { client.api.user.rated_list }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -143,7 +154,7 @@ describe Codeforces::Client, :vcr do
   describe "#user.rating" do
 
     context "rating Fefer_Ivan" do
-      subject! { client.user.rating "Fefer_Ivan" }
+      subject! { client.api.user.rating "Fefer_Ivan" }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
@@ -155,7 +166,7 @@ describe Codeforces::Client, :vcr do
   describe "#user.status" do
 
     context "status Fefer_Ivan" do
-      subject! { client.user.status "Fefer_Ivan" }
+      subject! { client.api.user.status "Fefer_Ivan" }
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
