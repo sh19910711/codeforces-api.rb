@@ -4,8 +4,6 @@ The wrapper library for [Codeforces API](http://codeforces.com/api/help) written
 
 [![Gem Version](https://img.shields.io/gem/v/codeforces.svg?style=flat)](https://rubygems.org/gems/codeforces)
 [![API Doc](http://img.shields.io/badge/RubyDocs-API-green.svg?style=flat)](http://www.rubydoc.info/github/sh19910711/ruby-codeforces-api-client)
-
-
 [![Travis CI Build Status](https://img.shields.io/travis/sh19910711/ruby-codeforces-api-client.svg?style=flat)](https://travis-ci.org/sh19910711/ruby-codeforces-api-client)
 [![Code Climate](https://img.shields.io/codeclimate/github/sh19910711/ruby-codeforces-api-client.svg?style=flat)](https://codeclimate.com/github/sh19910711/ruby-codeforces-api-client)
 [![Test Coverage](https://img.shields.io/codeclimate/coverage/github/sh19910711/ruby-codeforces-api-client.svg?style=flat)](https://codeclimate.com/github/sh19910711/ruby-codeforces-api-client)
