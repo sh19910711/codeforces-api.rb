@@ -26,6 +26,6 @@ deploy:
   gem:
     master: codeforces
   on:
-    repo: sh19910711/codeforces-api-client
+    repo: sh19910711/ruby-codeforces-api-client
     ruby: "2.2"
 
