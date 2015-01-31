@@ -8,6 +8,8 @@ The wrapper library for [Codeforces API](http://codeforces.com/api/help) written
 [![Test Coverage](https://img.shields.io/codeclimate/coverage/github/sh19910711/codeforces-api-client.svg?style=flat)](https://codeclimate.com/github/sh19910711/codeforces-api-client)
 [![API Doc](http://img.shields.io/badge/RubyDocs-API-green.svg?style=flat)](http://www.rubydoc.info/github/sh19910711/codeforces-api-client)
 
+![Demo](https://raw.githubusercontent.com/sh19910711/test/afbd63b242a3489f0b962359fb96e03fe9cd1c1f/output-16.gif)
+
 ## 0. Installation
 
 Add this line to your application's Gemfile:
