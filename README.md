@@ -3,10 +3,14 @@
 The wrapper library for [Codeforces API](http://codeforces.com/api/help) written in Ruby.
 
 [![Gem Version](https://img.shields.io/gem/v/codeforces.svg?style=flat)](https://rubygems.org/gems/codeforces)
-[![Build Status](https://img.shields.io/travis/sh19910711/ruby-codeforces-api-client.svg?style=flat)](https://travis-ci.org/sh19910711/ruby-codeforces-api-client)
+[![API Doc](http://img.shields.io/badge/RubyDocs-API-green.svg?style=flat)](http://www.rubydoc.info/github/sh19910711/ruby-codeforces-api-client)
+
+
+[![Travis CI Build Status](https://img.shields.io/travis/sh19910711/ruby-codeforces-api-client.svg?style=flat)](https://travis-ci.org/sh19910711/ruby-codeforces-api-client)
 [![Code Climate](https://img.shields.io/codeclimate/github/sh19910711/ruby-codeforces-api-client.svg?style=flat)](https://codeclimate.com/github/sh19910711/ruby-codeforces-api-client)
 [![Test Coverage](https://img.shields.io/codeclimate/coverage/github/sh19910711/ruby-codeforces-api-client.svg?style=flat)](https://codeclimate.com/github/sh19910711/ruby-codeforces-api-client)
-[![API Doc](http://img.shields.io/badge/RubyDocs-API-green.svg?style=flat)](http://www.rubydoc.info/github/sh19910711/ruby-codeforces-api-client)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/x44tj9b4n4sgt0qx/branch/master?svg=true)](https://ci.appveyor.com/project/sh19910711/ruby-codeforces-api-client/branch/master)
+[![Circle CI](https://circleci.com/gh/sh19910711/ruby-codeforces-api-client/tree/master.svg?style=svg)](https://circleci.com/gh/sh19910711/ruby-codeforces-api-client/tree/master)
 
 ![Demo](https://raw.githubusercontent.com/sh19910711/test/afbd63b242a3489f0b962359fb96e03fe9cd1c1f/output-16.gif)
 
