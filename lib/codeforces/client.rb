@@ -66,7 +66,11 @@ class Codeforces::Client
     @api ||= ::Codeforces::Api.new(self)
   end
 
-  def submission(status)
+  def create_user(user)
+    ::Codeforces::Models::User.new self, user
+  end
+
+  def create_submission(status)
     ::Codeforces::Models::Submission.new self, status
   end
 

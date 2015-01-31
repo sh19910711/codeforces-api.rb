@@ -5,11 +5,11 @@ module Codeforces::Helper
   end
 
   def user(handle)
-    api.user.info(handle).first
+    create_user api.user.info(handle).first
   end
 
   def each_status
-    api.problemset.recent_status.map {|status| submission status }.each {|status| yield(status) if block_given? }
+    api.problemset.recent_status.map {|s| create_submission s }.each {|status| yield(status) if block_given? }
   end
 
 end
