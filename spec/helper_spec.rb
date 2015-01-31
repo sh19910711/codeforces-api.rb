@@ -28,6 +28,11 @@ describe Codeforces::Helper, :vcr => true do
       it { should eq "Russia" }
     end
 
+    context "user(DmitriyH).submissions", :current => true do
+      subject! { client.user("DmitriyH").submissions }
+      it { should be_a Array }
+    end
+
   end # user
 
   describe "#each_status" do
