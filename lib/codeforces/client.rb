@@ -74,6 +74,10 @@ class Codeforces::Client
     ::Codeforces::Models::Submission.new self, status
   end
 
+  def create_users(users)
+    ::Codeforces::Models::Users.new self, users
+  end
+
   private
 
   def new_logger

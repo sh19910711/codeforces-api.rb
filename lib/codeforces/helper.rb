@@ -8,6 +8,10 @@ module Codeforces::Helper
     create_user api.user.info(handle).first
   end
 
+  def users
+    create_users api.user.rated_list.map {|u| create_user u }
+  end
+
   def each_status
     api.problemset.recent_status.map {|s| create_submission s }.each {|status| yield(status) if block_given? }
   end
