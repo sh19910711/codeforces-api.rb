@@ -11,3 +11,4 @@ module Codeforces::Models
   end
 
 end
+

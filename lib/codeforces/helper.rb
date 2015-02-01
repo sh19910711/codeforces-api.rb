@@ -1,18 +1,11 @@
 module Codeforces::Helper
 
   def contest(query)
-    if query.is_a?(Integer)
-      contests.select {|c| query === c.id }.first
-    else
-      ret = contests.select {|c| query === c.name }
-      raise "Error: contest is not found" if ret.empty?
-      raise "Error: query is ambiguous" if ret.length > 1
-      ret.first
-    end
+    create_contest resolve_contest(query)
   end
 
   def contests
-    api.contest.list
+    create_contests api.contest.list.map {|c| create_contest c }
   end
 
   def each_contest
@@ -33,6 +26,19 @@ module Codeforces::Helper
 
   def each_status
     recent_status.each {|status| yield(status) if block_given? }
+  end
+
+  private
+
+  def resolve_contest(query)
+    if query.is_a?(Integer)
+      contests.select {|c| query === c.id }.first
+    else
+      ret = contests.select {|c| query === c.name }
+      raise "Error: contest is not found" if ret.empty?
+      raise "Error: query is ambiguous" if ret.length > 1
+      ret.first
+    end
   end
 
 end

@@ -78,6 +78,14 @@ class Codeforces::Client
     ::Codeforces::Models::Users.new self, users
   end
 
+  def create_contest(contest)
+    ::Codeforces::Models::Contest.new self, contest
+  end
+
+  def create_contests(contests)
+    ::Codeforces::Models::Contests.new self, contests
+  end
+
   private
 
   def new_logger
