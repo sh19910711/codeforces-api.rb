@@ -4,6 +4,16 @@ describe Codeforces::Helper, :vcr => true do
 
   let!(:client) { Codeforces::Client.new }
 
+  describe "#contests" do
+
+    context "contests.grep :name => /#10/" do
+      subject! { client.contests.grep :name => /#10/ }
+      it { expect(subject).to be_a Array }
+      it { expect(subject.map &:name).to include "Codeforces Round #100" }
+    end
+
+  end
+
   describe "#contest" do
 
     context "contest 154" do
