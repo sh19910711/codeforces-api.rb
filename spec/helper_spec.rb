@@ -4,6 +4,25 @@ describe Codeforces::Helper, :vcr => true do
 
   let!(:client) { Codeforces::Client.new }
 
+  describe "#contest" do
+
+    context "contest 154" do
+      subject! { client.contest 154 }
+      it { expect(subject.name).to eq "Codeforces Round #109 (Div. 1)" }
+    end
+
+    context "contest Codeforces Round #109 (Div. 1)" do
+      subject! { client.contest "Codeforces Round #109 (Div. 1)" }
+      it { expect(subject.id).to eq 154 }
+    end
+
+    context "contest /Codeforces.*#109.*Div\. 1/" do
+      subject! { client.contest /Codeforces.*#109.*Div\. 1/ }
+      it { expect(subject.id).to eq 154 }
+    end
+
+  end
+
   describe "#users" do
 
     context "users" do
