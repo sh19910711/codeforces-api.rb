@@ -4,7 +4,7 @@ module Codeforces::Models
 
     def grep(option)
       base.select do |contest|
-        option.any? {|key, value| value === contest.send(key) }
+        option.all? {|key, value| value === contest.send(key) }
       end
     end
 
