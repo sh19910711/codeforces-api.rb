@@ -4,12 +4,19 @@ describe Codeforces::Helper, :vcr => true do
 
   let!(:client) { Codeforces::Client.new }
 
-  describe "#contests" do
+  describe "#contests", :current => true do
 
     context "contests.grep :name => /#10/" do
       subject! { client.contests.grep :name => /#10/ }
       it { expect(subject).to be_a Array }
       it { expect(subject.map &:name).to include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #10" }
+    end
+
+    context "contests.grep :name => /#10/, :type => CF" do
+      subject! { client.contests.grep :name => /#10/, :type => "CF" }
+      it { expect(subject.map &:name).to include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to_not include "Codeforces Beta Round #10" }
     end
 
   end
