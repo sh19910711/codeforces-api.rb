@@ -39,6 +39,13 @@ class Codeforces::Client
     request(:get, "#{path}#{request_uri.query.empty? ? "" : "?#{request_uri.query}"}", options[:data], options).result
   end
 
+  def post(path, options = {})
+    request_uri = ::Addressable::URI.new
+    options[:query] ||= {}
+    request_uri.query_values = options[:query]
+    request(:post, path, request_uri.query).result
+  end
+
   def request(method, path, data, options = {})
     logger.debug "#{method.upcase} #{URI.join endpoint, path}"
     @last_response = agent.call(method, path, data)
