@@ -23,7 +23,7 @@ require "webmock"
 RSpec.configure do |conf|
 
   conf.before do
-    WebMock.stub_request(
+    ::WebMock.stub_request(
       :get,
       "http://codeforces.com/api/user.ratedList",
     ).to_return(
