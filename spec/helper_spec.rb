@@ -102,6 +102,7 @@ describe Codeforces::Helper, :vcr => true do
     context "contest 154" do
       subject! { client.contest 154 }
       it { expect(subject.name).to eq "Codeforces Round #109 (Div. 1)" }
+      it { expect(subject.problems.map &:name).to include "Martian Colony" }
     end
 
     context "contest Codeforces Round #109 (Div. 1)" do
