@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Fri, 30 Jan 2015 13:21:24 GMT
+      - Sat, 14 Feb 2015 09:34:20 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,14 +31,16 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - 39ce7=CFJDE384; Expires=Wed, 11-Feb-2015 03:08:04 GMT; Path=/
-      - JSESSIONID=01914BCEEA79055179222FE5DE18DE4C-n1; Path=/; HttpOnly
+      - 39ce7=CFaai0zR; Expires=Wed, 25-Feb-2015 23:21:00 GMT; Path=/
+      - JSESSIONID=F43BB8743A6AC74BBD217734A18272C1-n1; Path=/; HttpOnly
       Cache-Control:
       - private,no-cache,no-store,max-age=0,must-revalidate
       Expires:
       - "-1"
       Pragma:
       - no-cache
+      Access-Control-Allow-Origin:
+      - http://st.codeforces.com
     body:
       encoding: ASCII-8BIT
       base64_string: |
@@ -46,7 +48,7 @@ http_interactions:
         Im5hbWUiOiJDb2RlZm9yY2VzIFJvdW5kICMyMjAgKERpdi4gMikiLCJ0eXBl
         IjoiQ0YiLCJwaGFzZSI6IkZJTklTSEVEIiwiZnJvemVuIjpmYWxzZSwiZHVy
         YXRpb25TZWNvbmRzIjo3MjAwLCJzdGFydFRpbWVTZWNvbmRzIjoxMzg3Mzgw
-        NjAwLCJyZWxhdGl2ZVRpbWVTZWNvbmRzIjozNTI0MzQ4NH0sInByb2JsZW1z
+        NjAwLCJyZWxhdGl2ZVRpbWVTZWNvbmRzIjozNjUyNTg1OX0sInByb2JsZW1z
         IjpbeyJjb250ZXN0SWQiOjM3NCwiaW5kZXgiOiJBIiwibmFtZSI6IklubmEg
         YW5kIFBpbmsgUG9ueSIsInR5cGUiOiJQUk9HUkFNTUlORyIsInBvaW50cyI6
         NTAwLjAsInRhZ3MiOlsiZ3JlZWR5IiwiaW1wbGVtZW50YXRpb24iXX0seyJj
@@ -664,29 +666,29 @@ http_interactions:
         OiJGSU5BTCJ9LHsicG9pbnRzIjowLjAsInJlamVjdGVkQXR0ZW1wdENvdW50
         IjowLCJ0eXBlIjoiRklOQUwifSx7InBvaW50cyI6MC4wLCJyZWplY3RlZEF0
         dGVtcHRDb3VudCI6MCwidHlwZSI6IkZJTkFMIn1dfSx7InBhcnR5Ijp7ImNv
-        bnRlc3RJZCI6Mzc0LCJtZW1iZXJzIjpbeyJoYW5kbGUiOiJraXNzaW5ndGhl
-        ZHJlYW0ifV0sInBhcnRpY2lwYW50VHlwZSI6IkNPTlRFU1RBTlQiLCJnaG9z
-        dCI6ZmFsc2UsInJvb20iOjY4LCJzdGFydFRpbWVTZWNvbmRzIjoxMzg3Mzgw
-        NjAwfSwicmFuayI6OTgsInBvaW50cyI6OTEyLjAsInBlbmFsdHkiOjAsInN1
-        Y2Nlc3NmdWxIYWNrQ291bnQiOjAsInVuc3VjY2Vzc2Z1bEhhY2tDb3VudCI6
-        MCwicHJvYmxlbVJlc3VsdHMiOlt7InBvaW50cyI6MC4wLCJyZWplY3RlZEF0
-        dGVtcHRDb3VudCI6NywidHlwZSI6IkZJTkFMIn0seyJwb2ludHMiOjAuMCwi
-        cmVqZWN0ZWRBdHRlbXB0Q291bnQiOjEsInR5cGUiOiJGSU5BTCJ9LHsicG9p
-        bnRzIjo5MTIuMCwicmVqZWN0ZWRBdHRlbXB0Q291bnQiOjAsInR5cGUiOiJG
-        SU5BTCIsImJlc3RTdWJtaXNzaW9uVGltZVNlY29uZHMiOjU5MDV9LHsicG9p
-        bnRzIjowLjAsInJlamVjdGVkQXR0ZW1wdENvdW50IjowLCJ0eXBlIjoiRklO
-        QUwifSx7InBvaW50cyI6MC4wLCJyZWplY3RlZEF0dGVtcHRDb3VudCI6MCwi
-        dHlwZSI6IkZJTkFMIn1dfSx7InBhcnR5Ijp7ImNvbnRlc3RJZCI6Mzc0LCJt
-        ZW1iZXJzIjpbeyJoYW5kbGUiOiJmbHV0aW5nIn1dLCJwYXJ0aWNpcGFudFR5
-        cGUiOiJDT05URVNUQU5UIiwiZ2hvc3QiOmZhbHNlLCJyb29tIjo1NCwic3Rh
+        bnRlc3RJZCI6Mzc0LCJtZW1iZXJzIjpbeyJoYW5kbGUiOiJmbHV0aW5nIn1d
+        LCJwYXJ0aWNpcGFudFR5cGUiOiJDT05URVNUQU5UIiwiZ2hvc3QiOmZhbHNl
+        LCJyb29tIjo1NCwic3RhcnRUaW1lU2Vjb25kcyI6MTM4NzM4MDYwMH0sInJh
+        bmsiOjk4LCJwb2ludHMiOjkxMi4wLCJwZW5hbHR5IjowLCJzdWNjZXNzZnVs
+        SGFja0NvdW50Ijo0LCJ1bnN1Y2Nlc3NmdWxIYWNrQ291bnQiOjMsInByb2Js
+        ZW1SZXN1bHRzIjpbeyJwb2ludHMiOjAuMCwicmVqZWN0ZWRBdHRlbXB0Q291
+        bnQiOjEsInR5cGUiOiJGSU5BTCJ9LHsicG9pbnRzIjo2NjIuMCwicmVqZWN0
+        ZWRBdHRlbXB0Q291bnQiOjEsInR5cGUiOiJGSU5BTCIsImJlc3RTdWJtaXNz
+        aW9uVGltZVNlY29uZHMiOjQzNjR9LHsicG9pbnRzIjowLjAsInJlamVjdGVk
+        QXR0ZW1wdENvdW50IjowLCJ0eXBlIjoiRklOQUwifSx7InBvaW50cyI6MC4w
+        LCJyZWplY3RlZEF0dGVtcHRDb3VudCI6MCwidHlwZSI6IkZJTkFMIn0seyJw
+        b2ludHMiOjAuMCwicmVqZWN0ZWRBdHRlbXB0Q291bnQiOjAsInR5cGUiOiJG
+        SU5BTCJ9XX0seyJwYXJ0eSI6eyJjb250ZXN0SWQiOjM3NCwibWVtYmVycyI6
+        W3siaGFuZGxlIjoia2lzc2luZ3RoZWRyZWFtIn1dLCJwYXJ0aWNpcGFudFR5
+        cGUiOiJDT05URVNUQU5UIiwiZ2hvc3QiOmZhbHNlLCJyb29tIjo2OCwic3Rh
         cnRUaW1lU2Vjb25kcyI6MTM4NzM4MDYwMH0sInJhbmsiOjk4LCJwb2ludHMi
-        OjkxMi4wLCJwZW5hbHR5IjowLCJzdWNjZXNzZnVsSGFja0NvdW50Ijo0LCJ1
-        bnN1Y2Nlc3NmdWxIYWNrQ291bnQiOjMsInByb2JsZW1SZXN1bHRzIjpbeyJw
-        b2ludHMiOjAuMCwicmVqZWN0ZWRBdHRlbXB0Q291bnQiOjEsInR5cGUiOiJG
-        SU5BTCJ9LHsicG9pbnRzIjo2NjIuMCwicmVqZWN0ZWRBdHRlbXB0Q291bnQi
-        OjEsInR5cGUiOiJGSU5BTCIsImJlc3RTdWJtaXNzaW9uVGltZVNlY29uZHMi
-        OjQzNjR9LHsicG9pbnRzIjowLjAsInJlamVjdGVkQXR0ZW1wdENvdW50Ijow
-        LCJ0eXBlIjoiRklOQUwifSx7InBvaW50cyI6MC4wLCJyZWplY3RlZEF0dGVt
+        OjkxMi4wLCJwZW5hbHR5IjowLCJzdWNjZXNzZnVsSGFja0NvdW50IjowLCJ1
+        bnN1Y2Nlc3NmdWxIYWNrQ291bnQiOjAsInByb2JsZW1SZXN1bHRzIjpbeyJw
+        b2ludHMiOjAuMCwicmVqZWN0ZWRBdHRlbXB0Q291bnQiOjcsInR5cGUiOiJG
+        SU5BTCJ9LHsicG9pbnRzIjowLjAsInJlamVjdGVkQXR0ZW1wdENvdW50Ijox
+        LCJ0eXBlIjoiRklOQUwifSx7InBvaW50cyI6OTEyLjAsInJlamVjdGVkQXR0
+        ZW1wdENvdW50IjowLCJ0eXBlIjoiRklOQUwiLCJiZXN0U3VibWlzc2lvblRp
+        bWVTZWNvbmRzIjo1OTA1fSx7InBvaW50cyI6MC4wLCJyZWplY3RlZEF0dGVt
         cHRDb3VudCI6MCwidHlwZSI6IkZJTkFMIn0seyJwb2ludHMiOjAuMCwicmVq
         ZWN0ZWRBdHRlbXB0Q291bnQiOjAsInR5cGUiOiJGSU5BTCJ9XX0seyJwYXJ0
         eSI6eyJjb250ZXN0SWQiOjM3NCwibWVtYmVycyI6W3siaGFuZGxlIjoid3Vz
@@ -703,5 +705,5 @@ http_interactions:
         SU5BTCJ9LHsicG9pbnRzIjowLjAsInJlamVjdGVkQXR0ZW1wdENvdW50Ijow
         LCJ0eXBlIjoiRklOQUwifV19XX19
     http_version: 
-  recorded_at: Fri, 30 Jan 2015 13:21:25 GMT
+  recorded_at: Sat, 14 Feb 2015 09:34:20 GMT
 recorded_with: VCR 2.9.3
