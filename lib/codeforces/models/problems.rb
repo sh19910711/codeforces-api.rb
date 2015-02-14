@@ -16,10 +16,6 @@ module Codeforces::Models
       self.class.new client, @contest[id]
     end
 
-    def grep(option)
-      chain(base.select {|x| match?(option, x) })
-    end
-
   end
 
 end
