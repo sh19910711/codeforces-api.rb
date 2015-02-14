@@ -58,7 +58,9 @@ class Codeforces::Client
 
     path += "?#{request_uri.query}" unless request_uri.query.empty?
 
-    @last_response = agent.call(method, path, options[:data])
+    tmp_uri = ::Addressable::URI.new
+    tmp_uri.query_values = options[:data]
+    @last_response = agent.call(method, path, tmp_uri.query)
 
     logger.debug "#{method.upcase} #{::URI.join endpoint, path}"
     logger.debug "Status: #{last_response.data.status}"
