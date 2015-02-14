@@ -2,6 +2,8 @@ require "sawyer"
 require "logger"
 require "uri"
 require "addressable/uri"
+require "time"
+require "digest/sha2"
 require "codeforces/api"
 require "codeforces/client"
 require "codeforces/helper"
@@ -13,11 +15,17 @@ class Codeforces::Client
 
   DEFAULT_ENDPOINT = "http://codeforces.com/api/"
   DEFAULT_PAGE_COUNT = 50
+  DEFAULT_API_KEY = ENV["CODEFORCES_API_KEY"]
+  DEFAULT_API_SECRET = ENV["CODEFORCES_API_SECRET"]
 
   attr_reader :endpoint
+  attr_reader :api_key
+  attr_reader :api_secret
 
-  def initialize(endpoint = DEFAULT_ENDPOINT)
-    @endpoint = endpoint
+  def initialize(options = {})
+    @endpoint = options.fetch(:endpoint, DEFAULT_ENDPOINT)
+    @api_key = options.fetch(:api_key, DEFAULT_API_KEY)
+    @api_secret = options.fetch(:api_secret, DEFAULT_API_SECRET)
   end
 
   def logger
@@ -33,25 +41,43 @@ class Codeforces::Client
   end
 
   def get(path, options = {})
-    request_uri = ::Addressable::URI.new
-    options[:query] ||= {}
-    request_uri.query_values = options[:query]
-    request(:get, "#{path}#{request_uri.query.empty? ? "" : "?#{request_uri.query}"}", options[:data], options).result
+    request(:get, path, options).result
   end
 
   def post(path, options = {})
-    request_uri = ::Addressable::URI.new
-    options[:query] ||= {}
-    request_uri.query_values = options[:query]
-    request(:post, path, request_uri.query).result
+    request(:post, path, options).result
   end
 
-  def request(method, path, data, options = {})
-    logger.debug "#{method.upcase} #{URI.join endpoint, path}"
-    @last_response = agent.call(method, path, data)
+  def request(method, path, options = {})
+    request_uri = ::Addressable::URI.new
+    query = {}
+    query.merge!(options[:query]) unless options[:query].nil?
+    request_uri.query_values = query
+
+    unless api_key.nil?
+      query.merge!({:time => server_time})
+      query.merge!({:apiKey => api_key})
+      request_uri.query_values = query
+
+      # calc signature
+      seed = api_sig_seed(654321, path, request_uri)
+      hash = ::Digest::SHA512.hexdigest(seed)
+      query.merge!({:apiSig => "654321#{hash}"})
+      request_uri.query_values = query
+
+      logger.debug "Enable Auth"
+      logger.debug "API signature seed: #{seed}"
+    end
+
+    path += "?#{request_uri.query}" unless request_uri.query.empty?
+
+    @last_response = agent.call(method, path, options[:data])
+
+    logger.debug "#{method.upcase} #{::URI.join endpoint, path}"
+    logger.debug "Status: #{last_response.data.status}"
 
     unless last_response.data.status === "OK"
-      raise "Error: #{last_response.data.status}"
+      raise "Error: #{last_response.data.status} #{last_response.data.comment}"
     end
 
     last_response.data
@@ -107,6 +133,23 @@ class Codeforces::Client
     logger = ::Logger.new(STDOUT)
     logger.level = ::Logger::INFO
     logger
+  end
+
+  def is_old_time?(t)
+    t.nil? || ::Time.now.to_i - t > 30
+  end
+
+  def server_time
+    return @server_time unless is_old_time?(@server_time)
+
+    logger.debug "Resolve Server Time"
+    @server_time = ::Net::HTTP.start("codeforces.com", 80) do |http|
+      ::Time.parse(http.head("/")["date"]).to_i
+    end
+  end
+
+  def api_sig_seed(rand, path, uri)
+    "#{rand}/#{path}?#{uri.query}##{api_secret}"
   end
 
 end
