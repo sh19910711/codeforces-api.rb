@@ -4,18 +4,16 @@ describe Codeforces::Helper, :vcr => true do
 
   let!(:client) { Codeforces::Client.new }
 
-  describe "#problems", :current => true do
+  describe "#problems" do
 
     context "problems.grep :name => /Alice/" do
       subject! { client.problems.grep :name => /Alice/ }
-      it { expect(subject).to be_a Array }
       it { expect(subject.map &:name).to include "Alice and Bob" }
       it { expect(subject.map &:name).to_not include "Number Transformation" }
     end
 
     context "problems.grep :contestId => 250" do
       subject! { client.problems.grep :contestId => 250 }
-      it { expect(subject).to be_a Array }
       it { expect(subject.map &:name).to include "Building Bridge" }
       it { expect(subject.map &:name).to_not include "Alice and Bob" }
       it { expect(subject.map &:name).to_not include "Number Transformation" }
@@ -25,9 +23,32 @@ describe Codeforces::Helper, :vcr => true do
 
   describe "#contests" do
 
+    context "contests" do
+      subject! { client.contests }
+      it { expect(subject.map &:name).to include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #10" }
+      it { expect(subject.map &:name).to include "Rockethon 2015" }
+      it { expect(subject.map &:name).to include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
+    end
+
+    context "contests.rounds" do
+      subject! { client.contests.rounds }
+      it { expect(subject.map &:name).to include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #10" }
+      it { expect(subject.map &:name).to_not include "Rockethon 2015" }
+      it { expect(subject.map &:name).to include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
+    end
+
+    context "contests.rounds.grep :name => /#10/" do
+      subject! { client.contests.rounds.grep :name => /#10/ }
+      it { expect(subject.map &:name).to include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #10" }
+      it { expect(subject.map &:name).to_not include "Rockethon 2015" }
+      it { expect(subject.map &:name).to_not include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
+    end
+
     context "contests.grep :name => /#10/" do
       subject! { client.contests.grep :name => /#10/ }
-      it { expect(subject).to be_a Array }
       it { expect(subject.map &:name).to include "Codeforces Round #100" }
       it { expect(subject.map &:name).to include "Codeforces Beta Round #10" }
     end
@@ -100,10 +121,10 @@ describe Codeforces::Helper, :vcr => true do
 
   describe "#each_contest" do
 
-    example "it is called 450 or more times" do
+    example "it is called 10 or more times" do
       cnt = 0
       client.each_contest { cnt += 1 }
-      expect(cnt).to be > 450
+      expect(cnt).to be >= 10
     end
 
     it { expect(client.each_contest.map &:name).to include "Codeforces Beta Round #2" }
