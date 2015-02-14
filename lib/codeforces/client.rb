@@ -54,20 +54,7 @@ class Codeforces::Client
     query.merge!(options[:query]) unless options[:query].nil?
     request_uri.query_values = query
 
-    unless api_key.nil?
-      query.merge!({:time => server_time})
-      query.merge!({:apiKey => api_key})
-      request_uri.query_values = query
-
-      # calc signature
-      seed = api_sig_seed(654321, path, request_uri)
-      hash = ::Digest::SHA512.hexdigest(seed)
-      query.merge!({:apiSig => "654321#{hash}"})
-      request_uri.query_values = query
-
-      logger.debug "Enable Auth"
-      logger.debug "API signature seed: #{seed}"
-    end
+    enable_auth!(path, request_uri, query) unless api_key.nil?
 
     path += "?#{request_uri.query}" unless request_uri.query.empty?
 
@@ -133,6 +120,21 @@ class Codeforces::Client
     logger = ::Logger.new(STDOUT)
     logger.level = ::Logger::INFO
     logger
+  end
+
+  def enable_auth!(path, request_uri, query)
+    query.merge!({:time => server_time})
+    query.merge!({:apiKey => api_key})
+    request_uri.query_values = query
+
+    # calc signature
+    seed = api_sig_seed(654321, path, request_uri)
+    hash = ::Digest::SHA512.hexdigest(seed)
+    query.merge!({:apiSig => "654321#{hash}"})
+    request_uri.query_values = query
+
+    logger.debug "Enable Auth"
+    logger.debug "API signature seed: #{seed}"
   end
 
   def is_old_time?(t)
