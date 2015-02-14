@@ -10,8 +10,8 @@ class Codeforces::Api
 
     def info(handles, options = {})
       handles = [handles] unless handles.is_a?(Array)
-      options[:query] ||= {}
-      options[:query][:handles] = multi_values(handles)
+      options[:data] ||= {}
+      options[:data][:handles] = multi_values(handles)
       post("user.info", options)
     end
 
