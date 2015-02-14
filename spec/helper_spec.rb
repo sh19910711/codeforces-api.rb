@@ -4,7 +4,26 @@ describe Codeforces::Helper, :vcr => true do
 
   let!(:client) { Codeforces::Client.new }
 
-  describe "#contests", :current => true do
+  describe "#problems", :current => true do
+
+    context "problems.grep :name => /Alice/" do
+      subject! { client.problems.grep :name => /Alice/ }
+      it { expect(subject).to be_a Array }
+      it { expect(subject.map &:name).to include "Alice and Bob" }
+      it { expect(subject.map &:name).to_not include "Number Transformation" }
+    end
+
+    context "problems.grep :contestId => 250" do
+      subject! { client.problems.grep :contestId => 250 }
+      it { expect(subject).to be_a Array }
+      it { expect(subject.map &:name).to include "Building Bridge" }
+      it { expect(subject.map &:name).to_not include "Alice and Bob" }
+      it { expect(subject.map &:name).to_not include "Number Transformation" }
+    end
+
+  end #problems
+
+  describe "#contests" do
 
     context "contests.grep :name => /#10/" do
       subject! { client.contests.grep :name => /#10/ }
