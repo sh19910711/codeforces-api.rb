@@ -1,6 +1,5 @@
 module Codeforces::Models
 
-  class Contest < Base; end
+  class Problem < Base; end
 
 end
-

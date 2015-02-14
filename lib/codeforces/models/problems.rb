@@ -1,12 +1,11 @@
 module Codeforces::Models
 
-  class Contests < Base
+  class Problems < Base
 
     def grep(option)
-      base.select {|c| match?(option, c) }
+      base.select {|p| match?(option, p) }
     end
 
   end
 
 end
-

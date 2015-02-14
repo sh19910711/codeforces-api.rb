@@ -12,6 +12,10 @@ module Codeforces::Models
 
     protected
 
+    def match?(option, target)
+      option.all? {|key, value| value === target.send(key) }
+    end
+
     def method_missing(method, *args, &block)
       base.send method, *args, &block
     end
