@@ -54,7 +54,7 @@ class Codeforces::Client
     query.merge!(options[:query]) unless options[:query].nil?
     request_uri.query_values = query
 
-    enable_auth!(path, request_uri, query) unless api_key.nil?
+    enable_auth!(path, request_uri, query) unless method === :post || api_key.nil?
 
     path += "?#{request_uri.query}" unless request_uri.query.empty?
 
