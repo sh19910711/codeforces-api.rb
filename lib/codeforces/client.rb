@@ -148,14 +148,6 @@ class Codeforces::Client
     end
   end
 
-  def auth_params(path, key, time)
-    if /\?/ === path
-      "&apiKey=#{key}&time=#{time}"
-    else
-      "?apiKey=#{key}&time=#{time}"
-    end
-  end
-
   def api_sig_seed(rand, path, uri)
     "#{rand}/#{path}?#{uri.query}##{api_secret}"
   end
