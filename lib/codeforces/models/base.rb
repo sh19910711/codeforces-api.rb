@@ -16,6 +16,10 @@ module Codeforces::Models
       self.class.new(client, new_base)
     end
 
+    def not_match?(option, target)
+      option.all? {|key, value| target.send(key) !~ value }
+    end
+
     def match?(option, target)
       option.all? {|key, value| value === target.send(key) }
     end
