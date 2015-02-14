@@ -19,6 +19,20 @@ describe Codeforces::Helper, :vcr => true do
       it { expect(subject.map &:name).to_not include "Number Transformation" }
     end
 
+    context "problems.grep :tags => dp" do
+      subject! { client.problems.grep :tags => "dp" }
+      it { expect(subject.map &:name).to include "Inversions problem" }
+      it { expect(subject.map &:name).to_not include "Alice and Bob" }
+      it { expect(subject.map &:name).to include "Number Transformation" }
+    end
+
+    context "problems.invert_grep :tags => dp" do
+      subject! { client.problems.invert_grep :tags => "dp" }
+      it { expect(subject.map &:name).to_not include "Inversions problem" }
+      it { expect(subject.map &:name).to include "Alice and Bob" }
+      it { expect(subject.map &:name).to_not include "Number Transformation" }
+    end
+
   end #problems
 
   describe "#contests" do
