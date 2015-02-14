@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Codeforces::VERSION
   spec.authors       = ["Hiroyuki Sano"]
   spec.email         = ["sh19910711@gmail.com"]
-  spec.summary       = %q{The wrapper library for Codeforces API.}
+  spec.summary       = %q{The Wrapper Library for Codeforces API.}
   spec.homepage      = "https://github.com/sh19910711/codeforces-api-client"
   spec.license       = "MIT"
 
