@@ -69,6 +69,7 @@ RSpec.configure do |conf|
           {"id" => 504,"name" => "Codeforces Round #285 (Div. 1)","type" => "CF","phase" => "FINISHED","frozen" => false,"durationSeconds" => 7200,"startTimeSeconds" => 1421053200,"relativeTimeSeconds" => 2852211},
           {"id" => 154,"name" => "Codeforces Round #109 (Div. 1)","type" => "CF","phase" => "FINISHED","frozen" => false,"durationSeconds" => 7200,"startTimeSeconds" => 1330095600,"relativeTimeSeconds" => 93809811},
           {"id" => 140,"name" => "Codeforces Round #100","type" => "CF","phase" => "FINISHED","frozen" => false,"durationSeconds" => 7200,"startTimeSeconds" => 1325689200,"relativeTimeSeconds" => 98216211},
+          {"id" => 12,"name" => "Codeforces Beta Round #12 (Div 2 Only)","type" => "ICPC","phase" => "FINISHED","frozen" => false,"durationSeconds" => 7200,"startTimeSeconds" => 1272538800,"relativeTimeSeconds" => 151366611},
           {"id" => 10,"name" => "Codeforces Beta Round #10","type" => "ICPC","phase" => "FINISHED","frozen" => false,"durationSeconds" => 7200,"startTimeSeconds" => 1271346300,"relativeTimeSeconds" => 152559111},
           {"id" => 2,"name" => "Codeforces Beta Round #2","type" => "ICPC","phase" => "FINISHED","frozen" => false,"durationSeconds" => 7200,"startTimeSeconds" => 1267117200,"relativeTimeSeconds" => 156788211},
           {"id" => 1,"name" => "Codeforces Beta Round #1","type" => "ICPC","phase" => "FINISHED","frozen" => false,"durationSeconds" => 7200,"startTimeSeconds" => 1266580800,"relativeTimeSeconds" => 157324611},

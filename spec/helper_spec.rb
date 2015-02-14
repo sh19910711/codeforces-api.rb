@@ -31,6 +31,42 @@ describe Codeforces::Helper, :vcr => true do
       it { expect(subject.map &:name).to include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
     end
 
+    context "contests.div1" do
+      subject! { client.contests.div1 }
+      it { expect(subject.map &:name).to include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #10" }
+      it { expect(subject.map &:name).to include "Rockethon 2015" }
+      it { expect(subject.map &:name).to_not include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
+      it { expect(subject.map &:name).to_not include "Codeforces Beta Round #12 (Div 2 Only)" }
+    end
+
+    context "contests.rounds.div1" do
+      subject! { client.contests.rounds.div1 }
+      it { expect(subject.map &:name).to include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #10" }
+      it { expect(subject.map &:name).to_not include "Rockethon 2015" }
+      it { expect(subject.map &:name).to_not include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
+      it { expect(subject.map &:name).to_not include "Codeforces Beta Round #12 (Div 2 Only)" }
+    end
+
+    context "contests.div2" do
+      subject! { client.contests.div2 }
+      it { expect(subject.map &:name).to_not include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to_not include "Codeforces Beta Round #10" }
+      it { expect(subject.map &:name).to_not include "Rockethon 2015" }
+      it { expect(subject.map &:name).to include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #12 (Div 2 Only)" }
+    end
+
+    context "contests.rounds.div2" do
+      subject! { client.contests.rounds.div2 }
+      it { expect(subject.map &:name).to_not include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to_not include "Codeforces Beta Round #10" }
+      it { expect(subject.map &:name).to_not include "Rockethon 2015" }
+      it { expect(subject.map &:name).to include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #12 (Div 2 Only)" }
+    end
+
     context "contests.rounds" do
       subject! { client.contests.rounds }
       it { expect(subject.map &:name).to include "Codeforces Round #100" }
