@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.6.2
       Date:
-      - Tue, 03 Feb 2015 11:17:24 GMT
+      - Sat, 14 Feb 2015 09:34:28 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,14 +31,16 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - 39ce7=CFPW5loe; Expires=Sun, 15-Feb-2015 01:04:04 GMT; Path=/
-      - JSESSIONID=AD86D61481167B8CA3F24EAB3AACC7A4-n1; Path=/; HttpOnly
+      - 39ce7=CFcNydMc; Expires=Wed, 25-Feb-2015 23:21:08 GMT; Path=/
+      - JSESSIONID=E66BCD7F41E3890CB415194415559F0C-n1; Path=/; HttpOnly
       Cache-Control:
       - private,no-cache,no-store,max-age=0,must-revalidate
       Expires:
       - "-1"
       Pragma:
       - no-cache
+      Access-Control-Allow-Origin:
+      - http://st.codeforces.com
     body:
       encoding: ASCII-8BIT
       base64_string: |
@@ -256,5 +258,5 @@ http_interactions:
         InJhdGluZ1VwZGF0ZVRpbWVTZWNvbmRzIjoxNDA2NDg5NDAwLCJvbGRSYXRp
         bmciOjIyOTUsIm5ld1JhdGluZyI6MjQwM31dfQ==
     http_version: 
-  recorded_at: Tue, 03 Feb 2015 11:17:25 GMT
+  recorded_at: Sat, 14 Feb 2015 09:34:29 GMT
 recorded_with: VCR 2.9.3

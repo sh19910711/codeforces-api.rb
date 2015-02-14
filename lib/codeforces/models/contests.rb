@@ -2,10 +2,16 @@ module Codeforces::Models
 
   class Contests < Base
 
-    def grep(option)
-      base.select do |contest|
-        option.all? {|key, value| value === contest.send(key) }
-      end
+    def div1
+      invert_grep(:name => /Div[\.]? 2/)
+    end
+
+    def div2
+      grep(:name => /Div[\.]? 2/)
+    end
+
+    def rounds
+      grep(:name => /^Codeforces( Alpha| Beta|) Round/)
     end
 
   end

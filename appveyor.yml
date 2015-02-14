@@ -10,6 +10,7 @@ cache:
   - vendor/bundle
 
 install:
+  - cmd: gem install bundler
   - cmd: bundle install --path vendor/bundle
 
 test_script:

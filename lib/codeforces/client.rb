@@ -93,6 +93,14 @@ class Codeforces::Client
     ::Codeforces::Models::Contests.new self, contests
   end
 
+  def create_problem(problem)
+    ::Codeforces::Models::Problem.new self, problem
+  end
+
+  def create_problems(problems)
+    ::Codeforces::Models::Problems.new self, problems
+  end
+
   private
 
   def new_logger

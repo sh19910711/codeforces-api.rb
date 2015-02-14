@@ -1,5 +1,9 @@
 module Codeforces::Helper
 
+  def problems
+    @problems ||= create_problems(api.problemset.problems.map {|p| create_problem p })
+  end
+
   def contest(query)
     create_contest resolve_contest(query)
   end
