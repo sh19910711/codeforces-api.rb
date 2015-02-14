@@ -68,15 +68,16 @@ class Codeforces::Client
       logger.debug "Enable Auth"
       logger.debug "API signature seed: #{seed}"
     end
+
     path += "?#{request_uri.query}" unless request_uri.query.empty?
 
-    logger.debug "#{method.upcase} #{::URI.join endpoint, path}"
     @last_response = agent.call(method, path, options[:data])
+
+    logger.debug "#{method.upcase} #{::URI.join endpoint, path}"
     logger.debug "Status: #{last_response.data.status}"
 
     unless last_response.data.status === "OK"
-      logger.debug "comment: #{last_response.data.comment}"
-      raise "Error: #{last_response.data.status}"
+      raise "Error: #{last_response.data.status} #{last_response.data.comment}"
     end
 
     last_response.data
@@ -135,14 +136,15 @@ class Codeforces::Client
   end
 
   def is_old_time?(t)
-    t.nil? || Time.now.to_i - t > 30
+    t.nil? || ::Time.now.to_i - t > 30
   end
 
   def server_time
     return @server_time unless is_old_time?(@server_time)
+
     logger.debug "Resolve Server Time"
     @server_time = ::Net::HTTP.start("codeforces.com", 80) do |http|
-      Time.parse(http.head("/")["date"]).to_i
+      ::Time.parse(http.head("/")["date"]).to_i
     end
   end
 
