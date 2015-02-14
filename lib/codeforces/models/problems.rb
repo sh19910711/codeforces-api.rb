@@ -3,7 +3,7 @@ module Codeforces::Models
   class Problems < Base
 
     def grep(option)
-      base.select {|p| match?(option, p) }
+      chain(base.select {|x| match?(option, x) })
     end
 
   end

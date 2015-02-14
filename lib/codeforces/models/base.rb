@@ -12,6 +12,10 @@ module Codeforces::Models
 
     protected
 
+    def chain(new_base)
+      self.class.new(client, new_base)
+    end
+
     def match?(option, target)
       option.all? {|key, value| value === target.send(key) }
     end
