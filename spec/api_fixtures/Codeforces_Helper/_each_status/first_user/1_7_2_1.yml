@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.6.3
       Date:
-      - Tue, 29 Dec 2015 22:17:03 GMT
+      - Tue, 29 Dec 2015 22:17:04 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,8 +31,8 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - 39ce7=CF3HoZov; Expires=Sun, 10-Jan-2016 12:03:43 GMT; Path=/
-      - JSESSIONID=8F5A194BD0AFB60C076C7E8FECC9C4DA-n1; Path=/; HttpOnly
+      - 39ce7=CF6FI9Pu; Expires=Sun, 10-Jan-2016 12:03:44 GMT; Path=/
+      - JSESSIONID=1AAFBE47B78C8D84D0FBC253CBAC9B03-n1; Path=/; HttpOnly
       Cache-Control:
       - no-cache, must-revalidate, max-age=0
       - private,no-cache,no-store,max-age=0,must-revalidate
@@ -611,5 +611,53 @@ http_interactions:
         Q29uc3VtZWRNaWxsaXMiOjkzNSwibWVtb3J5Q29uc3VtZWRCeXRlcyI6MTI4
         NjE0NDAwfV19
     http_version: 
-  recorded_at: Tue, 29 Dec 2015 22:17:03 GMT
+  recorded_at: Tue, 29 Dec 2015 22:17:05 GMT
+- request:
+    method: get
+    uri: http://codeforces.com/api/user.info?handles=Jexin
+    body:
+      encoding: US-ASCII
+      base64_string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.6.3
+      Date:
+      - Tue, 29 Dec 2015 22:17:06 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '134'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - 39ce7=CFg2mLJd; Expires=Sun, 10-Jan-2016 12:03:46 GMT; Path=/
+      - JSESSIONID=AB4EDD36DAB4E9DD7760890D0D462B11-n1; Path=/; HttpOnly
+      Cache-Control:
+      - no-cache, must-revalidate, max-age=0
+      - private,no-cache,no-store,max-age=0,must-revalidate
+      Expires:
+      - "-1"
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      base64_string: |
+        eyJzdGF0dXMiOiJPSyIsInJlc3VsdCI6W3siaGFuZGxlIjoiSmV4aW4iLCJj
+        b250cmlidXRpb24iOjAsImxhc3RPbmxpbmVUaW1lU2Vjb25kcyI6MTQ1MTQx
+        MjY0NywicmVnaXN0cmF0aW9uVGltZVNlY29uZHMiOjE0NDk2OTYwNjV9XX0=
+    http_version: 
+  recorded_at: Tue, 29 Dec 2015 22:17:06 GMT
 recorded_with: VCR 3.0.1

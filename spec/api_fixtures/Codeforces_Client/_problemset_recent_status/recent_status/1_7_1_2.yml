@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx/1.6.3
       Date:
-      - Tue, 29 Dec 2015 22:17:03 GMT
+      - Tue, 29 Dec 2015 22:16:38 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -31,8 +31,8 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - 39ce7=CF3HoZov; Expires=Sun, 10-Jan-2016 12:03:43 GMT; Path=/
-      - JSESSIONID=8F5A194BD0AFB60C076C7E8FECC9C4DA-n1; Path=/; HttpOnly
+      - 39ce7=CFIxHU2n; Expires=Sun, 10-Jan-2016 12:03:18 GMT; Path=/
+      - JSESSIONID=98DB10D8704CC3D5EF53AB200438872F-n1; Path=/; HttpOnly
       Cache-Control:
       - no-cache, must-revalidate, max-age=0
       - private,no-cache,no-store,max-age=0,must-revalidate
@@ -611,5 +611,5 @@ http_interactions:
         Q29uc3VtZWRNaWxsaXMiOjkzNSwibWVtb3J5Q29uc3VtZWRCeXRlcyI6MTI4
         NjE0NDAwfV19
     http_version: 
-  recorded_at: Tue, 29 Dec 2015 22:17:03 GMT
+  recorded_at: Tue, 29 Dec 2015 22:16:38 GMT
 recorded_with: VCR 3.0.1
