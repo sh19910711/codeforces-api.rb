@@ -186,7 +186,7 @@ describe Codeforces::Helper, :vcr => true do
 
     context "user(DmitriyH).rating" do
       subject! { client.user("DmitriyH").rating }
-      it { should eq 1941 }
+      it { should be_kind_of Integer }
     end
 
     context "user(DmitriyH).country" do
