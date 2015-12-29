@@ -59,7 +59,7 @@ describe Codeforces::Client, :vcr do
       it { should be_a Array }
       it { should_not be_empty }
       it { expect(client.last_response.status).to eq 200 }
-      it { expect(subject.map &:id).to include 9823801 }
+      it { expect(subject.map { |status| status.author.participantType }).to include 'PRACTICE' }
       it { expect(subject.length).to eq ::Codeforces::Client::DEFAULT_PAGE_COUNT }
     end
 
