@@ -12,7 +12,7 @@ class Codeforces::Api
       handles = [handles] unless handles.is_a?(Array)
       options[:data] ||= {}
       options[:data][:handles] = multi_values(handles)
-      post("user.info", options)
+      get("user.info", options)
     end
 
     def rated_list(options = {})
