@@ -24,10 +24,10 @@ deploy:
   provider: rubygems
   api_key:
     master:
-      secure: "alhZpyXA3GL09Au3efqVLNHhaDrAT9CyUxObMX3sZIEQKQWaphORGSN5aHV4CcwiW+486IfgJvP2iFRibTtG+RKt/RQtSHxX/1gnvaJWhcPWNewPLYrybzcvNvtyblbSxEME9nZ5r2se8/ete28i9wgh6yKnljqWqmyOzdClmio="
+      secure: "S9CaXZnIJa0JxHbASoYRKtHeITtxbmGN47zDQJDSIwN2dF3P2si8bhx4JL+dmhyhZhq/yB8vmVaBbCB2Qd7PZEBL6WyD0H8TJ0o0DbX2i/iHxzvNX1GYLsVH0sem2rf7kfyuxP+IO2wgbJe5itddwrTVsgUtm1IfGRIwnjHdCus="
   gem:
     master: codeforces
   on:
     repo: sh19910711/ruby-codeforces-api-client
-    ruby: "2.2"
+    ruby: "2.3.0"
 
