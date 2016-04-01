@@ -15,6 +15,7 @@ VCR.configure do |conf|
   conf.preserve_exact_body_bytes { true }
   conf.default_cassette_options = {
     :serialize_with => :psych,
+    :re_record_interval => 24 * 3600,
   }
   conf.ignore_hosts "codeclimate.com"
 end
@@ -22,7 +23,6 @@ end
 require "webmock"
 require "json"
 RSpec.configure do |conf|
-
   conf.before do
     ::WebMock.stub_request(
       :get,
@@ -103,8 +103,3 @@ RSpec.configure do |conf|
   end
 
 end
-
-if ENV["CODEFORCES_DEBUG"] === "yes"
-  require "byebug"
-end
-
