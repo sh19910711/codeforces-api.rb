@@ -13,9 +13,9 @@ class Codeforces::Client
 
   include Codeforces::Helper
 
-  DEFAULT_ENDPOINT = "http://codeforces.com/api/"
+  DEFAULT_ENDPOINT   = "http://codeforces.com/api/"
   DEFAULT_PAGE_COUNT = 50
-  DEFAULT_API_KEY = ENV["CODEFORCES_API_KEY"]
+  DEFAULT_API_KEY    = ENV["CODEFORCES_API_KEY"]
   DEFAULT_API_SECRET = ENV["CODEFORCES_API_SECRET"]
 
   attr_reader :endpoint
@@ -58,15 +58,26 @@ class Codeforces::Client
 
     path += "?#{request_uri.query}" unless request_uri.query.empty?
 
-    logger.debug "#{method.upcase} #{::URI.join endpoint, path}?#{options[:data]}"
+    logger.debug "#{method.upcase} #{::URI.join endpoint, path} with #{options[:data]}"
     @last_response = agent.call(method, path, :query => options[:data])
-    logger.debug "Status: #{last_response.data.status}"
 
-    unless last_response.data.status === "OK"
-      raise "Error: #{last_response.data.status} #{last_response.data.comment}"
-    end
-
+    raise_http_status last_response
+    raise_codeforces_status last_response
     last_response.data
+  end
+
+  def raise_http_status(res)
+    logger.debug "HTTP: #{res.status}"
+    unless res.status === 200
+      raise "Error: HTTP Status is #{res.status}"
+    end
+  end
+
+  def raise_codeforces_status(res)
+    logger.debug "Codeforces: #{res.data[:status]}"
+    unless res.data.status === "OK"
+      raise "Error: #{res.data[:status]} #{res.data[:comment]}"
+    end
   end
 
   def paginate(offset)
