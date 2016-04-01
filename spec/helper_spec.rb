@@ -111,6 +111,19 @@ describe Codeforces::Helper, :vcr => true do
 
   end
 
+  describe "#rounds" do
+
+    context "rounds.div2" do
+      subject! { client.rounds.div2 }
+      it { expect(subject.map &:name).to_not include "Codeforces Round #100" }
+      it { expect(subject.map &:name).to_not include "Codeforces Beta Round #10" }
+      it { expect(subject.map &:name).to_not include "Rockethon 2015" }
+      it { expect(subject.map &:name).to include "Codeforces Round #289 (Div. 2, ACM ICPC Rules)" }
+      it { expect(subject.map &:name).to include "Codeforces Beta Round #12 (Div 2 Only)" }
+    end
+
+  end
+
   describe "#contest" do
 
     context "contest 154" do
