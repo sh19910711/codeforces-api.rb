@@ -18,6 +18,7 @@ script:
 cache:
   directories:
     - vendor/bundle
+    - spec/api_fixtures
 
 deploy:
   provider: rubygems
