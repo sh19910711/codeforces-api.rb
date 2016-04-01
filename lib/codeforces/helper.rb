@@ -8,6 +8,10 @@ module Codeforces::Helper
     create_contest resolve_contest(query)
   end
 
+  def rounds(*args)
+    contests.send :rounds, *args
+  end
+
   def contests
     create_contests api.contest.list.map {|c| create_contest c }
   end
